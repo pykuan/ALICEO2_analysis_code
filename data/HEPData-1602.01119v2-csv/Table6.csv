@@ -1,0 +1,30 @@
+#: table_doi: 10.17182/hepdata.72886.v2/t6
+#: name: Table 6
+#: description: Ratio of $p_{\rm T}$-integrated $v_3$ and $v_4$ between $\sqrt{s_{\rm NN}}$ = 5.02 and 2.76 TeV.
+
+#: data_file: Table6.yaml
+#: keyword reactions: PB PB --> CHARGED X
+#: keyword observables: V3 | V4
+#: keyword phrases: Inclusive | Angular Correlation
+#: ETARAP,,,-0.8-0.8
+#: PT [GeV c^-1],,,0.2-5.0
+#: RE,,,PB PB --> CHARGED X
+CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,"V3{2, |DELTAETA|>1} (5.02 TeV) / V3{2, |DELTAETA|>1} (2.76 TeV)",stat +,stat -,sys +,sys -
+2.5,0.0,5.0,1.006,0.032,-0.032,0.019,-0.019
+7.5,5.0,10.0,0.979,0.035,-0.035,0.019,-0.019
+15.0,10.0,20.0,1.054,0.019,-0.019,0.02,-0.02
+25.0,20.0,30.0,1.059,0.023,-0.023,0.02,-0.02
+35.0,30.0,40.0,1.083,0.029,-0.029,0.021,-0.021
+45.0,40.0,50.0,1.058,0.049,-0.049,0.02,-0.02
+
+#: ETARAP,,,-0.8-0.8
+#: PT [GeV c^-1],,,0.2-5.0
+#: RE,,,PB PB --> CHARGED X
+CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,"V4{2, |DELTAETA|>1} (5.02 TeV) / V4{2, |DELTAETA|>1} (2.76 TeV)",stat +,stat -,sys +,sys -
+2.5,0.0,5.0,1.156,0.102,-0.102,0.02,-0.02
+7.5,5.0,10.0,1.112,0.108,-0.108,0.019,-0.019
+15.0,10.0,20.0,1.085,0.063,-0.063,0.018,-0.018
+25.0,20.0,30.0,1.106,0.083,-0.083,0.019,-0.019
+35.0,30.0,40.0,1.091,0.096,-0.096,0.018,-0.018
+45.0,40.0,50.0,1.055,0.17,-0.17,0.018,-0.018
+

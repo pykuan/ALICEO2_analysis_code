@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.110113.v1/t6
+#: name: Table 6
+#: description: Centrality dependence of ${\rm NSC}(2,3,5)$ in Pb--Pb collisions at $\sqrt{s_{\rm NN}} = 2.76$~TeV.
+#: data_file: data6.yaml
+#: keyword reactions: PB PB --> CHARGED X
+#: keyword observables: SC
+#: keyword cmenergies: 2760.0
+#: ETARAP,,,-0.8 TO 0.8
+#: PT [GEV/c],,,0.2 TO 5.0
+#: RE,,,PB PB --> CHARGED X
+#: SQRT(S)/NUCLEON [GEV],,,2760
+CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,"NSC(2,3,5)",stat +,stat -,sys +,sys -
+7.5,5.0,10.0,0.04127824,0.01475393,-0.01475393,0.03348064,-0.03348064
+15.0,10.0,20.0,0.07997417,0.01267038,-0.01267038,0.02371821,-0.02371821
+25.0,20.0,30.0,0.05188638,0.02114206,-0.02114206,0.02043286,-0.02043286
+35.0,30.0,40.0,0.0479981,0.01962741,-0.01962741,0.01890165,-0.01890165
+45.0,40.0,50.0,0.01113212,0.03371361,-0.03371361,0.004383829,-0.004383829
+

@@ -1,0 +1,7 @@
+Testing 1 files.
+Enabled tests: ['include-iostream', 'import-std-name', 'using-directive', 'std-prefix', 'root/entity', 'root/lorentz-vector', 'external-pi', 'two-pi-add-subtract', 'pi-multiple-fraction', 'pdg/database', 'pdg/explicit-code', 'pdg/explicit-mass', 'pdg/known-mass', 'logging', 'const-ref-in-for-loop', 'const-ref-in-process', 'o2-workflow-options', 'magic-number', 'doc/file', 'name/function-variable', 'name/macro', 'name/constexpr-constant', 'name/o2-column', 'name/o2-table', 'name/namespace', 'name/type', 'name/enum', 'name/class', 'name/struct', 'name/file-cpp', 'name/file-python', 'name/o2-workflow', 'name/o2-task', 'name/workflow-file', 'name/configurable', 'pwghf/name/struct-class', 'pwghf/name/task-file', 'pwghf/struct-member-order']
+Suffixes of tested files: ['.C', '.cxx', '.h', '.ipynb', '.py', 'CMakeLists.txt']
+
+O2 linter result: All tests passed.
+
+Tip: You can run the O2 linter locally from the O2Physics directory with: python3 Scripts/o2_linter.py <files>

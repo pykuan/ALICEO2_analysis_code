@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.105046.v1/t9
+#: name: Table 9
+#: description: Centrality dependence of $nMHC(v_2^2,v_3^6)$ in Pb-Pb collisions at 5.02 TeV.
+#: data_file: Table_9.yaml
+#: keyword cmenergies: 5020
+#: keyword phrases: Anisotropic flow
+#: RE,,,Pb Pb --> CHARGED $X$
+#: SQRT(S),,,5020.0 GEV
+#: ABS(ETA),,,< 0.8
+#: PT,,,0.2 - 5.0 GeV
+Centrality percentile,Centrality percentile LOW,Centrality percentile HIGH,"nMHC(v_2^2,v_3^6)",stat +,stat -,sys +,sys -
+2.5,0.0,5.0,0.0001464138,0.01232189,-0.01232189,1.127386e-05,-1.127386e-05
+7.5,5.0,10.0,0.0003937522,0.005374605,-0.005374605,3.031892e-05,-3.031892e-05
+15.0,10.0,20.0,-0.002893561,0.002692469,-0.002692469,0.0002228042,-0.0002228042
+25.0,20.0,30.0,-0.01016836,0.003863621,-0.003863621,0.0007829637,-0.0007829637
+35.0,30.0,40.0,-0.01207547,0.005685737,-0.005685737,0.0009298114,-0.0009298114
+

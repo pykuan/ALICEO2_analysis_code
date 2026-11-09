@@ -1,0 +1,125 @@
+{
+    "internal-dpl-clock": "",
+    "internal-dpl-aod-reader": {
+        "aod-max-io-rate": "0",
+        "time-limit": "0",
+        "orbit-offset-enumeration": "0",
+        "orbit-multiplier-enumeration": "0",
+        "start-value-enumeration": "0",
+        "end-value-enumeration": "-1",
+        "step-value-enumeration": "1",
+
+        "__ realdata __": "this is a comment",
+        "__aod-file-private": "/scratch3/go52dab/O2tutorial/analysis_code/realdata/AO2D.root",
+
+        "__ MCdata __": "this is a comment",
+        "aod-file-private": "/scratch3/go52dab/O2tutorial/analysis_code/MCdata/AO2D.root"
+    },
+    "eventselection-run3": {
+        "evselOpts": {
+            "isMC": "1"
+        },
+        "ccdburl": "http:\/\/alice-ccdb.cern.ch"
+    },
+    "propagation-service": {
+        "processRealData": "0",
+        "processMonteCarlo": "1",
+        "processRealDataWithPID": "0",
+        "processMonteCarloWithPID": "0"
+    },
+    "mult-cent-table": {
+        "processMonteCarlo": "1",
+        "processMonteCarlo2Mults": "0"
+    },
+    "tracks-extra-v002-converter": {
+        "processV000ToV002": "0",
+        "processV001ToV002": "0"
+    },
+    "multiparticle-cumulants": {
+        "__ process switches __" : "this is a comment",
+        "processRec": "0",
+        "processRecSim": "1",
+        "processSim": "0",
+
+        "__ configure your task __" : "this is a comment",
+        "cfDryRun": "0",
+        "cfCentEstm" : "FT0M",
+        "cfMultEstm" : "FT0M",
+
+        "cfQASwitch" : "true",
+        "cfWeightSwitch" : "true",
+        "cfPrintSwitch" : "false",
+
+        "cfGeneralCutSwitch" : "true",
+        "cfVertexZCutSwitch" : "true",
+        "cfSel8CutSwitch" : "true",
+        "cfCentCutSwitch" : "false",
+        "cfNumContribCutSwitch" : "false",
+        "cfNumTrackCutSwitch" : "false",
+        "cfOccupancyCutSwitch" : "true",
+        "cfCentCorrCutSwitch" : "true",
+        "cfMultCorrCutSwitch" : "true",
+        "cfNumContribMultCorrCutSwitch" : "true",
+
+        "cfPtCutSwitch" : "true",
+        "cfEtaCutSwitch" : "true",
+        "cfSignCutSwitch" : "true",
+        "cfTpcNClsFoundCutSwitch" : "true",
+        "cfDCAXYCutSwitch" : "true",
+        "cfDCAZCutSwitch" : "true",
+        "cfHasTpcItsCutSwitch": "false",
+
+        "cfVertexZCut" : {"values": ["-10.", "10."]},
+        "cfCentCut" : {"values": ["50.", "60."]},
+        "cfNumContribCut" : {"values": ["0.", "3000."]},
+        "cfNumTrackCut" : {"values": ["50.", "450."]},
+        "cfOccupancyCut" : {"values": ["0.", "6000."]},
+        "cfCentABCorrCut" : {"values": ["1.188477855", "2.447662182", "0.8216937786", "-4.03104324"]},
+        "cfCentACCorrCut" : {"values": ["1.189700835", "3.156701185", "0.8003282157", "-4.732205286"]},
+        "cfCentBCCorrCut" : {"values": ["1.056918661", "2.633479441", "0.9209878969", "-2.514355236"]},
+        "cfMultABCorrCut" : {"values": ["4.250464146", "31452.33765", "4.141988996", "-10855.93509"]},
+        "cfMultACCorrCut" : {"values": ["3.51317219", "14814.35246", "2.723512573", "-9673.156564"]},
+        "cfMultBCCorrCut" : {"values": ["0.8005160893", "-407.5493119", "0.6720369877", "-8280.835338"]},
+        "cfNumContribMultCorrCut" : {"values": ["0.03460083851", "37.38359596", "0.0256844967", "-537.3427212"]},
+
+        "cfPtCut" : {"values": ["0.2", "5.0"]},
+        "cfEtaCut" : {"values": ["-0.8", "0.8"]},
+        "cfSignCut" : {"values": ["1", "0", "1"]},
+        "cfTpcNClsFoundCut" : {"values": ["70.", "159."]},
+        "cfDCAXYCut" : {"values": ["-3.", "3."]},
+        "cfDCAZCut" : {"values": ["-3.", "3."]},
+        "cfHasTpcItsCut" : {"values": ["1", "1"]},
+        "cfEtaGap" : {"values": ["0.4", "0.8", "1.0"]},
+
+        "__ cfFileWithWeightsLocal __" : "/scratch3/go52dab/O2tutorial/analysis_code/weights.root",
+        "__ cfFileWithWeightsAlien __" : "/alice/data/CCDB/Users/p/pkuan/test-02/06/18495/d58de70e-3e5a-11f1-b736-8af603b824ee",
+        "__ cfFileWithWeightsCCDB __" : "/alice-ccdb.cern.ch/Users/p/pkuan/test-05",
+        "cfFileWithWeights" : "/scratch3/go52dab/O2tutorial/analysis_code/weights.root",
+
+        "__ binning __ " : "this is a comment",
+        "cfPtBins":   {"values": ["200", "0.", "20."]},
+        "cfEtaBins": {"values": ["200", "-1.", "1."]},
+        "cfPhiBins":  {"values": ["200", "0.", "6.283185307179586"]},
+        "cfDCAXYBins": {"values": ["200", "-5.", "5."]},
+        "cfDCAZBins": {"values": ["200", "-5.", "5."]},
+
+        "cfCentBins": {"values": ["100", "0.", "100."]},
+        "cfFT0CMultBins": {"values": ["100", "0.", "60000."]},
+        "cfFT0MMultBins": {"values": ["100", "0.", "250000."]},
+        "cfFV0AMultBins": {"values": ["100", "0.", "200000."]},
+        "cfVerXBins": {"values": ["100", "-0.0500000007", "0.0500000007"]},
+        "cfVerYBins": {"values": ["100", "-0.0500000007", "0.0500000007"]},
+        "cfVerZBins": {"values": ["100","-50","50"]},
+        "cfNumContribBins": {"values": ["100","0.","8000"]},
+        "cfNumTrackBins": {"values": ["100","50.","450"]},
+        "cfTwoParticleCorrBins": {"values": ["100", "-5e-2", "5e-2"]},
+        "cfThreeParticleCorrBins": {"values": ["100", "-2e-3", "2e-3"]},
+        "cfFourParticleCorrBins": {"values": ["100", "-1e-5", "1e-5"]},
+        "cfSixParticleCorrBins": {"values": ["100", "-1e-2", "1e-2"]},
+        "cfNumTrackTotalBins": {"values": ["20", "0", "3000"]}
+
+    },
+    "internal-dpl-aod-writer": "",
+    "internal-dpl-injected-dummy-sink": "",
+    "internal-dpl-aod-global-analysis-file-sink": ""
+}

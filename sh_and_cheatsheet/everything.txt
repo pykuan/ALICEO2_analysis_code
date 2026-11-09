@@ -1,0 +1,16 @@
+## write analysis code
+# 0. see /scratch3/go52dab/O2tutorial/compile.sh
+
+## download analysis result from hyperloop
+# 0. go to /scratch3/go52dab/O2tutorial/
+# 1. create test2026XXXX_analysis/realdata/ and test2026XXXX_analysis/MCdata/
+# 2. copy derived.py to either of them, change the train_id in line 183 (train_id see hyperloop)
+# 3. run python3 derive.py in alice env
+# 4. copy CleanTF1.C and clean.sh to test2026XXXX_analysis/
+# 5. run source clean.sh
+
+## calculate analysis result
+# 0. go to /scratch3/go52dab/O2tutorial/analysis_code/
+# 1. run CalculateData.C to get result/result_a.csv result/result_b.csv
+# 2. run BarlowTest.C to run Barlow test of b-a, generate result/barlow_bVSa.csv
+# 3. run CalculateData.C to include systematic error, generate result/plot/....png

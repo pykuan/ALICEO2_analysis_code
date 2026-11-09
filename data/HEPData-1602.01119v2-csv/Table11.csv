@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.72886.v2/t11
+#: name: Table 11
+#: description: Fully $p_{\rm T}$-integrated $v_2${4} at $\sqrt{s_{\rm NN}}$ = 2.76 and 5.02 TeV, for centrality 20-30%.
+
+#: data_file: Table11.yaml
+#: keyword reactions: PB PB --> CHARGED X
+#: keyword observables: V2
+#: keyword phrases: Inclusive | Angular Correlation
+#: keyword cmenergies: 2760.0-5023.0
+#: CENTRALITY [pct],20.0-30.0
+#: ETARAP,-0.8-0.8
+#: PT [GeV c^-1],0.0-20.0
+#: RE,PB PB --> CHARGED X
+SQRT(S)/NUCLEON [GEV],V2{4},stat +,stat -,sys +,sys -
+2760.0,0.06235,7e-05,-7e-05,0.00072,-0.00072
+5023.0,0.0654,9e-05,-9e-05,0.0012,-0.0012
+

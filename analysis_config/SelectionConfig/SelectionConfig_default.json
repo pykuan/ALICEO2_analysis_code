@@ -1,0 +1,45 @@
+
+{
+  "multiparticle-cumulants": {
+
+        "cfDryRun": "0",
+        "cfCentEstm" : "FT0M",
+        "cfMultEstm" : "FT0M",
+
+        "cfQASwitch" : "true",
+        "cfWeightSwitch" : "true",
+        "cfPrintSwitch" : "false",
+
+        "cfGeneralCutSwitch" : "true",
+        "cfVertexZCutSwitch" : "true",
+        "cfSel8CutSwitch" : "true",
+        "cfCentCutSwitch" : "true",
+        "cfNumContribCutSwitch" : "false",
+        "cfNumTrackCutSwitch" : "true",
+        "cfOccupancyCutSwitch" : "true",
+        "cfCentCorrCutSwitch" : "true",
+        "cfMultCorrCutSwitch" : "true",
+        "cfNumContribMultCorrCutSwitch" : "true",
+
+        "cfPtCutSwitch" : "true",
+        "cfEtaCutSwitch" : "true",
+        "cfSignCutSwitch" : "true",
+        "cfTpcNClsFoundCutSwitch" : "true",
+        "cfDCAXYCutSwitch" : "true",
+        "cfDCAZCutSwitch" : "true",
+        "cfHasTpcItsCutSwitch": "false",
+
+        "cfVertexZCut" : {"values": ["-10.", "10."]},
+        "cfNumContribCut" : {"values": ["0.", "3000."]},
+        "cfOccupancyCut" : {"values": ["0.", "6000."]},
+
+        "cfPtCut" : {"values": ["0.2", "5.0"]},
+        "cfEtaCut" : {"values": ["-0.8", "0.8"]},
+        "cfSignCut" : {"values": ["1", "0", "1"]},
+        "cfTpcNClsFoundCut" : {"values": ["70.", "159."]},
+        "cfDCAXYCut" : {"values": ["-3.", "3."]},
+        "cfDCAZCut" : {"values": ["-3.", "3."]},
+        "cfHasTpcItsCut" : {"values": ["1", "1"]},
+        "cfEtaGap" : {"values": ["0.4", "0.8", "1.0"]}
+  }
+}
