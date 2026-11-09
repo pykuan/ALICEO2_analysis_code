@@ -10,6 +10,10 @@
 #include <set>
 #include <string>
 #include <vector>
+#include <TROOT.h>
+#include <algorithm>
+#include <mutex>
+#include <thread>
 
 struct CleanCounts {
     Long64_t removed = 0;
@@ -75,67 +79,135 @@ void CleanObject(TObject* object,
     }
 }
 
+
+
 void CleanTF1(const char* fileName, bool removeAll = false)
 {
+
+    ROOT::EnableThreadSafety();
+    std::mutex filemutex;
+
     TFile file(fileName, "UPDATE");
     if (file.IsZombie()) {
         printf("Failed to open %s\n", fileName);
         return;
     }
 
-    std::set<std::string> directoryNames;
+    std::set<std::string> directoryNames_set;
     TIter nextKey(file.GetListOfKeys());
 
     while (auto* key = dynamic_cast<TKey*>(nextKey())) {
         TString name = key->GetName();
 
         if (name.BeginsWith("multiparticle-cumulants")) {
-            directoryNames.insert(name.Data());
+            directoryNames_set.insert(name.Data());
         }
     }
 
     Long64_t totalRemoved = 0;
     Long64_t totalKept = 0;
 
-    for (const std::string& directoryName : directoryNames) {
-        TDirectory* directory =
-            file.GetDirectory(directoryName.c_str());
+    std::vector<std::string> directoryNames(
+        directoryNames_set.begin(),
+        directoryNames_set.end()
+    );
+    size_t totalSize = directoryNames.size();
+    size_t nThreads = 4;
+    size_t threadSize = totalSize / nThreads;
+    size_t threadSize_remainder = totalSize % nThreads;
+    std::vector<std::thread> threads;
 
-        if (!directory) {
-            continue;
-        }
 
+    auto LoopOverDirectory = [&](std::string directoryName, bool removeAll = false) {
+
+        TDirectory* directory = nullptr;
         TList* baseList = nullptr;
-        directory->GetObject("Default list name", baseList);
+        {   
+            std::lock_guard<std::mutex> lock(filemutex);
+
+            directory = file.GetDirectory(directoryName.c_str());
+
+            if (!directory) {
+                return 1;
+            }
+            directory->GetObject("Default list name", baseList);
+        }
 
         if (!baseList) {
             printf("%s: Default list not found\n",
-                   directoryName.c_str());
-            continue;
+                    directoryName.c_str());
+            return 2;
+        }
+
+        auto* correlationList = dynamic_cast<TCollection*>(
+            baseList->FindObject("CorrelationHistograms"));
+
+        if (!correlationList) {
+            printf("%s: CorrelationHistograms not found\n",
+                directoryName.c_str());
+            return 3;
         }
 
         CleanCounts counts;
-        CleanCollection(baseList, removeAll, counts);
+
+        CleanCollection(correlationList, removeAll, counts);
 
         directory->cd();
 
-        const int bytesWritten = baseList->Write(
-            "Default list name",
-            TObject::kSingleKey | TObject::kWriteDelete);
+        {
+            std::lock_guard<std::mutex> lock(filemutex);
+            if (counts.removed == 0) {
+                totalKept += counts.kept;
+                printf("%s: no TF1 removed; skipped writing\n",
+                    directoryName.c_str());
+                return 4;
+            }
 
-        if (bytesWritten <= 0) {
-            printf("%s: write failed\n",
-                   directoryName.c_str());
-            continue;
+            const int bytesWritten = baseList->Write(
+                "Default list name",
+                TObject::kSingleKey | TObject::kWriteDelete);
+
+            if (bytesWritten <= 0) {
+                printf("%s: write failed\n",
+                        directoryName.c_str());
+                return 5;
+            }
+        
+            totalRemoved += counts.removed;
+            totalKept += counts.kept;
+
+            printf("%s: removed %lld TF1, kept %lld\n",
+                    directoryName.c_str(),
+                    counts.removed,
+                    counts.kept);
         }
 
-        totalRemoved += counts.removed;
-        totalKept += counts.kept;
+        return 0;
 
-        printf("%s: removed %lld TF1, kept %lld\n",
-               directoryName.c_str(),
-               counts.removed,
-               counts.kept);
+    };
+
+
+    for (int thread_id = 0; thread_id < nThreads; thread_id++) {
+        size_t local_threadSize = threadSize;
+        if (thread_id == nThreads - 1) {
+            local_threadSize += threadSize_remainder;
+        }
+
+        std::vector<std::string> directoryName;
+        for (int dirname_id = thread_id * threadSize; dirname_id < thread_id * threadSize + local_threadSize; dirname_id++){
+            directoryName.push_back(directoryNames[dirname_id]);
+        }
+
+
+        threads.emplace_back( [&, directoryName](){
+            for (auto& name : directoryName) {
+                LoopOverDirectory(name, removeAll);
+            }
+        });
+    }
+    
+    for (int thread_id = 0; thread_id < nThreads; thread_id++) {
+        threads[thread_id].join();
     }
 
     file.Close();
