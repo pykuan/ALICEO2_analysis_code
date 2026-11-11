@@ -19,7 +19,7 @@
 using namespace std;
 
 const bool bLocal = false;
-const bool bNormalized = true;
+bool bNormalized = true;
 bool bShowMC = true;
 if (bNormalized) {
   bShowMC = false;
@@ -30,8 +30,10 @@ const char* resultPath_trending = "result/data/result_trending_realdata.csv";
 const char* resultPath_root_cutchecks = "/scratch3/go52dab/O2tutorial/test20260827_analysis/realdata/AnalysisResults.root";
 const char* resultPath_weights = "/scratch3/go52dab/O2tutorial/analysis_code/weights.root";
 
-const int runNumberMC[4] = {544886, 544868, 544122, 544116};
-const int runNumberReal[8] = {544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091};
+const int nRunNumberMC = 4;
+const int nRunNumberReal = 8;
+const int runNumberMC[nRunNumberMC] = {544886, 544868, 544122, 544116};
+const int runNumberReal[nRunNumberReal] = {544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091};
 
 // tools
 
@@ -105,9 +107,7 @@ void setRunPositions(TGraphErrors* graph, int nRunNumber)
     }
 }
 
-void setRunLabels(TMultiGraph* multigraph,
-                  const int runNumber[],
-                  int nRunNumber)
+void setRunLabels(TMultiGraph* multigraph, const int runNumber[], int nRunNumber)
 {
     TAxis* axis = multigraph->GetXaxis();
 
@@ -336,7 +336,6 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
       legend->AddEntry(dataV3V4Compare[harmonic - 3], Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
 
       legend->AddEntry(fourParticleGraphMC, Form("v_{%d}{4}", harmonic));
-      legend->AddEntry((TObject*)0, "", "");
       legend->AddEntry(fourParticleGraphReal, Form("v_{%d}{4}", harmonic));
       legend->AddEntry((TObject*)0, "", "");
 
@@ -353,7 +352,6 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
       legend->AddEntry(twoParticleGraphReal, Form("v_{%d}{2}", harmonic));
 
       legend->AddEntry(fourParticleGraphMC, Form("v_{%d}{4}", harmonic));
-      legend->AddEntry((TObject*)0, "", "");
       legend->AddEntry(fourParticleGraphReal, Form("v_{%d}{4}", harmonic));
     }
 
@@ -581,8 +579,8 @@ void plotNSC(int index, TGraphErrors* resultGraphReal, TGraphErrors* resultGraph
 
 void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
 {
-  const int nRunNumber = 8;
-  const int runNumber[nRunNumber] = {544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091};
+  // const int nRunNumber = 8;
+  // const int runNumber[nRunNumber] = {544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091};
   const int nObservables = 9;
   const char* observablesList[nObservables] = {"multiplicity", "Nparticles", "pT", "<<2>>2cent10-20", "<<2>>3cent10-20", "<<2>>4cent10-20", "<<2>>2cent50-60", "<<2>>3cent50-60", "<<2>>4cent50-60"};
 
@@ -598,7 +596,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
     if (i != 3) {
 
       TGraphErrors* Graph = TrendingGraphs[i];
-      setRunPositions(Graph, nRunNumber);
+      setRunPositions(Graph, nRunNumberReal);
       convertToRelativeDeviation(Graph);
       Graph->SetMarkerStyle(20);
       Graph->SetMarkerColor(kRed);
@@ -616,7 +614,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
       legend->Draw();
 
       multigraph->Draw("APX");
-      setRunLabels(multigraph, runNumber, nRunNumber);
+      setRunLabels(multigraph, runNumberReal, nRunNumberReal);
       multigraph->GetXaxis()->SetTitle("Run number");
       multigraph->GetYaxis()->SetTitle(Form("Relative %s (%%)", observablesList[i]));
       multigraph->GetXaxis()->SetTitleOffset(2);
@@ -643,7 +641,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
       for (int j = 0; j < nObservables - 3; j++) {
 
         auto* Graph = TrendingGraphs[i + j];
-        setRunPositions(Graph, nRunNumber);
+        setRunPositions(Graph, nRunNumberReal);
         convertToRelativeDeviation(Graph);
         Graph->SetMarkerStyle(markerStyle[j]);
         Graph->SetMarkerColor(markerColor[j]);
@@ -674,7 +672,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
       multigraph->SetMaximum(yRange);
 
       multigraph->Draw("APX");
-      setRunLabels(multigraph, runNumber, nRunNumber);
+      setRunLabels(multigraph, runNumberReal, nRunNumberReal);
       multigraph->GetXaxis()->SetTitle("Run number");
       multigraph->GetYaxis()->SetTitle("Relative #LT#LT2#GT#GT_{n} (\%)");
       multigraph->GetXaxis()->SetTitleOffset(2);
@@ -794,6 +792,45 @@ void PlotCutCheck(TFile* resultFile, const char* quantityName, const char* xTitl
   }
 }
 
+void plotPhiWeights(TFile* weightFile, const int runNumber)
+{
+
+  TList* ccdbObject = nullptr;
+  weightFile->GetObject("ccdb_object", ccdbObject);
+
+  auto* run544116 = dynamic_cast<TList*>(ccdbObject->FindObject(Form("000%d", runNumber)));
+  auto* h544116_0 = dynamic_cast<TH1F*>(run544116->FindObject(Form("wPhi_run%d", runNumber)));
+  auto* h544116 = static_cast<TH1*>(h544116_0->Clone("hPhiWeight544116"));
+
+  h544116->Scale(1.0 / h544116->Integral());
+
+  h544116->SetDirectory(nullptr);
+  // weightFile->Close();
+
+  gStyle->SetOptStat(0);
+  h544116->SetTitle("");
+  h544116->GetXaxis()->SetTitle("#varphi");
+  h544116->GetYaxis()->SetTitle("Weight");
+  h544116->SetLineColor(kBlue + 1);
+  h544116->SetLineWidth(2);
+  const double yMin = h544116->GetMinimum();
+  const double yMax = h544116->GetMaximum();
+  const double margin = 0.08 * (yMax - yMin);
+  h544116->SetMinimum(yMin - margin);
+  h544116->SetMaximum(yMax + margin);
+
+  auto* canvas = new TCanvas("cPhiWeights", "", 1000, 700);
+
+  h544116->Draw("HIST");
+
+  // auto* legend = new TLegend(0.72, 0.79, 0.89, 0.90);
+  // legend->SetBorderSize(0);
+  // legend->SetFillStyle(0);
+  // legend->AddEntry(h544116, "run 544116", "l");
+  // legend->Draw();
+  canvas->Print(Form("result/plots/chap3_phiWeights_%d.png", runNumber));
+}
+
 void plotPtWeights(TFile* weightFile, const int runNumber)
 {
 
@@ -835,8 +872,10 @@ void plotPtWeights(TFile* weightFile, const int runNumber)
 }
 
 
-int Plotting()
+int Plotting(bool isNormalized = true)
 {
+  bNormalized = isNormalized;
+
   gStyle->SetOptStat(0);
   gStyle->SetTitleSize(0.045, "X");
   gStyle->SetTitleSize(0.05, "Y");
@@ -905,8 +944,10 @@ int Plotting()
     PlotCutCheck(resultData_root_cutchecks, "VertexZ", "Vertex Z [cm]", "EventHistograms", "", false);
 
     for (int const& i : runNumberMC) {
-      // printf("%d\n", i);
       plotPtWeights(resultData_root_weights, i);
+    }
+    for (int const& i : runNumberReal) {
+      plotPhiWeights(resultData_root_weights, i);
     }
 
   }

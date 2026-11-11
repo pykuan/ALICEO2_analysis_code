@@ -58,7 +58,7 @@ const int maxRunNumber = 8;
 const std::vector<std::string> readBarlowTestTypeReal = {"phiVSall", "phiptVSall"};
 const std::vector<std::string> readBarlowTestTypeMC = {"ptVSall", "phiptVSall"};
 
-const bool bSCnormalized = true;
+bool bSCnormalized = true;
 const bool bLocal = false;
 
 const int idReal = 0;
@@ -520,7 +520,9 @@ void CalculateData(const char* realMC_, const char* generateBarlowTestType) {
     dirBarlowTests.clear();
 }
 
-int CalculateData_vnscVScent() {
+int CalculateData_vnscVScent(bool isNormalized = true) {
+
+    bSCnormalized = isNormalized;
 
     if (!bLocal) {
         // generate data for Barlow test
