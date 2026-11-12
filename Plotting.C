@@ -20,10 +20,8 @@ using namespace std;
 
 const bool bLocal = false;
 bool bNormalized = true;
-bool bShowMC = true;
-if (bNormalized) {
-  bShowMC = false;
-}
+bool bShowMC = false;
+
 const char* resultPath_vnscVScent_real = "result/data/result_vnscVScent_realdata.csv";
 const char* resultPath_vnscVScent_MC = "result/data/result_vnscVScent_MCdata.csv";
 const char* resultPath_trending = "result/data/result_trending_realdata.csv";
@@ -239,7 +237,7 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
   const double yMax = getYMax(multigraph);
   const double yMin = getYMin(multigraph);
   if (bShowCompare) {
-    if (yMax > 0. && yMin > 0.) {
+    if (yMax > 0. && yMin >= 0.) {
       legend = harmonic == 2 ? new TLegend(0.40, 0.65, 0.85, 0.85)
                              : new TLegend(0.40, 0.73, 0.85, 0.85);
       multigraph->SetMinimum(0.);
@@ -875,6 +873,9 @@ void plotPtWeights(TFile* weightFile, const int runNumber)
 int Plotting(bool isNormalized = true)
 {
   bNormalized = isNormalized;
+  if (!isNormalized) {
+    bShowMC = true;
+  }
 
   gStyle->SetOptStat(0);
   gStyle->SetTitleSize(0.045, "X");

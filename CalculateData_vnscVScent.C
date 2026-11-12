@@ -1,5 +1,6 @@
 #include <iostream>
-#include <fstream>
+#include <fstream> 
+#include <complex>
 #include <iomanip>
 #include <sstream>
 #include <string>
@@ -81,7 +82,7 @@ enum observablesEnum {eV22 = 0, eV24, eV32, eV34, eV42, eV44, eNSC23, eNSC24, eN
 
 bool bValidRun[maxRunNumber];
 
-double MeanByRun[nObservables][maxRunNumber][nCentBins];
+std::complex<double> MeanByRun[nObservables][maxRunNumber][nCentBins];
 double Mean[nObservables][nCentBins];
 double StatErr[nObservables][nCentBins];
 double SysErr[nObservables][nCentBins];
@@ -215,9 +216,13 @@ void FillArray(){
                 }
 
                 // <<2>> and vn{2}
-                double v2TwoPCorr = std::pow(prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>")), 0.5); // v2{2}
-                double v3TwoPCorr = std::pow(prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>")), 0.5); // v3{2}
-                double v4TwoPCorr = std::pow(prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>")), 0.5); // v4{2}
+                std::complex<double> v2TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>")), 0}; // c2{2}
+                std::complex<double> v3TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>")), 0};
+                std::complex<double> v4TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>")), 0};
+                
+                std::complex<double> v2TwoPCorr = std::pow(v2TwoPCu, 0.5); // v2{2}
+                std::complex<double> v3TwoPCorr = std::pow(v3TwoPCu, 0.5); // v3{2}
+                std::complex<double> v4TwoPCorr = std::pow(v4TwoPCu, 0.5); // v4{2}
 
                 // <<2>> and vn{2}, gapped
                 double v2TwoPCorrGap1 = std::pow(prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v2^2>")), 0.5); // v2{2}
@@ -228,9 +233,12 @@ void FillArray(){
                 double v3TwoPCorrGap2 = std::pow(prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v3^2>")), 0.5); // v3{2}
                 double v4TwoPCorrGap2 = std::pow(prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v4^2>")), 0.5); // v4{2}
 
-                double v2TwoPCorrGap3 = std::pow(prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v2^2>")), 0.5); // v2{2}
-                double v3TwoPCorrGap3 = std::pow(prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v3^2>")), 0.5); // v3{2}
-                double v4TwoPCorrGap3 = std::pow(prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v4^2>")), 0.5); // v4{2}
+                std::complex<double> v2TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v2^2>")), 0};
+                std::complex<double> v3TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v3^2>")), 0};
+                std::complex<double> v4TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v4^2>")), 0};
+                std::complex<double> v2TwoPCorrGap3 = std::pow(v2TwoPCuGap3, 0.5); // v2{2}
+                std::complex<double> v3TwoPCorrGap3 = std::pow(v3TwoPCuGap3, 0.5); // v3{2}
+                std::complex<double> v4TwoPCorrGap3 = std::pow(v4TwoPCuGap3, 0.5); // v4{2}
 
                 // <<4>>
                 double v2v2FourPCorr = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v2^2>")); // <v2^2 v2^2>
@@ -244,9 +252,14 @@ void FillArray(){
                 double vnSixPCorr = prof6->GetBinContent(prof6->GetXaxis()->FindBin("<v2^2v3^2v4^2>")); // <v2^2 v3^2 v4^2>
 
                 // vn{4}
-                double v2FourPCorr = std::pow(2 * std::pow(v2TwoPCorr, 4) - v2v2FourPCorr, 0.25); // v2{4}
-                double v3FourPCorr = std::pow(2 * std::pow(v3TwoPCorr, 4) - v3v3FourPCorr, 0.25); // v3{4}
-                double v4FourPCorr = std::pow(2 * std::pow(v4TwoPCorr, 4) - v4v4FourPCorr, 0.25); // v4{4}
+
+                std::complex<double> v2FourPCu = 2. * std::pow(v2TwoPCorr, 4.) - v2v2FourPCorr; // -c2{4}
+                std::complex<double> v3FourPCu = 2. * std::pow(v3TwoPCorr, 4.) - v3v3FourPCorr; // -c3{4}
+                std::complex<double> v4FourPCu = 2. * std::pow(v4TwoPCorr, 4.) - v4v4FourPCorr; // -c4{4}
+
+                std::complex<double> v2FourPCorr = std::pow(v2FourPCu, 0.25); // v2{4}
+                std::complex<double> v3FourPCorr = std::pow(v3FourPCu, 0.25); // v3{4}
+                std::complex<double> v4FourPCorr = std::pow(v4FourPCu, 0.25); // v4{4}
 
                 // (N)SC
                 double NSC23;
@@ -254,30 +267,30 @@ void FillArray(){
                 double NSC234;
 
                 if (bSCnormalized) {
-                    NSC23 = (v2v3FourPCorr - std::pow(v2TwoPCorr * v3TwoPCorr, 2)) / std::pow(v2TwoPCorrGap3 * v3TwoPCorrGap3, 2); // NSC(2,3)
-                    NSC24 = (v2v4FourPCorr - std::pow(v2TwoPCorr * v4TwoPCorr, 2)) / std::pow(v2TwoPCorrGap3 * v4TwoPCorrGap3, 2); // NSC(2,4)
-                    NSC234 = (vnSixPCorr - v2v3FourPCorr * std::pow(v4TwoPCorr, 2) - v2v4FourPCorr * std::pow(v3TwoPCorr, 2) - v3v4FourPCorr * std::pow(v2TwoPCorr, 2) + 2 * std::pow(v2TwoPCorr * v3TwoPCorr * v4TwoPCorr, 2)) / std::pow(v2TwoPCorrGap3 * v3TwoPCorrGap3 * v4TwoPCorrGap3, 2); // NSC(2,3,4)
+                    NSC23 = (v2v3FourPCorr - v2TwoPCu.real() * v3TwoPCu.real()) / v2TwoPCuGap3.real() * v3TwoPCuGap3.real(); // NSC(2,3)
+                    NSC24 = (v2v4FourPCorr - v2TwoPCu.real() * v4TwoPCu.real()) / v2TwoPCuGap3.real() * v4TwoPCuGap3.real(); // NSC(2,4)
+                    NSC234 = (vnSixPCorr - v2v3FourPCorr * v4TwoPCu.real() - v2v4FourPCorr * v3TwoPCu.real() - v3v4FourPCorr * v2TwoPCu.real() + 2 * v2TwoPCu.real() * v3TwoPCu.real() * v4TwoPCu.real()) / (v2TwoPCuGap3.real() * v3TwoPCuGap3.real() * v4TwoPCuGap3.real()); // NSC(2,3,4)
                 }
                 else {
-                    NSC23 = (v2v3FourPCorr - std::pow(v2TwoPCorr * v3TwoPCorr, 2)); // SC(2,3)
-                    NSC24 = (v2v4FourPCorr - std::pow(v2TwoPCorr * v4TwoPCorr, 2)); // SC(2,4)
-                    NSC234 = (vnSixPCorr - v2v3FourPCorr * std::pow(v4TwoPCorr, 2) - v2v4FourPCorr * std::pow(v3TwoPCorr, 2) - v3v4FourPCorr * std::pow(v2TwoPCorr, 2) + 2 * std::pow(v2TwoPCorr * v3TwoPCorr * v4TwoPCorr, 2)); // SC(2,3,4)
+                    NSC23 = (v2v3FourPCorr - v2TwoPCu.real() * v3TwoPCu.real()); // SC(2,3)
+                    NSC24 = (v2v4FourPCorr - v2TwoPCu.real() * v4TwoPCu.real()); // SC(2,4)
+                    NSC234 = (vnSixPCorr - v2v3FourPCorr * v4TwoPCu.real() - v2v4FourPCorr * v3TwoPCu.real() - v3v4FourPCorr * v2TwoPCu.real() + 2 * v2TwoPCu.real() * v3TwoPCu.real() * v4TwoPCu.real()); // SC(2,3,4)
                 }
 
 
 
-                printf("  v2{2} = %.12f \n", v2TwoPCorr);
-                printf("  v3{2} = %.12f \n", v3TwoPCorr);
-                printf("  v4{2} = %.12f \n", v4TwoPCorr);
-                printf("  v2{4} = %.12f \n", v2FourPCorr);
-                printf("  v3{4} = %.12f \n", v3FourPCorr);
-                printf("  v4{4} = %.12f \n", v4FourPCorr);
-                // printf("  <v2^2 v2^2> = %.12f \n", v2v2FourPCorr);
-                // printf("  <v2^2 v3^2> = %.12f \n", v2v3FourPCorr);
-                // printf("  <v2^2 v4^2> = %.12f \n", v2v4FourPCorr);
-                printf("  (N)SC(2,3) = %.12f \n", NSC23);
-                printf("  (N)SC(2,4) = %.12f \n", NSC24);
-                printf("  (N)SC(2,3,4) = %.12f \n", NSC234);
+                // printf("  v2{2} = %.12f \n", v2TwoPCorr);
+                // printf("  v3{2} = %.12f \n", v3TwoPCorr);
+                // printf("  v4{2} = %.12f \n", v4TwoPCorr);
+                // printf("  v2{4} = %.12f \n", v2FourPCorr);
+                // printf("  v3{4} = %.12f \n", v3FourPCorr);
+                // printf("  v4{4} = %.12f \n", v4FourPCorr);
+                // // printf("  <v2^2 v2^2> = %.12f \n", v2v2FourPCorr);
+                // // printf("  <v2^2 v3^2> = %.12f \n", v2v3FourPCorr);
+                // // printf("  <v2^2 v4^2> = %.12f \n", v2v4FourPCorr);
+                // printf("  (N)SC(2,3) = %.12f \n", NSC23);
+                // printf("  (N)SC(2,4) = %.12f \n", NSC24);
+                // printf("  (N)SC(2,3,4) = %.12f \n", NSC234);
 
                 MeanByRun[eV22][j][i] = v2TwoPCorr;
                 MeanByRun[eV24][j][i] = v2FourPCorr;
@@ -320,7 +333,7 @@ void FillArray(){
 void Bootstrap()
 {
 
-    int nValid[nObservables][nCentBins] = {};
+    double nValid[nObservables][nCentBins] = {}; // actually int
 
     for (int obs = 0; obs < nObservables; ++obs) {
         for (int cent = 0; cent < nCentBins; ++cent) {
@@ -333,13 +346,13 @@ void Bootstrap()
         for (int obs = 0; obs < nObservables; ++obs) {
             for (int cent = 0; cent < nCentBins; ++cent) {
 
-                const double value = MeanByRun[obs][run][cent];
+                std::complex<double> value = MeanByRun[obs][run][cent];
 
-                if (!std::isfinite(value)) {
+                if (value != value) { // nan?
                     continue;
                 }
 
-                Mean[obs][cent] += value;
+                Mean[obs][cent] += value.real();
                 nValid[obs][cent]++;
             }
         }
@@ -360,13 +373,13 @@ void Bootstrap()
         for (int obs = 0; obs < nObservables; ++obs) {
             for (int cent = 0; cent < nCentBins; ++cent) {
 
-                const double value = MeanByRun[obs][run][cent];
+                std::complex<double> value = MeanByRun[obs][run][cent];
 
-                if (!std::isfinite(value) || nValid[obs][cent] < 2) {
+                if (value != value || nValid[obs][cent] < 2) { // !std::isfinite(value) || ...
                     continue;
                 }
 
-                StatErr[obs][cent] += std::pow(value - Mean[obs][cent], 2);
+                StatErr[obs][cent] += std::pow(value.real() - Mean[obs][cent], 2);
             }
         }
     }
@@ -552,7 +565,7 @@ int CalculateData_vnscVScent(bool isNormalized = true) {
     // apply systematic error and print total result
     CalculateData("realdata", "all");
     if (!bLocal) {
-        CalculateData("MCdata", "all");
+        CalculateData("MCdata", "pt");
     }
 
     return 0;
