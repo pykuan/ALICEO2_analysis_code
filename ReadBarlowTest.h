@@ -26,7 +26,7 @@ inline std::array<double, 8> ReadBarlowTest(const char* dataSysErr, const char* 
 
     while (getline(inSysErr, line)) {
 
-        if (line.find("#centrality,sigBarlow,sigSys", 0) == 0 || line.empty()) {
+        if (line.find("#X,sigBarlow,sigSys", 0) == 0 || line.empty()) {
             continue;
         } // ignore comment
 

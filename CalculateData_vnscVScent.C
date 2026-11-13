@@ -469,7 +469,7 @@ void Print(){
             resultForBarlowFile << "#:" << observablesList[m] << endl;
         }
         resultFile << "#:" << observablesList[m] << endl;
-        resultFile << "CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH," << observablesList[m] << ",stat +,stat -,sys +,sys -" << endl;
+        resultFile << "X,DUMMY,DUMMY," << observablesList[m] << ",stat +,stat -,sys +,sys -" << endl;
         for (int i=0; i<nCentBins; i++) {
             if (!bLocal) {
                 resultForBarlowFile << centBinsCenter[i] << "," << Mean[m][i] << "," << StatErr[m][i] << endl;
@@ -528,10 +528,10 @@ void CalculateData(const char* realMC_, const char* generateBarlowTestType) {
         }
     }
     nRunNumber = runNumber.size();
-    resultForBarlowFile.open(Form("result/barlow/result_%s_%s.csv", generateBarlowTestType, realMC_));
+    resultForBarlowFile.open(Form("result/barlow/result_vnscVScent_%s_%s.csv", generateBarlowTestType, realMC_));
     nBarlowTests = readBarlowTestType.size();
     for (const auto& barlowTest : readBarlowTestType){
-        dirBarlowTests.emplace_back(Form("result/barlow/barlow_%s_%s.csv", barlowTest.c_str(), realMC_));
+        dirBarlowTests.emplace_back(Form("result/barlow/barlow_vnscVScent_%s_%s.csv", barlowTest.c_str(), realMC_));
     }
     resultFile.open(Form("result/data/result_vnscVScent_%s.csv", realMC_));
 
@@ -558,13 +558,13 @@ int CalculateData_vnscVScent(bool isNormalized = true) {
             std::string strTrial = barlowTest.substr(0, pos);
             std::string strDefault = barlowTest.substr(pos + 2);
             // trial, default, sys err data path
-            BarlowTest(Form("result/barlow/result_%s_realdata.csv", strTrial.c_str()), Form("result/barlow/result_%s_realdata.csv", strDefault.c_str()), Form("result/barlow/barlow_%s_realdata.csv", barlowTest.c_str()));
+            BarlowTest(Form("result/barlow/result_vnscVScent_%s_realdata.csv", strTrial.c_str()), Form("result/barlow/result_vnscVScent_%s_realdata.csv", strDefault.c_str()), Form("result/barlow/barlow_vnscVScent_%s_realdata.csv", barlowTest.c_str()));
         }
         for (const auto& barlowTest : readBarlowTestTypeMC) {
             std::size_t pos = barlowTest.find("VS");
             std::string strTrial = barlowTest.substr(0, pos);
             std::string strDefault = barlowTest.substr(pos + 2);
-            BarlowTest(Form("result/barlow/result_%s_MCdata.csv", strTrial.c_str()), Form("result/barlow/result_%s_MCdata.csv", strDefault.c_str()), Form("result/barlow/barlow_%s_MCdata.csv", barlowTest.c_str()));
+            BarlowTest(Form("result/barlow/result_vnscVScent_%s_MCdata.csv", strTrial.c_str()), Form("result/barlow/result_vnscVScent_%s_MCdata.csv", strDefault.c_str()), Form("result/barlow/barlow_vnscVScent_%s_MCdata.csv", barlowTest.c_str()));
         }
     }
 

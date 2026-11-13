@@ -19,11 +19,11 @@ inline void BarlowTest(const char* dataTrial, const char* dataDefault, const cha
     double diffBarlow, errBarlow, sigBarlow, sigSys;
 
     ofstream outSysErr(dataSysErr);
-    outSysErr << "#centrality,sigBarlow,sigSys" << endl;
+    outSysErr << "#X,sigBarlow,sigSys" << endl;
 
     while (getline(inDefault, lineDefault)) {
         // printf(">> loop 1\n");
-        if (lineDefault.rfind("#centrality,value,staterror", 0) == 0 || lineDefault.empty()) {
+        if (lineDefault.rfind("#X,Y,staterror", 0) == 0 || lineDefault.empty()) {
             continue;
         } // ignore comment
 
@@ -54,7 +54,7 @@ inline void BarlowTest(const char* dataTrial, const char* dataDefault, const cha
             // printf(">> loop 2\n");
             // printf(">> loop 2, title1 = %s, title2 = %s\n", currentTitleDefault.c_str(), currentTitleTrial.c_str());
 
-            if (lineTrial.rfind("#centrality,value,staterror", 0) == 0 || lineTrial.empty()) {
+            if (lineTrial.rfind("#X,Y,staterror", 0) == 0 || lineTrial.empty()) {
                 // printf(">> loop 2, ignore comment\n");
                 continue;
             } // ignore comment

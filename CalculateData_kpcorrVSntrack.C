@@ -65,6 +65,14 @@ double TwoPCorr[n2][nbin];
 double ThreePCorr[n3][nbin];
 double FourPCorr[n4][nbin];
 
+double TwoPCorrStatErr[n2][nbin];
+double ThreePCorrStatErr[n3][nbin];
+double FourPCorrStatErr[n4][nbin];
+
+double TwoPCorrSysErr[n2][nbin];
+double ThreePCorrSysErr[n3][nbin];
+double FourPCorrSysErr[n4][nbin];
+
 double nTracks[nbin];
 
 const char* dataDir = "/scratch3/go52dab/O2tutorial/test20260922_analysis/";
@@ -111,18 +119,18 @@ int CalculateData_kpcorrVSntrack() {
         TProfile2D* prof4 = dynamic_cast<TProfile2D*>(runNumberList->FindObject("prof4NumTrackAfterCut"));
 
         for (int j = 0; j < nbin; j++) {
-            TwoPCorrByRun[i][eV11][j] = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v1^2>"), j + 1);
-            TwoPCorrByRun[i][eV22][j] = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>"), j + 1);
-            TwoPCorrByRun[i][eV33][j] = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>"), j + 1);
-            TwoPCorrByRun[i][eV44][j] = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>"), j + 1);
-            ThreePCorrByRun[i][eV211][j] = prof3->GetBinContent(prof3->GetXaxis()->FindBin("<v2v1v1>"), j + 1);
-            ThreePCorrByRun[i][eV321][j] = prof3->GetBinContent(prof3->GetXaxis()->FindBin("<v3v2v1>"), j + 1);
-            ThreePCorrByRun[i][eV422][j] = prof3->GetBinContent(prof3->GetXaxis()->FindBin("<v4v2v2>"), j + 1);
-            FourPCorrByRun[i][eV2222][j] = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v2^2>"), j + 1);
-            FourPCorrByRun[i][eV3333][j] = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v3^2v3^2>"), j + 1);
-            FourPCorrByRun[i][eV4444][j] = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v4^2v4^2>"), j + 1);
-            FourPCorrByRun[i][eV3232][j] = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v3^2>"), j + 1);
-            FourPCorrByRun[i][eV4242][j] = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v4^2>"), j + 1);
+            TwoPCorrByRun[i][eV11][j] = (prof2->GetBinEntries(prof2->GetBin(prof2->GetXaxis()->FindBin("<v1^2>"), j + 1))== 0) ? quiet_nan : prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v1^2>"), j + 1);
+            TwoPCorrByRun[i][eV22][j] = (prof2->GetBinEntries(prof2->GetBin(prof2->GetXaxis()->FindBin("<v2^2>"), j + 1))== 0) ? quiet_nan : prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>"), j + 1);
+            TwoPCorrByRun[i][eV33][j] = (prof2->GetBinEntries(prof2->GetBin(prof2->GetXaxis()->FindBin("<v3^2>"), j + 1))== 0) ? quiet_nan : prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>"), j + 1);
+            TwoPCorrByRun[i][eV44][j] = (prof2->GetBinEntries(prof2->GetBin(prof2->GetXaxis()->FindBin("<v4^2>"), j + 1))== 0) ? quiet_nan : prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>"), j + 1);
+            ThreePCorrByRun[i][eV211][j] = (prof3->GetBinEntries(prof3->GetBin(prof3->GetXaxis()->FindBin("<v2v1v1>"), j + 1))== 0) ? quiet_nan : prof3->GetBinContent(prof3->GetXaxis()->FindBin("<v2v1v1>"), j + 1);
+            ThreePCorrByRun[i][eV321][j] = (prof3->GetBinEntries(prof3->GetBin(prof3->GetXaxis()->FindBin("<v3v2v1>"), j + 1))== 0) ? quiet_nan : prof3->GetBinContent(prof3->GetXaxis()->FindBin("<v3v2v1>"), j + 1);
+            ThreePCorrByRun[i][eV422][j] = (prof3->GetBinEntries(prof3->GetBin(prof3->GetXaxis()->FindBin("<v4v2v2>"), j + 1))== 0) ? quiet_nan : prof3->GetBinContent(prof3->GetXaxis()->FindBin("<v4v2v2>"), j + 1);
+            FourPCorrByRun[i][eV2222][j] = (prof4->GetBinEntries(prof4->GetBin(prof4->GetXaxis()->FindBin("<v2^2v2^2>"), j + 1))== 0) ? quiet_nan : prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v2^2>"), j + 1);
+            FourPCorrByRun[i][eV3333][j] = (prof4->GetBinEntries(prof4->GetBin(prof4->GetXaxis()->FindBin("<v3^2v3^2>"), j + 1))== 0) ? quiet_nan : prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v3^2v3^2>"), j + 1);
+            FourPCorrByRun[i][eV4444][j] = (prof4->GetBinEntries(prof4->GetBin(prof4->GetXaxis()->FindBin("<v4^2v4^2>"), j + 1))== 0) ? quiet_nan : prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v4^2v4^2>"), j + 1);
+            FourPCorrByRun[i][eV3232][j] = (prof4->GetBinEntries(prof4->GetBin(prof4->GetXaxis()->FindBin("<v2^2v3^2>"), j + 1))== 0) ? quiet_nan : prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v3^2>"), j + 1);
+            FourPCorrByRun[i][eV4242][j] = (prof4->GetBinEntries(prof4->GetBin(prof4->GetXaxis()->FindBin("<v2^2v4^2>"), j + 1))== 0) ? quiet_nan : prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v4^2>"), j + 1);
             nTracks[j] = prof2->GetYaxis()->GetBinCenter(j + 1);
         }
 
@@ -131,11 +139,22 @@ int CalculateData_kpcorrVSntrack() {
     // bootstrap
     int nValid[n2 + n3 + n4][nbin] = {};
 
+    for (int obs = 0; obs < nObservables; ++obs) {
+        for (int cent = 0; cent < nCentBins; ++cent) {
+            TwoPCorr[obs][bin] = 0.;
+            ThreePCorr[obs][bin] = 0.;
+            FourPCorr[obs][bin] = 0.;
+            TwoPCorrStatErr[obs][cent] = 0.;
+            ThreePCorrStatErr[obs][cent] = 0.;
+            FourPCorrStatErr[obs][cent] = 0.;
+        }
+    }
+
     for (int run = 0; run < nRun; run++) {
         for (int bin = 0; bin < nbin; bin++) {
             for (int obs = 0; obs < n2; obs++) {
                 double value = TwoPCorrByRun[run][obs][bin];
-                if (value == 0.) {
+                if (value != value.) {
                     continue;
                 }
                 TwoPCorr[obs][bin] += value;
@@ -143,7 +162,7 @@ int CalculateData_kpcorrVSntrack() {
             }
             for (int obs = 0; obs < n3; obs++) {
                 double value = ThreePCorrByRun[run][obs][bin];
-                if (value == 0.) {
+                if (value != value.) {
                     continue;
                 }
                 ThreePCorr[obs][bin] += value;
@@ -151,7 +170,7 @@ int CalculateData_kpcorrVSntrack() {
             }
             for (int obs = 0; obs < n4; obs++) {
                 double value = FourPCorrByRun[run][obs][bin];
-                if (value == 0.) {
+                if (value != value.) {
                     continue;
                 }
                 FourPCorr[obs][bin] += value;
@@ -171,6 +190,115 @@ int CalculateData_kpcorrVSntrack() {
             FourPCorr[obs][bin] = (nValid[n2 + n3 + obs][bin] > 0) ? FourPCorr[obs][bin] / nValid[n2 + n3 + obs][bin] : quiet_nan;
         }
     }
+
+    for (int run = 0; run < nRun; run++) {
+        for (int bin = 0; bin < nbin; bin++){
+            for (int obs = 0; obs < n2; obs++) {
+                double value = TwoPCorrByRun[run][obs][bin];
+                if (value != value || nValid[obs][bin] < 2) {
+                    continue;
+                }
+                TwoPCorrStatErr[obs][bin] += std::pow(value - TwoPCorr[obs][bin], 2);
+            }
+            for (int obs = 0; obs < n3; obs++) {
+                double value = ThreePCorrByRun[run][obs][bin];
+                if (value != value || nValid[n2 + obs][bin] < 2) {
+                    continue;
+                }
+                ThreePCorrStatErr[obs][bin] += std::pow(value - ThreePCorr[obs][bin], 2);
+            }
+            for (int obs = 0; obs < n4; obs++) {
+                double value = FourPCorrByRun[run][obs][bin];
+                if (value != value || nValid[n2 + n3 + obs][bin] < 2) {
+                    continue;
+                }
+                FourPCorrStatErr[obs][bin] += std::pow(value - FourPCorr[obs][bin], 2);
+            }
+        }
+    }
+
+
+    for (int obs = 0; obs < n2; obs++) {
+        for (int bin = 0; bin < nbin; bin++) {
+            const int n = nValid[obs][bin];
+            if (n >= 2) {
+                TwoPCorrStatErr[obs][bin] = std::sqrt(TwoPCorrStatErr[obs][bin] /(static_cast<double>(n) * (n - 1)));
+            } else {
+                TwoPCorrStatErr[obs][bin] = std::numeric_limits<double>::quiet_NaN(); //0
+            }
+            TwoPCorrErr[obs][bin] = TwoPCorrStatErr[obs][bin];
+        }
+    }
+
+    for (int obs = 0; obs < n3; obs++) {
+        for (int bin = 0; bin < nbin; bin++) {
+            const int n = nValid[n2 + obs][bin];
+            if (n >= 2) {
+                ThreePCorrStatErr[obs][bin] = std::sqrt(ThreePCorrStatErr[obs][bin] /(static_cast<double>(n) * (n - 1)));
+            } else {
+                ThreePCorrStatErr[obs][bin] = std::numeric_limits<double>::quiet_NaN(); //0
+            }
+            ThreePCorrErr[obs][bin] = ThreePCorrStatErr[obs][bin];
+        }
+    }
+
+    for (int obs = 0; obs < n4; obs++) {
+        for (int bin = 0; bin < nbin; bin++) {
+            const int n = nValid[n2 + n3 + obs][bin];
+            if (n >= 2) {
+                FourPCorrStatErr[obs][bin] = std::sqrt(FourPCorrStatErr[obs][bin] /(static_cast<double>(n) * (n - 1)));
+            } else {
+                FourPCorrStatErr[obs][bin] = std::numeric_limits<double>::quiet_NaN(); //0
+            }
+            FourPCorrErr[obs][bin] = FourPCorrStatErr[obs][bin];
+        }
+    }
+
+
+    // barlow
+
+// void Barlow(){
+
+//     for (int i=0; i<nCentBins; i++) {
+//         for(int j=0; j<nObservables; j++) {
+//             SysErr[j][i] = 0.;
+//         }
+//     }
+
+//     double a[nObservables][nCentBins] = {};
+//     for (int m=0; m<nObservables; m++) {
+//         for (int n=0; n<nBarlowTests; n++) {
+//             // std::cout << "reading: " << dirBarlowTests[n] << '\n';
+//             auto array = ReadBarlowTest(dirBarlowTests[n].c_str(), observablesList[m]);
+//             for (int p=0; p<nCentBins; p++) {
+//                 a[m][p] += std::pow(array[p], 2);
+//             }
+//         }
+
+//         for (int q=0; q<nCentBins; q++) {
+//             SysErr[m][q] = a[m][q];
+//         }
+
+//     }
+
+//     for (int p=0; p<nCentBins; p++) {
+//         for (int m=0; m<nObservables; m++) {
+//             SysErr[m][p] = std::pow(SysErr[m][p], 0.5);
+//             SysErr[m][p] *= Mean[m][p];
+//             Err[m][p] = StatErr[m][p] + SysErr[m][p];
+//         }
+//     }
+
+//     for (int i=0; i<nCentBins; i++) {
+//         for(int j=0; j<nObservables; j++) {
+//             if (SysErr[j][i] != SysErr[j][i]) { // check for NaN
+//                 SysErr[j][i] = 0.;
+//             }
+//         }
+//     }
+
+// }
+
 
     // plot
 
