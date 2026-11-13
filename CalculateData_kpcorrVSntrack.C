@@ -68,7 +68,7 @@ double FourPCorr[n4][nbin];
 double nTracks[nbin];
 
 const char* dataDir = "/scratch3/go52dab/O2tutorial/test20260922_analysis/";
-const double nan = std::numeric_limits<double>::quiet_NaN();
+const double quiet_nan = std::numeric_limits<double>::quiet_NaN();
 
 int CalculateData_kpcorrVSntrack() {
 
@@ -102,7 +102,7 @@ int CalculateData_kpcorrVSntrack() {
         TList* runNumberList = dynamic_cast<TList*>(histogramList->FindObject(Form("mcc_run%d", runNumber[i])));
 
         if(!runNumberList) {
-            printf(Form(" Failed to find list \"mcc_run%d\"\n", runNumber[i]));
+            printf(" Failed to find list \"mcc_run%d\"\n", runNumber[i]);
             return 0;
         }
 
@@ -162,13 +162,13 @@ int CalculateData_kpcorrVSntrack() {
 
     for (int bin = 0; bin < nbin; bin++) {
         for (int obs = 0; obs < n2; obs++) {
-            TwoPCorr[obs][bin] = (nValid[obs][bin] > 0) ? TwoPCorr[obs][bin] / nValid[obs][bin] : nan;
+            TwoPCorr[obs][bin] = (nValid[obs][bin] > 0) ? TwoPCorr[obs][bin] / nValid[obs][bin] : quiet_nan;
         }
         for (int obs = 0; obs < n3; obs++) {
-            ThreePCorr[obs][bin] = (nValid[n2 + obs][bin] > 0) ? ThreePCorr[obs][bin] / nValid[n2 + obs][bin] : nan;
+            ThreePCorr[obs][bin] = (nValid[n2 + obs][bin] > 0) ? ThreePCorr[obs][bin] / nValid[n2 + obs][bin] : quiet_nan;
         }
         for (int obs = 0; obs < n4; obs++) {
-            FourPCorr[obs][bin] = (nValid[n2 + n3 + obs][bin] > 0) ? FourPCorr[obs][bin] / nValid[n2 + n3 + obs][bin] : nan;
+            FourPCorr[obs][bin] = (nValid[n2 + n3 + obs][bin] > 0) ? FourPCorr[obs][bin] / nValid[n2 + n3 + obs][bin] : quiet_nan;
         }
     }
 
@@ -204,5 +204,5 @@ int CalculateData_kpcorrVSntrack() {
         delete g4[i];
     }
 
-    return 1;
+    return 0;
 }

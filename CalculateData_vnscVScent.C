@@ -225,13 +225,19 @@ void FillArray(){
                 std::complex<double> v4TwoPCorr = std::pow(v4TwoPCu, 0.5); // v4{2}
 
                 // <<2>> and vn{2}, gapped
-                double v2TwoPCorrGap1 = std::pow(prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v2^2>")), 0.5); // v2{2}
-                double v3TwoPCorrGap1 = std::pow(prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v3^2>")), 0.5); // v3{2}
-                double v4TwoPCorrGap1 = std::pow(prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v4^2>")), 0.5); // v4{2}
+                std::complex<double> v2TwoPCuGap1 = std::complex<double>{prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v2^2>")), 0};
+                std::complex<double> v3TwoPCuGap1 = std::complex<double>{prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v3^2>")), 0};
+                std::complex<double> v4TwoPCuGap1 = std::complex<double>{prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v4^2>")), 0};
+                std::complex<double> v2TwoPCorrGap1 = std::pow(v2TwoPCuGap1, 0.5); // v2{2}
+                std::complex<double> v3TwoPCorrGap1 = std::pow(v3TwoPCuGap1, 0.5); // v3{2}
+                std::complex<double> v4TwoPCorrGap1 = std::pow(v4TwoPCuGap1, 0.5); // v4{2}
 
-                double v2TwoPCorrGap2 = std::pow(prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v2^2>")), 0.5); // v2{2}
-                double v3TwoPCorrGap2 = std::pow(prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v3^2>")), 0.5); // v3{2}
-                double v4TwoPCorrGap2 = std::pow(prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v4^2>")), 0.5); // v4{2}
+                std::complex<double> v2TwoPCuGap2 = std::complex<double>{prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v2^2>")), 0};
+                std::complex<double> v3TwoPCuGap2 = std::complex<double>{prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v3^2>")), 0};
+                std::complex<double> v4TwoPCuGap2 = std::complex<double>{prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v4^2>")), 0};
+                std::complex<double> v2TwoPCorrGap2 = std::pow(v2TwoPCuGap2, 0.5); // v2{2}
+                std::complex<double> v3TwoPCorrGap2 = std::pow(v3TwoPCuGap2, 0.5); // v3{2}
+                std::complex<double> v4TwoPCorrGap2 = std::pow(v4TwoPCuGap2, 0.5); // v4{2}
 
                 std::complex<double> v2TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v2^2>")), 0};
                 std::complex<double> v3TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v3^2>")), 0};
@@ -565,7 +571,7 @@ int CalculateData_vnscVScent(bool isNormalized = true) {
     // apply systematic error and print total result
     CalculateData("realdata", "all");
     if (!bLocal) {
-        CalculateData("MCdata", "pt");
+        CalculateData("MCdata", "all");
     }
 
     return 0;
