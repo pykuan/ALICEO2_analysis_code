@@ -51,10 +51,11 @@ inline vector<TGraphErrors*> loadtable(const char* csvfile)
     while (getline(in,line)) {
         if (line.rfind("#:",0)==0) continue;
         if (line.empty())        { push(); continue; }
-
-        if (line.rfind("X",0)==0 || line.rfind("Centrality percentile",0)==0 || line.rfind("RUN NUMBER",0)==0) {
+        if (line.rfind("X",0)==0 || line.rfind("RUN NUMBER",0)==0 || // experimental data
+            line.rfind("Centrality percentile",0)==0 || line.rfind("CENTRALITY",0)==0) // comparison
+            {
             stringstream hs(line);
-            string dummy1, dummy2, dummy3; // CENTRALITY [PCT],CENTRALITY [PCT] LOW,X [PCT] HIGH,
+            string dummy1, dummy2, dummy3; // CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,
             getline(hs,dummy1,',');
             getline(hs,dummy2,',');
             getline(hs,dummy3,',');

@@ -49,8 +49,8 @@ const int TwoPCorrName[n2][2] = {{1,-1}, {2,-2}, {3,-3}, {4,-4}};
 const int ThreePCorrName[n3][3] = {{2,-1,-1}, {3,-2,-1}, {4,-2,-2}};
 const int FourPCorrName[n4][4] = {{2,2,-2,-2}, {3,3,-3,-3}, {4,4,-4,-4}, {3,2,-3,-2}, {4,2,-4,-2}};
 
-const size_t nRun = 4;
-const int runNumber[nRun] = {544886, 544868, 544122, 544116};
+const size_t nRun = 2;
+const int runNumber[nRun] = {544886, 544868}; //, 544122, 544116
 
 // size_t n2 = 4;
 // size_t n3 = 3;
@@ -64,6 +64,10 @@ double FourPCorrByRun[nRun][n4][nbin];
 double TwoPCorr[n2][nbin];
 double ThreePCorr[n3][nbin];
 double FourPCorr[n4][nbin];
+
+double TwoPCorrErr[n2][nbin];
+double ThreePCorrErr[n3][nbin];
+double FourPCorrErr[n4][nbin];
 
 double TwoPCorrStatErr[n2][nbin];
 double ThreePCorrStatErr[n3][nbin];
@@ -139,14 +143,18 @@ int CalculateData_kpcorrVSntrack() {
     // bootstrap
     int nValid[n2 + n3 + n4][nbin] = {};
 
-    for (int obs = 0; obs < nObservables; ++obs) {
-        for (int cent = 0; cent < nCentBins; ++cent) {
+    for (int bin = 0; bin < nbin; bin++) {
+        for (int obs = 0; obs < n2; obs++) {
             TwoPCorr[obs][bin] = 0.;
+            TwoPCorrStatErr[obs][bin] = 0.;
+        }
+        for (int obs = 0; obs < n3; obs++) {
             ThreePCorr[obs][bin] = 0.;
+            ThreePCorrStatErr[obs][bin] = 0.;
+        }
+        for (int obs = 0; obs < n4; obs++) {
             FourPCorr[obs][bin] = 0.;
-            TwoPCorrStatErr[obs][cent] = 0.;
-            ThreePCorrStatErr[obs][cent] = 0.;
-            FourPCorrStatErr[obs][cent] = 0.;
+            FourPCorrStatErr[obs][bin] = 0.;
         }
     }
 
@@ -154,7 +162,7 @@ int CalculateData_kpcorrVSntrack() {
         for (int bin = 0; bin < nbin; bin++) {
             for (int obs = 0; obs < n2; obs++) {
                 double value = TwoPCorrByRun[run][obs][bin];
-                if (value != value.) {
+                if (value != value) {
                     continue;
                 }
                 TwoPCorr[obs][bin] += value;
@@ -162,7 +170,7 @@ int CalculateData_kpcorrVSntrack() {
             }
             for (int obs = 0; obs < n3; obs++) {
                 double value = ThreePCorrByRun[run][obs][bin];
-                if (value != value.) {
+                if (value != value) {
                     continue;
                 }
                 ThreePCorr[obs][bin] += value;
@@ -170,7 +178,7 @@ int CalculateData_kpcorrVSntrack() {
             }
             for (int obs = 0; obs < n4; obs++) {
                 double value = FourPCorrByRun[run][obs][bin];
-                if (value != value.) {
+                if (value != value) {
                     continue;
                 }
                 FourPCorr[obs][bin] += value;

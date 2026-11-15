@@ -20,6 +20,7 @@ using namespace std;
 
 const bool bLocal = false;
 bool bNormalized = true;
+bool bCumulant = false;
 bool bShowMC = false;
 
 const char* resultPath_vnscVScent_real = "result/data/result_vnscVScent_realdata.csv";
@@ -581,6 +582,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
   // const int runNumber[nRunNumber] = {544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091};
   const int nObservables = 9;
   const char* observablesList[nObservables] = {"multiplicity", "Nparticles", "pT", "<<2>>2cent10-20", "<<2>>3cent10-20", "<<2>>4cent10-20", "<<2>>2cent50-60", "<<2>>3cent50-60", "<<2>>4cent50-60"};
+  const char* observablesUnitList[nObservables] = {"", "", "[GeV]", "", "", "", "", "", ""};
 
   TCanvas* canvas = nullptr;
   TMultiGraph* multigraph = nullptr;
@@ -595,7 +597,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
 
       TGraphErrors* Graph = TrendingGraphs[i];
       setRunPositions(Graph, nRunNumberReal);
-      convertToRelativeDeviation(Graph);
+      // convertToRelativeDeviation(Graph);
       Graph->SetMarkerStyle(20);
       Graph->SetMarkerColor(kRed);
 
@@ -603,18 +605,19 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
       multigraph->SetTitle(" ");
       multigraph->Add(Graph);
 
-      const double yRange = 1.2 * std::abs(getYMax(multigraph, false));
-      multigraph->SetMinimum(-yRange);
-      multigraph->SetMaximum(yRange);
+      const double yRangeMax = std::abs(getYMax(multigraph, false));
+      const double yRangeMin = std::abs(getYMin(multigraph, false));
+      multigraph->SetMinimum(yRangeMin - 0.2 * std::abs(yRangeMax));
+      multigraph->SetMaximum(yRangeMax + 0.2 * std::abs(yRangeMax));
 
       TLegend* legend = new TLegend(0.55, 0.73, 0.85, 0.85);
       legend->SetBorderSize(0);
       legend->Draw();
 
-      multigraph->Draw("APX");
+      multigraph->Draw("AP");
       setRunLabels(multigraph, runNumberReal, nRunNumberReal);
       multigraph->GetXaxis()->SetTitle("Run number");
-      multigraph->GetYaxis()->SetTitle(Form("Relative %s (%%)", observablesList[i]));
+      multigraph->GetYaxis()->SetTitle(Form("%s %s", observablesList[i], observablesUnitList[i]));
       multigraph->GetXaxis()->SetTitleOffset(2);
 
 
@@ -625,7 +628,7 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
       // delete multigraph;
       multigraph = nullptr;
     }
-    else {
+    else { // 2p corr
 
       const int nGraphs = nObservables - 3; // 6
       canvas = new TCanvas("c", "", 1500, 900);
@@ -636,11 +639,11 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
       multigraph->SetTitle(" ");
       const int markerStyle[nGraphs] = {20, 20, 20, 24, 24, 24};
       const int markerColor[nGraphs] = {kRed + 1, kBlue + 1, kGreen + 2, kRed + 1, kBlue + 1, kGreen + 2};
-      for (int j = 0; j < nObservables - 3; j++) {
+      for (int j = 0; j < nGraphs; j++) {
 
         auto* Graph = TrendingGraphs[i + j];
         setRunPositions(Graph, nRunNumberReal);
-        convertToRelativeDeviation(Graph);
+        // convertToRelativeDeviation(Graph);
         Graph->SetMarkerStyle(markerStyle[j]);
         Graph->SetMarkerColor(markerColor[j]);
         multigraph->Add(Graph);
@@ -665,14 +668,16 @@ void plotTrending(std::vector<TGraphErrors*> TrendingGraphs)
           ++graphIndex;
       }
 
-      const double yRange = 1.2 * std::abs(getYMax(multigraph, false));
-      multigraph->SetMinimum(-yRange);
-      multigraph->SetMaximum(yRange);
+      const double yRangeMax = std::abs(getYMax(multigraph, false));
+      const double yRangeMin = std::abs(getYMin(multigraph, false));
+      multigraph->SetMinimum(yRangeMin - 0.2 * std::abs(yRangeMax));
+      multigraph->SetMaximum(yRangeMax + 0.6 * std::abs(yRangeMax));
 
-      multigraph->Draw("APX");
+
+      multigraph->Draw("AP");//APX
       setRunLabels(multigraph, runNumberReal, nRunNumberReal);
       multigraph->GetXaxis()->SetTitle("Run number");
-      multigraph->GetYaxis()->SetTitle("Relative #LT#LT2#GT#GT_{n} (\%)");
+      multigraph->GetYaxis()->SetTitle("#LT#LT2#GT#GT_{n}");
       multigraph->GetXaxis()->SetTitleOffset(2);
 
 
@@ -870,12 +875,13 @@ void plotPtWeights(TFile* weightFile, const int runNumber)
 }
 
 
-int Plotting(bool isNormalized = true)
+int Plotting(bool isNormalized = true, bool isCumulant = false)
 {
   bNormalized = isNormalized;
   if (!isNormalized) {
     bShowMC = true;
   }
+  bCumulant = isCumulant;
 
   gStyle->SetOptStat(0);
   gStyle->SetTitleSize(0.045, "X");
@@ -885,7 +891,6 @@ int Plotting(bool isNormalized = true)
   Color_t semiTransWhite = TColor::GetColorTransparent(kWhite, 0.8);
   gStyle->SetLegendFillColor(semiTransWhite);
   gStyle->SetLegendBorderSize(1); 
-
 
   const auto resultData_vnscVScent_real = loadtable(resultPath_vnscVScent_real);
   const auto resultData_vnscVScent_MC = loadtable(resultPath_vnscVScent_MC);
@@ -905,52 +910,59 @@ int Plotting(bool isNormalized = true)
   const auto resultData_root_weights = TFile::Open(resultPath_weights, "read");
 
 
-  // vn without comparison
-  plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[1]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[1]->Clone()), dataV2Compare, dataV3V4Compare, false);
-  plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[3]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[3]->Clone()), dataV2Compare, dataV3V4Compare, false);
-  plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[5]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[5]->Clone()), dataV2Compare, dataV3V4Compare, false);
+  if (!bCumulant) {
 
-  // vn with comparison
-  plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[11]->Clone()), resultData_vnscVScent_real[1], resultData_vnscVScent_MC[1], dataV2Compare, dataV3V4Compare, true);
-  plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[14]->Clone()), resultData_vnscVScent_real[3], resultData_vnscVScent_MC[3], dataV2Compare, dataV3V4Compare, true);
-  plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[17]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[17]->Clone()), resultData_vnscVScent_real[5], resultData_vnscVScent_MC[5], dataV2Compare, dataV3V4Compare, true);
-  
-  plotFlow2pGap(2, resultData_vnscVScent_real[0], resultData_vnscVScent_real[9], resultData_vnscVScent_real[10], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()));
-  plotFlow2pGap(3, resultData_vnscVScent_real[2], resultData_vnscVScent_real[12], resultData_vnscVScent_real[13], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()));
-  plotFlow2pGap(4, resultData_vnscVScent_real[4], resultData_vnscVScent_real[15], resultData_vnscVScent_real[16], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[17]->Clone()));
+    // vn without comparison
+    plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[1]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[1]->Clone()), dataV2Compare, dataV3V4Compare, false);
+    plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[3]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[3]->Clone()), dataV2Compare, dataV3V4Compare, false);
+    plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[5]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[5]->Clone()), dataV2Compare, dataV3V4Compare, false);
 
-  if (bNormalized) {
-    plotNSC(3, resultData_vnscVScent_real[6], resultData_vnscVScent_MC[6], dataNSC23Compare[0], true, bShowMC, bNormalized);
-    plotNSC(4, resultData_vnscVScent_real[7], resultData_vnscVScent_MC[7], dataNSC24Compare[1], true, bShowMC, bNormalized);
-    plotNSC(5, resultData_vnscVScent_real[8], resultData_vnscVScent_MC[8], dataNSC234Compare[0], true, bShowMC, bNormalized);
-  }
-  else {
-    plotNSC(3, resultData_vnscVScent_real[6], resultData_vnscVScent_MC[6], dataSC23Compare[0], true, bShowMC, bNormalized);
-    plotNSC(4, resultData_vnscVScent_real[7], resultData_vnscVScent_MC[7], dataSC24Compare[1], true, bShowMC, bNormalized);
-    plotNSC(5, resultData_vnscVScent_real[8], resultData_vnscVScent_MC[8], dataSC234Compare[0], true, bShowMC, bNormalized);
-  }
+    // vn with comparison
+    plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[11]->Clone()), resultData_vnscVScent_real[1], resultData_vnscVScent_MC[1], dataV2Compare, dataV3V4Compare, true);
+    plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[14]->Clone()), resultData_vnscVScent_real[3], resultData_vnscVScent_MC[3], dataV2Compare, dataV3V4Compare, true);
+    plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[17]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[17]->Clone()), resultData_vnscVScent_real[5], resultData_vnscVScent_MC[5], dataV2Compare, dataV3V4Compare, true);
+    
+    plotFlow2pGap(2, resultData_vnscVScent_real[0], resultData_vnscVScent_real[9], resultData_vnscVScent_real[10], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()));
+    plotFlow2pGap(3, resultData_vnscVScent_real[2], resultData_vnscVScent_real[12], resultData_vnscVScent_real[13], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()));
+    plotFlow2pGap(4, resultData_vnscVScent_real[4], resultData_vnscVScent_real[15], resultData_vnscVScent_real[16], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[17]->Clone()));
 
-  if (!bLocal) {
-    plotTrending(resultData_trending);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent60-70", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent50-60", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent40-50", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent30-40", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent20-30", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent10-20", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent05-10", true);
-    PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent00-05", true);
-    PlotCutCheck(resultData_root_cutchecks, "Pt", "p_{T} [GeV]", "ParticleHistograms", "", true);
-    PlotCutCheck(resultData_root_cutchecks, "Phi", "#phi", "ParticleHistograms", "", false);
-    PlotCutCheck(resultData_root_cutchecks, "VertexZ", "Vertex Z [cm]", "EventHistograms", "", false);
-
-    for (int const& i : runNumberMC) {
-      plotPtWeights(resultData_root_weights, i);
+    if (bNormalized) {
+      plotNSC(3, resultData_vnscVScent_real[6], resultData_vnscVScent_MC[6], dataNSC23Compare[0], true, bShowMC, bNormalized);
+      plotNSC(4, resultData_vnscVScent_real[7], resultData_vnscVScent_MC[7], dataNSC24Compare[1], true, bShowMC, bNormalized);
+      plotNSC(5, resultData_vnscVScent_real[8], resultData_vnscVScent_MC[8], dataNSC234Compare[0], true, bShowMC, bNormalized);
     }
-    for (int const& i : runNumberReal) {
-      plotPhiWeights(resultData_root_weights, i);
+    else {
+      plotNSC(3, resultData_vnscVScent_real[6], resultData_vnscVScent_MC[6], dataSC23Compare[0], true, bShowMC, bNormalized);
+      plotNSC(4, resultData_vnscVScent_real[7], resultData_vnscVScent_MC[7], dataSC24Compare[1], true, bShowMC, bNormalized);
+      plotNSC(5, resultData_vnscVScent_real[8], resultData_vnscVScent_MC[8], dataSC234Compare[0], true, bShowMC, bNormalized);
     }
 
+    if (!bLocal) {
+      plotTrending(resultData_trending);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent60-70", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent50-60", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent40-50", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent30-40", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent20-30", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent10-20", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent05-10", true);
+      PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent00-05", true);
+      PlotCutCheck(resultData_root_cutchecks, "Pt", "p_{T} [GeV]", "ParticleHistograms", "", true);
+      PlotCutCheck(resultData_root_cutchecks, "Phi", "#phi", "ParticleHistograms", "", false);
+      PlotCutCheck(resultData_root_cutchecks, "VertexZ", "Vertex Z [cm]", "EventHistograms", "", false);
+
+      for (int const& i : runNumberMC) {
+        plotPtWeights(resultData_root_weights, i);
+      }
+      for (int const& i : runNumberReal) {
+        plotPhiWeights(resultData_root_weights, i);
+      }
+
+    }
+
+  } else {
+    return 1;
+    // PlotCumulant()
   }
 
   return 0;

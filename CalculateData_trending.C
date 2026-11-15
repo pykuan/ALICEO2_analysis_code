@@ -125,7 +125,7 @@ void FillArray(){
                         else {
                             printf("  Found histogram \"fHistMultiplicity[eRec][after cut]\"\n");
                             double mult_mean = multHist->GetMean();
-                            double mult_err = multHist->GetStdDev();
+                            double mult_err = multHist->GetMeanError();
                             Mean[eMult][j] = mult_mean;
                             Err[eMult][j] = mult_err;
 
@@ -149,7 +149,7 @@ void FillArray(){
                             printf("  Found histogram \"fHistPt[eRec][after cut]\"\n");
                             double nparticle = static_cast<double>(ptHist->GetEntries());
                             double pt_mean = ptHist->GetMean();
-                            double pt_err = ptHist->GetStdDev();
+                            double pt_err = ptHist->GetMeanError();
                             Mean[eNParticles][j] = nparticle;
                             Err[eNParticles][j] = 0.;
                             Mean[ePt][j] = pt_mean;
@@ -206,9 +206,9 @@ void FillArray(){
                                 double v2TwoPCorr = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>"));
                                 double v3TwoPCorr = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>"));
                                 double v4TwoPCorr = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>"));
-                                double v2TwoPCorr_err = prof2->GetStdDev(prof2->GetXaxis()->FindBin("<v2^2>")); //getmeanerror
-                                double v3TwoPCorr_err = prof2->GetStdDev(prof2->GetXaxis()->FindBin("<v3^2>"));
-                                double v4TwoPCorr_err = prof2->GetStdDev(prof2->GetXaxis()->FindBin("<v4^2>"));
+                                double v2TwoPCorr_err = prof2->GetBinError(prof2->GetXaxis()->FindBin("<v2^2>")); //getmeanerror
+                                double v3TwoPCorr_err = prof2->GetBinError(prof2->GetXaxis()->FindBin("<v3^2>"));
+                                double v4TwoPCorr_err = prof2->GetBinError(prof2->GetXaxis()->FindBin("<v4^2>"));
 
                                 Mean[eTwoP2Cent15][j] = v2TwoPCorr;
                                 Mean[eTwoP3Cent15][j] = v3TwoPCorr;
@@ -275,9 +275,9 @@ void FillArray(){
                                 double v2TwoPCorr = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>"));
                                 double v3TwoPCorr = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>"));
                                 double v4TwoPCorr = prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>"));
-                                double v2TwoPCorr_err = prof2->GetStdDev(prof2->GetXaxis()->FindBin("<v2^2>"));
-                                double v3TwoPCorr_err = prof2->GetStdDev(prof2->GetXaxis()->FindBin("<v3^2>"));
-                                double v4TwoPCorr_err = prof2->GetStdDev(prof2->GetXaxis()->FindBin("<v4^2>"));
+                                double v2TwoPCorr_err = prof2->GetBinError(prof2->GetXaxis()->FindBin("<v2^2>"));
+                                double v3TwoPCorr_err = prof2->GetBinError(prof2->GetXaxis()->FindBin("<v3^2>"));
+                                double v4TwoPCorr_err = prof2->GetBinError(prof2->GetXaxis()->FindBin("<v4^2>"));
 
                                 Mean[eTwoP2Cent55][j] = v2TwoPCorr;
                                 Mean[eTwoP3Cent55][j] = v3TwoPCorr;
@@ -308,7 +308,7 @@ int CalculateData_trending(){
 
     for(int m=0; m<nObservables; m++) {
         resultFile << "#:" << observablesList[m] << endl;
-        resultFile << "RUN NUMBER,DUMMY 1,DUMMY 2," << observablesList[m] << ",stat +,stat -,sys +,sys -" << endl;
+        resultFile << "X,DUMMY,DUMMY," << observablesList[m] << ",stat +,stat -,sys +,sys -" << endl;
         for (int i=0; i<nRunNumber; i++) {
             resultFile << runNumber[i] << "," // RUN NUMBER
                         << 0. << "," // DUMMY 1
