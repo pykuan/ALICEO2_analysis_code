@@ -22,6 +22,13 @@
 #include <cstdio>
 
 using namespace std;
+
+const char* fileDir = "test20260922_analysis"; // test20261030_make_weight_hist
+int runNumberMC[4] = {544886, 544868, 544122, 544116}; //544886, 544868, 544122, 544116
+int runNumberReal[8] = {544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091};//544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091
+int idMC = 58663;
+int idReal = 58664;
+
 TList* getHistogramList(TFile* file_weight, int id) {
 
     TString dirName = Form("multiparticle-cumulants_id%d", id);
@@ -62,22 +69,17 @@ int makeWeightHistogram(){
     ccdb_object->SetOwner(kTRUE);
     ccdb_object->SetName("ccdb_object");
 
-    int runNumberMC[4] = {544886, 544868, 544122, 544116}; //544886, 544868, 544122, 544116
-    int runNumberReal[2] = {544122, 544116};//544124, 544123, 544122, 544121, 544116, 544098, 544095, 544091
-    int idMC = 58663;
-    int idReal = 58664;
-
     std::map<TString, TList*> HistExistMap;
     TFile* file_real_weight = nullptr;
     TFile* file_MC_weight = nullptr;
 
-    //phi weight
+    // phi weight
 
-    for(int runNumber : runNumberReal) {//test20260706_make_weight_hist
+    for(int runNumber : runNumberReal) {
 
         printf("processing real data:\n");
 
-        file_real_weight = TFile::Open(Form("/scratch3/go52dab/O2tutorial/test20261030_make_weight_hist/realdata/%d/AnalysisResults.root", runNumber), "READ");
+        file_real_weight = TFile::Open(Form("/scratch3/go52dab/O2tutorial/%s/realdata/%d/AnalysisResults.root", fileDir, runNumber), "READ");
 
         if (!file_real_weight || file_real_weight->IsZombie()) {
             printf(" failed to open real %d/AnalysisResults.root\n", runNumber);
@@ -113,7 +115,7 @@ int makeWeightHistogram(){
 
                 TH1F* histClone = dynamic_cast<TH1F*>(histReal->Clone());
                 TString histCloneName = histNameReal;
-                histCloneName.ReplaceAll("hPhi_run", "wPhi_run");
+                histCloneName.ReplaceAll("hPhi_run", "wPhiReal_run");
                 histClone->SetName(histCloneName);
                 histClone->SetTitle(Form("phi weight for run %s", runNumberName.Data()));
                 histClone->SetDirectory(nullptr);
@@ -146,13 +148,89 @@ int makeWeightHistogram(){
         }
     }
 
+
+    for(int runNumber : runNumberMC) {
+
+        printf("processing MC data:\n");
+
+        file_MC_weight = TFile::Open(Form("/scratch3/go52dab/O2tutorial/%s/MCdata/%d/AnalysisResults.root", fileDir, runNumber), "READ");
+
+        if (!file_MC_weight || file_MC_weight->IsZombie()) {
+            printf(" failed to open MC %d/AnalysisResults.root\n", runNumber);
+            return 1;
+        }
+
+        TList* histogramMCList = getHistogramList(file_MC_weight, idMC);
+        TList* runListMC = nullptr;
+        TIter nextMC(histogramMCList);
+        TObject* objectMC = nullptr;
+        while(true) {
+
+            objectMC = nextMC();
+            if(!objectMC) {
+                break;
+            }
+
+            TH1F* histMC = nullptr;
+            histMC = dynamic_cast<TH1F*>(objectMC);
+            if (!histMC) {
+                printf("  failed to open MC data histogram\n");
+                continue;
+            }
+
+            TString histNameMC = histMC->GetName();
+            printf("  processing %s \n", histNameMC.Data());
+
+            if(histNameMC.BeginsWith("hPhi_run")) { 
+                printf("  is phi MC histogram\n");  
+
+                TString runNumberName = histNameMC;
+                runNumberName.ReplaceAll("hPhi_run", "");
+
+                TH1F* histClone = dynamic_cast<TH1F*>(histMC->Clone());
+                TString histCloneName = histNameMC;
+                histCloneName.ReplaceAll("hPhi_run", "wPhiMC_run");
+                histClone->SetName(histCloneName);
+                histClone->SetTitle(Form("phi weight for run %s", runNumberName.Data()));
+                histClone->SetDirectory(nullptr);
+
+                int nBins = histClone->GetNbinsX();
+                for(int i=1; i<=nBins; i++){
+                    if(histClone->GetBinContent(i)>0){
+                        histClone->SetBinContent(i, 1/histClone->GetBinContent(i) * pow(10, 6));
+                    }
+                    else{
+                        histClone->SetBinContent(i, 0);
+                    }
+
+                }
+                histClone->SetBinContent(0, 0.);
+                histClone->SetBinContent(nBins+1, 0.);
+
+                if (HistExistMap.find(runNumberName) == HistExistMap.end()) {
+                    runListMC = nullptr;
+                    runListMC = new TList;
+                    runListMC->SetOwner(kTRUE);
+                    runListMC->SetName(Form("%09d", runNumberName.Atoi()));
+                    HistExistMap[runNumberName] = runListMC;
+                }
+                HistExistMap[runNumberName]->Add(histClone);
+
+            }
+            else continue;
+
+        }
+    }
+
+
+
     // pt weight
 
     for(int runNumber : runNumberMC) {
 
         printf("processing MC data:\n");
 
-        file_MC_weight = TFile::Open(Form("/scratch3/go52dab/O2tutorial/test20261030_make_weight_hist/MCdata/%d/AnalysisResults.root", runNumber), "READ");
+        file_MC_weight = TFile::Open(Form("/scratch3/go52dab/O2tutorial/%s/MCdata/%d/AnalysisResults.root", fileDir, runNumber), "READ");
         
         if (!file_MC_weight || file_MC_weight->IsZombie()) {
             printf(" failed to open MC %d/AnalysisResults.root\n", runNumber);
@@ -180,15 +258,15 @@ int makeWeightHistogram(){
             TString histNameMC = histMC->GetName();
             printf("  processing %s \n", histNameMC.Data());
 
-            if(histNameMC.BeginsWith("hPtReal_run")) { //MC rec
+            if(histNameMC.BeginsWith("hPtRec_run")) { //MC rec
                 printf("  is pt MC rec histogram\n");  
             
                 TString runNumberNameMC = histNameMC;
-                runNumberNameMC.ReplaceAll("hPtReal_run", ""); //
+                runNumberNameMC.ReplaceAll("hPtRec_run", ""); //
 
                 TH1F* histCloneMC = dynamic_cast<TH1F*>(histMC->Clone());
                 TString histCloneMCName = histNameMC;
-                histCloneMCName.ReplaceAll("hPtReal_run", "wPtReal_run");
+                histCloneMCName.ReplaceAll("hPtRec_run", "wPt_run");
                 histCloneMC->SetName(histCloneMCName);
                 histCloneMC->SetTitle(Form("pt weight for run %s", runNumberNameMC.Data()));
                 histCloneMC->SetDirectory(nullptr);
@@ -211,11 +289,11 @@ int makeWeightHistogram(){
 
                     TString histNameMCsim = histMCsim->GetName();
 
-                    if(histNameMCsim.BeginsWith("hPtMC_run")) {   //MC sim
+                    if(histNameMCsim.BeginsWith("hPtSim_run")) {   //MC sim
 
                         // MC/Real
                         TString runNumberNameMCsim = histNameMCsim;
-                        runNumberNameMCsim.ReplaceAll("hPtMC_run", "");
+                        runNumberNameMCsim.ReplaceAll("hPtSim_run", "");
 
                         if(runNumberNameMCsim == runNumberNameMC) {
                             printf("  paired pt MC sim histogram found\n");  

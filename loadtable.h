@@ -8,7 +8,7 @@
 #include "TGraphErrors.h"
 
 using namespace std;
-inline vector<TGraphErrors*> loadtable(const char* csvfile)
+inline vector<TGraphErrors*> loadtable(const char* csvfile, bool bStatErr = true, bool bSysErr = true, float SysErrX = 0.5)
 {
     ifstream in(csvfile);
 
@@ -65,15 +65,16 @@ inline vector<TGraphErrors*> loadtable(const char* csvfile)
 
         stringstream ss(line);
         string tok;
-        double cx,val,err;
+        double cx,val;
+        double err = 0.;
 
         getline(ss,tok,',');  cx   = stod(tok); // x value (cent center)
         getline(ss,tok,','); // cent lower limit
         getline(ss,tok,','); // cent upper limit
         getline(ss,tok,',');  if(tok == "-") continue; else val = stod(tok); // y value (vn{k})
-        getline(ss,tok,',');  err = stod(tok); // stat +
+        getline(ss,tok,',');  if(bStatErr) err += stod(tok); // stat +
         getline(ss,tok,','); // stat -
-        getline(ss,tok,',');  err += stod(tok); // sys +
+        getline(ss,tok,',');  if(bSysErr) err += stod(tok); // sys +
 
         if (!std::isfinite(cx) ||
             !std::isfinite(val) ||
@@ -83,7 +84,8 @@ inline vector<TGraphErrors*> loadtable(const char* csvfile)
 
         vx.push_back(cx);
         vy.push_back(val);
-        ex.push_back(0.0);
+        if (!bStatErr and bSysErr) ex.push_back(SysErrX);
+        else ex.push_back(0.0);
         ey.push_back(err);
     }
     push();

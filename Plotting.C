@@ -149,62 +149,102 @@ void convertToRelativeDeviation(TGraphErrors* graph)
 
 // plots functions
 
-void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* twoParticleGraphMC, TGraphErrors* fourParticleGraphReal, TGraphErrors* fourParticleGraphMC, const std::vector<TGraphErrors*>& dataV2Compare, const std::vector<TGraphErrors*>& dataV3V4Compare, const bool bShowCompare) {
+void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal_stat, TGraphErrors* twoParticleGraphMC_stat, TGraphErrors* fourParticleGraphReal_stat, TGraphErrors* fourParticleGraphMC_stat, const std::vector<TGraphErrors*>& dataV2Compare_stat, const std::vector<TGraphErrors*>& dataV3V4Compare_stat,
+                            TGraphErrors* twoParticleGraphReal_sys, TGraphErrors* twoParticleGraphMC_sys, TGraphErrors* fourParticleGraphReal_sys, TGraphErrors* fourParticleGraphMC_sys, const std::vector<TGraphErrors*>& dataV2Compare_sys, const std::vector<TGraphErrors*>& dataV3V4Compare_sys, const bool bShowCompare) {
+
+
+  std::vector<TGraphErrors*> twoParticleGraphReal = {twoParticleGraphReal_sys, twoParticleGraphReal_stat};
+  std::vector<TGraphErrors*> twoParticleGraphMC = {twoParticleGraphMC_sys, twoParticleGraphMC_stat};
+  std::vector<TGraphErrors*> fourParticleGraphReal = {fourParticleGraphReal_sys, fourParticleGraphReal_stat};
+  std::vector<TGraphErrors*> fourParticleGraphMC = {fourParticleGraphMC_sys, fourParticleGraphMC_stat};
+
+  std::vector<std::vector<TGraphErrors*>> dataV2Compare = {dataV2Compare_sys, dataV2Compare_stat};
+  std::vector<std::vector<TGraphErrors*>> dataV3V4Compare = {dataV3V4Compare_sys, dataV3V4Compare_stat};
 
   auto* canvas = new TCanvas(Form("c_v%d", harmonic), "", 1500, 900);
   canvas->SetGrid();
+  const float alpha = 0.5;
 
-  twoParticleGraphReal->SetMarkerStyle(20);
-  twoParticleGraphReal->SetMarkerColor(kRed);
-  twoParticleGraphMC->SetMarkerStyle(20);
-  twoParticleGraphMC->SetMarkerColor(kGreen + 2);
-  fourParticleGraphReal->SetMarkerStyle(harmonic == 2 ? 22 : 26);
-  fourParticleGraphReal->SetMarkerColor(kRed);
-  fourParticleGraphMC->SetMarkerStyle(harmonic == 2 ? 22 : 26);
-  fourParticleGraphMC->SetMarkerColor(kGreen + 2);
-
-  if (bShowCompare) {
-    if (harmonic == 2) {
-      const int markers[4] = {20, 22, 25, 32};
-      for (int i = 0; i < 4; ++i) {
-        dataV2Compare[i]->SetMarkerStyle(markers[i]);
-        dataV2Compare[i]->SetMarkerColor(kBlue);
-      }
-    } else {
-      const int index = harmonic - 3;
-      dataV3V4Compare[index]->SetMarkerStyle(20);
-      dataV3V4Compare[index]->SetMarkerColor(kBlue);
+  for (size_t s = 0; s < 2; s++) {
+    twoParticleGraphReal[s]->SetMarkerStyle(20);
+    twoParticleGraphReal[s]->SetMarkerColor(kRed);
+    twoParticleGraphMC[s]->SetMarkerStyle(20);
+    twoParticleGraphMC[s]->SetMarkerColor(kGreen + 2);
+    fourParticleGraphReal[s]->SetMarkerStyle(harmonic == 2 ? 22 : 26);
+    fourParticleGraphReal[s]->SetMarkerColor(kRed);
+    fourParticleGraphMC[s]->SetMarkerStyle(harmonic == 2 ? 22 : 26);
+    fourParticleGraphMC[s]->SetMarkerColor(kGreen + 2);
+    if (s == 0) {
+      twoParticleGraphReal[s]->SetFillColorAlpha(kRed - 9, alpha);
+      twoParticleGraphMC[s]->SetFillColorAlpha(kGreen - 9, alpha);
+      fourParticleGraphReal[s]->SetFillColorAlpha(kRed - 9, alpha);
+      fourParticleGraphMC[s]->SetFillColorAlpha(kGreen - 9, alpha);
+      twoParticleGraphReal[s]->SetLineWidth(0); 
+      twoParticleGraphMC[s]->SetLineWidth(0); 
+      fourParticleGraphReal[s]->SetLineWidth(0); 
+      fourParticleGraphMC[s]->SetLineWidth(0); 
     }
+
+    if (bShowCompare) {
+      if (harmonic == 2) {
+        const int markers[4] = {20, 22, 25, 32};
+        for (int i = 0; i < 4; ++i) {
+          dataV2Compare[s][i]->SetMarkerStyle(markers[i]);
+          dataV2Compare[s][i]->SetMarkerColor(kBlue);
+          if (s == 0) {
+            dataV2Compare[s][i]->SetFillColorAlpha(kBlue - 9, alpha);
+            dataV2Compare[s][i]->SetLineWidth(0); 
+          }
+        }
+      } else {
+        const int index = harmonic - 3;
+        dataV3V4Compare[s][index]->SetMarkerStyle(20);
+        dataV3V4Compare[s][index]->SetMarkerColor(kBlue);
+        if (s == 0) {
+          dataV3V4Compare[s][index]->SetFillColorAlpha(kBlue - 9, alpha);
+          dataV3V4Compare[s][index]->SetLineWidth(0); 
+        } 
+      }
+    }
+
   }
 
   auto* multigraph = new TMultiGraph();
   multigraph->SetTitle(" ");
-  multigraph->Add(twoParticleGraphReal);
-  multigraph->Add(fourParticleGraphReal);
-  multigraph->Add(twoParticleGraphMC);
-  multigraph->Add(fourParticleGraphMC);
 
-  if (bShowCompare) {
-    if (harmonic == 2) {
-      for (auto* graph : dataV2Compare) {
-        multigraph->Add(graph);
+  const char* drawOp[2] = {"2", "P"};
+  for (int s = 0; s < 2; s++) {
+    multigraph->Add(twoParticleGraphReal[s], drawOp[s]);
+    multigraph->Add(fourParticleGraphReal[s], drawOp[s]);
+    multigraph->Add(twoParticleGraphMC[s], drawOp[s]);
+    multigraph->Add(fourParticleGraphMC[s], drawOp[s]);
+
+    if (bShowCompare) {
+      if (harmonic == 2) {
+        for (auto* graph : dataV2Compare[s]) {
+          multigraph->Add(graph, drawOp[s]);
+        }
+      } else {
+        multigraph->Add(dataV3V4Compare[s][harmonic - 3], drawOp[s]);
       }
-    } else {
-      multigraph->Add(dataV3V4Compare[harmonic - 3]);
     }
   }
   
   TIter next(multigraph->GetListOfGraphs());
-  float multigraphSize = static_cast<float>(multigraph->GetListOfGraphs()->GetSize());
+  int multigraphSize = multigraph->GetListOfGraphs()->GetSize();
   int graphIndex = 0;
   int graphIndexTrue = 0;
   if (harmonic != 4) {
     while (auto* object = next()) {
       auto* graph = dynamic_cast<TGraphErrors*>(object);
-      if (!graph) {
-        continue;
+      if (graphIndexTrue >= multigraphSize / 2) {
+        graphIndexTrue = 0;
+        graphIndex = 0;
       }
-      else if (graphIndexTrue == 2) {
+      // if (!graph) {
+      //   continue;
+      // }
+      if (graphIndexTrue == 2) {
         ShiftAlongXaxis(graph, 1);
         ++graphIndexTrue;
         continue;
@@ -223,9 +263,13 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
   else {
     while (auto* object = next()) {
       auto* graph = dynamic_cast<TGraphErrors*>(object);
-      if (!graph) {
-        continue;
+      if (graphIndexTrue >= multigraphSize / 2) {
+        graphIndexTrue = 0;
+        graphIndex = 0;
       }
+      // if (!graph) {
+      //   continue;
+      // }
       graph->SetLineColor(kBlack);
       ShiftAlongXaxis(graph, - 0.6 + 0.7 * graphIndex);
       ++graphIndexTrue;
@@ -266,7 +310,7 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
     multigraph->SetMaximum(1.7 * yMax);
   }
 
-  multigraph->Draw("ap");
+  multigraph->Draw("A");
   multigraph->GetXaxis()->SetLimits(0., harmonic == 2 && bShowCompare ? 80. : 70.);
   multigraph->GetXaxis()->SetTitle("Centrality (\%)");
   multigraph->GetYaxis()->SetTitle(Form("v_{%d}", harmonic));
@@ -284,21 +328,21 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
       legend->AddEntry((TObject*)0, "5.36 TeV", "");
       legend->AddEntry((TObject*)0, "5.02 TeV", "");
 
-      legend->AddEntry(twoParticleGraphMC, "v_{2}{2, |#Delta#eta|>1}");
-      legend->AddEntry(twoParticleGraphReal, "v_{2}{2, |#Delta#eta|>1}");
-      legend->AddEntry(dataV2Compare[0], "v_{2}{2, |#Delta#eta|>1}");
+      legend->AddEntry(twoParticleGraphMC[0], "v_{2}{2, |#Delta#eta|>1}");
+      legend->AddEntry(twoParticleGraphReal[0], "v_{2}{2, |#Delta#eta|>1}");
+      legend->AddEntry(dataV2Compare[0][0], "v_{2}{2, |#Delta#eta|>1}");
 
-      legend->AddEntry(fourParticleGraphMC, "v_{2}{4}");
-      legend->AddEntry(fourParticleGraphReal, "v_{2}{4}");
-      legend->AddEntry(dataV2Compare[1], "v_{2}{4}");
-
-      legend->AddEntry((TObject*)0, "", "");
-      legend->AddEntry((TObject*)0, "", "");
-      legend->AddEntry(dataV2Compare[2], "v_{2}{6}");
+      legend->AddEntry(fourParticleGraphMC[0], "v_{2}{4}");
+      legend->AddEntry(fourParticleGraphReal[0], "v_{2}{4}");
+      legend->AddEntry(dataV2Compare[0][1], "v_{2}{4}");
 
       legend->AddEntry((TObject*)0, "", "");
       legend->AddEntry((TObject*)0, "", "");
-      legend->AddEntry(dataV2Compare[3], "v_{2}{8}");
+      legend->AddEntry(dataV2Compare[0][2], "v_{2}{6}");
+
+      legend->AddEntry((TObject*)0, "", "");
+      legend->AddEntry((TObject*)0, "", "");
+      legend->AddEntry(dataV2Compare[0][3], "v_{2}{8}");
     }
     else {
       legend->SetNColumns(2);
@@ -309,11 +353,11 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
       legend->AddEntry((TObject*)0, "5.36 TeV", "");
       legend->AddEntry((TObject*)0, "5.36 TeV", "");
 
-      legend->AddEntry(twoParticleGraphMC, "v_{2}{2}");
-      legend->AddEntry(twoParticleGraphReal, "v_{2}{2}");
+      legend->AddEntry(twoParticleGraphMC[0], "v_{2}{2}");
+      legend->AddEntry(twoParticleGraphReal[0], "v_{2}{2}");
 
-      legend->AddEntry(fourParticleGraphMC, "v_{2}{4}");
-      legend->AddEntry(fourParticleGraphReal, "v_{2}{4}");
+      legend->AddEntry(fourParticleGraphMC[0], "v_{2}{4}");
+      legend->AddEntry(fourParticleGraphReal[0], "v_{2}{4}");
 
     }
 
@@ -330,12 +374,12 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
       legend->AddEntry((TObject*)0, "5.36 TeV", "");
       legend->AddEntry((TObject*)0, "5.02 TeV", "");
 
-      legend->AddEntry(twoParticleGraphMC, Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
-      legend->AddEntry(twoParticleGraphReal, Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
-      legend->AddEntry(dataV3V4Compare[harmonic - 3], Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
+      legend->AddEntry(twoParticleGraphMC[0], Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
+      legend->AddEntry(twoParticleGraphReal[0], Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
+      legend->AddEntry(dataV3V4Compare[0][harmonic - 3], Form("v_{%d}{2, |#Delta#eta|>1}", harmonic));
 
-      legend->AddEntry(fourParticleGraphMC, Form("v_{%d}{4}", harmonic));
-      legend->AddEntry(fourParticleGraphReal, Form("v_{%d}{4}", harmonic));
+      legend->AddEntry(fourParticleGraphMC[0], Form("v_{%d}{4}", harmonic));
+      legend->AddEntry(fourParticleGraphReal[0], Form("v_{%d}{4}", harmonic));
       legend->AddEntry((TObject*)0, "", "");
 
     } else {
@@ -347,11 +391,11 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal, TGraphErrors* tw
       legend->AddEntry((TObject*)0, "5.36 TeV", "");
       legend->AddEntry((TObject*)0, "5.36 TeV", "");
 
-      legend->AddEntry(twoParticleGraphMC, Form("v_{%d}{2}", harmonic));
-      legend->AddEntry(twoParticleGraphReal, Form("v_{%d}{2}", harmonic));
+      legend->AddEntry(twoParticleGraphMC[0], Form("v_{%d}{2}", harmonic));
+      legend->AddEntry(twoParticleGraphReal[0], Form("v_{%d}{2}", harmonic));
 
-      legend->AddEntry(fourParticleGraphMC, Form("v_{%d}{4}", harmonic));
-      legend->AddEntry(fourParticleGraphReal, Form("v_{%d}{4}", harmonic));
+      legend->AddEntry(fourParticleGraphMC[0], Form("v_{%d}{4}", harmonic));
+      legend->AddEntry(fourParticleGraphReal[0], Form("v_{%d}{4}", harmonic));
     }
 
   }
@@ -894,19 +938,32 @@ int Plotting(bool isNormalized = true, bool isCumulant = false)
   gStyle->SetLegendFillColor(semiTransWhite);
   gStyle->SetLegendBorderSize(1); 
 
-  const auto resultData_vnscVScent_real = loadtable(resultPath_vnscVScent_real);
-  const auto resultData_vnscVScent_MC = loadtable(resultPath_vnscVScent_MC);
-  const auto dataV2Compare = loadtable("data/HEPData-1602.01119v2-csv/Table1.csv"); // V2{2, |DELTAETA|>1}, V2{4}, V2{6}, V2{8}
-  const auto dataV3V4Compare = loadtable("data/HEPData-1602.01119v2-csv/Table2.csv"); // V3{2, |DELTAETA|>1}, V4{2, |DELTAETA|>1}
-  const auto dataNSC23Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table2.csv"); // NSC(2,3)
-  const auto dataNSC24Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table2.csv"); // NSC(2,4)
-  const auto dataNSC234Compare = loadtable("data/HEPData-PhysRevLett.127.092302-csv/Table5.csv"); // NSC(2,3,4)
-  const auto dataSC23Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table1.csv"); // SC(2,3)
-  const auto dataSC24Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table1.csv"); // SC(2,4)
-  const auto dataSC234Compare = loadtable("data/HEPData-PhysRevLett.127.092302-csv/Table1.csv"); // SC(2,3,4)
-  // const auto dataNSC23Compare = loadtable("data/HEPData-2102.12180v2-csv/Table1.csv"); // nMHC(v_2^2,v_3^2)
-  // const auto dataNSC24Compare = loadtable("data/HEPData-2102.12180v2-csv/Table2.csv"); // nMHC(v_2^2,v_4^2)
-  // const auto dataNSC234Compare = loadtable("data/HEPData-2102.12180v2-csv/Table4.csv"); // nMHC(v_2^2, v_3^2, v_4^2)
+
+  // data + stat err
+  const auto resultData_vnscVScent_real = loadtable(resultPath_vnscVScent_real, true, false);
+  const auto resultData_vnscVScent_MC = loadtable(resultPath_vnscVScent_MC, true, false);
+  const auto dataV2Compare = loadtable("data/HEPData-1602.01119v2-csv/Table1.csv", true, false); // V2{2, |DELTAETA|>1}, V2{4}, V2{6}, V2{8}
+  const auto dataV3V4Compare = loadtable("data/HEPData-1602.01119v2-csv/Table2.csv", true, false); // V3{2, |DELTAETA|>1}, V4{2, |DELTAETA|>1}
+  const auto dataNSC23Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table2.csv", true, false); // NSC(2,3)
+  const auto dataNSC24Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table2.csv", true, false); // NSC(2,4)
+  const auto dataNSC234Compare = loadtable("data/HEPData-PhysRevLett.127.092302-csv/Table5.csv", true, false); // NSC(2,3,4)
+  const auto dataSC23Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table1.csv", true, false); // SC(2,3)
+  const auto dataSC24Compare = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table1.csv", true, false); // SC(2,4)
+  const auto dataSC234Compare = loadtable("data/HEPData-PhysRevLett.127.092302-csv/Table1.csv", true, false); // SC(2,3,4)
+
+  // data + sys err
+  const auto resultData_vnscVScent_real_sys = loadtable(resultPath_vnscVScent_real, false, true);
+  const auto resultData_vnscVScent_MC_sys = loadtable(resultPath_vnscVScent_MC, false, true);
+  const auto dataV2Compare_sys = loadtable("data/HEPData-1602.01119v2-csv/Table1.csv", false, true); // V2{2, |DELTAETA|>1}, V2{4}, V2{6}, V2{8}
+  const auto dataV3V4Compare_sys = loadtable("data/HEPData-1602.01119v2-csv/Table2.csv", false, true); // V3{2, |DELTAETA|>1}, V4{2, |DELTAETA|>1}
+  const auto dataNSC23Compare_sys = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table2.csv", false, true); // NSC(2,3)
+  const auto dataNSC24Compare_sys = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table2.csv", false, true); // NSC(2,4)
+  const auto dataNSC234Compare_sys = loadtable("data/HEPData-PhysRevLett.127.092302-csv/Table5.csv", false, true); // NSC(2,3,4)
+  const auto dataSC23Compare_sys = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table1.csv", false, true); // SC(2,3)
+  const auto dataSC24Compare_sys = loadtable("data/HEPData-PhysRevLett.117.182301-csv/Table1.csv", false, true); // SC(2,4)
+  const auto dataSC234Compare_sys = loadtable("data/HEPData-PhysRevLett.127.092302-csv/Table1.csv", false, true); // SC(2,3,4)
+
+  // others
   const auto resultData_trending = loadtable(resultPath_trending);
   const auto resultData_root_cutchecks = TFile::Open(resultPath_root_cutchecks, "read");
   const auto resultData_root_weights = TFile::Open(resultPath_weights, "read");
@@ -915,14 +972,17 @@ int Plotting(bool isNormalized = true, bool isCumulant = false)
   if (!bCumulant) {
 
     // vn without comparison
-    plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[1]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[1]->Clone()), dataV2Compare, dataV3V4Compare, false);
-    plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[3]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[3]->Clone()), dataV2Compare, dataV3V4Compare, false);
-    plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[5]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[5]->Clone()), dataV2Compare, dataV3V4Compare, false);
+    // plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[0]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[1]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[1]->Clone()), dataV2Compare, dataV3V4Compare, false);
+    // plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[2]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[3]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[3]->Clone()), dataV2Compare, dataV3V4Compare, false);
+    // plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[4]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[5]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[5]->Clone()), dataV2Compare, dataV3V4Compare, false);
 
     // vn with comparison
-    plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[11]->Clone()), resultData_vnscVScent_real[1], resultData_vnscVScent_MC[1], dataV2Compare, dataV3V4Compare, true);
-    plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[14]->Clone()), resultData_vnscVScent_real[3], resultData_vnscVScent_MC[3], dataV2Compare, dataV3V4Compare, true);
-    plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[17]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[17]->Clone()), resultData_vnscVScent_real[5], resultData_vnscVScent_MC[5], dataV2Compare, dataV3V4Compare, true);
+    plotFlow(2, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[11]->Clone()), resultData_vnscVScent_real[1], resultData_vnscVScent_MC[1], dataV2Compare, dataV3V4Compare, 
+                dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real_sys[11]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC_sys[11]->Clone()), resultData_vnscVScent_real_sys[1], resultData_vnscVScent_MC_sys[1], dataV2Compare_sys, dataV3V4Compare_sys, true);
+    plotFlow(3, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[14]->Clone()), resultData_vnscVScent_real[3], resultData_vnscVScent_MC[3], dataV2Compare, dataV3V4Compare, 
+                dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real_sys[14]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC_sys[14]->Clone()), resultData_vnscVScent_real_sys[3], resultData_vnscVScent_MC_sys[3], dataV2Compare_sys, dataV3V4Compare_sys, true);
+    plotFlow(4, dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[17]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[17]->Clone()), resultData_vnscVScent_real[5], resultData_vnscVScent_MC[5], dataV2Compare, dataV3V4Compare, 
+                dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real_sys[17]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC_sys[17]->Clone()), resultData_vnscVScent_real_sys[5], resultData_vnscVScent_MC_sys[5], dataV2Compare_sys, dataV3V4Compare_sys, true);
     
     plotFlow2pGap(2, resultData_vnscVScent_real[0], resultData_vnscVScent_real[9], resultData_vnscVScent_real[10], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[11]->Clone()));
     plotFlow2pGap(3, resultData_vnscVScent_real[2], resultData_vnscVScent_real[12], resultData_vnscVScent_real[13], dynamic_cast<TGraphErrors*>(resultData_vnscVScent_real[14]->Clone()));

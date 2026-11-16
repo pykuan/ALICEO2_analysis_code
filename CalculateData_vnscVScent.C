@@ -264,14 +264,18 @@ void FillArray(){
                 std::complex<double> v3FourPCu = 2. * std::pow(v3TwoPCorr, 4.) - v3v3FourPCorr; // -c3{4}
                 std::complex<double> v4FourPCu = 2. * std::pow(v4TwoPCorr, 4.) - v4v4FourPCorr; // -c4{4}
 
+                std::complex<double> v2FourPCorr; // v2{4}
+                std::complex<double> v3FourPCorr; // v3{4}
+                std::complex<double> v4FourPCorr; // v4{4}
+
                 if (!bCumulant) {
-                    std::complex<double> v2FourPCorr = std::pow(v2FourPCu, 0.25); // v2{4}
-                    std::complex<double> v3FourPCorr = std::pow(v3FourPCu, 0.25); // v3{4}
-                    std::complex<double> v4FourPCorr = std::pow(v4FourPCu, 0.25); // v4{4}
+                    v2FourPCorr = std::pow(v2FourPCu, 0.25); // v2{4}
+                    v3FourPCorr = std::pow(v3FourPCu, 0.25); // v3{4}
+                    v4FourPCorr = std::pow(v4FourPCu, 0.25); // v4{4}
                 } else {
-                    std::complex<double> v2FourPCorr = v2FourPCu; // -c2{4}
-                    std::complex<double> v3FourPCorr = v3FourPCu; // -c3{4}
-                    std::complex<double> v4FourPCorr = v4FourPCu; // -c4{4}
+                    v2FourPCorr = v2FourPCu; // -c2{4}
+                    v3FourPCorr = v3FourPCu; // -c3{4}
+                    v4FourPCorr = v4FourPCu; // -c4{4}
                 }
 
                 // (N)SC
