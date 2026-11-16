@@ -26,7 +26,7 @@ bool bShowMC = false;
 const char* resultPath_vnscVScent_real = "result/data/result_vnscVScent_realdata.csv";
 const char* resultPath_vnscVScent_MC = "result/data/result_vnscVScent_MCdata.csv";
 const char* resultPath_trending = "result/data/result_trending_realdata.csv";
-const char* resultPath_root_cutchecks = "/scratch3/go52dab/O2tutorial/test20260827_analysis/realdata/AnalysisResults.root";
+const char* resultPath_root_cutchecks = "/scratch3/go52dab/O2tutorial/test20260922_analysis/realdata/AnalysisResults.root";
 const char* resultPath_weights = "/scratch3/go52dab/O2tutorial/analysis_code/weights.root";
 
 const int nRunNumberMC = 4;
@@ -770,6 +770,8 @@ void PlotCutCheck(TFile* resultFile, const char* quantityName, const char* xTitl
         histBefore->SetTitle("");
         if (!bLogY) {
           histBefore->SetMinimum(0);
+        } else {
+          histBefore->SetMinimum(1e-1);
         }
         histBefore->SetLineColor(2);
         histAfter->SetLineColor(4);
@@ -948,7 +950,10 @@ int Plotting(bool isNormalized = true, bool isCumulant = false)
       PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent05-10", true);
       PlotCutCheck(resultData_root_cutchecks, "Multiplicity", "Multiplicity", "EventHistograms", "_cent00-05", true);
       PlotCutCheck(resultData_root_cutchecks, "Pt", "p_{T} [GeV]", "ParticleHistograms", "", true);
+      PlotCutCheck(resultData_root_cutchecks, "Eta", "#eta", "ParticleHistograms", "", false);
       PlotCutCheck(resultData_root_cutchecks, "Phi", "#phi", "ParticleHistograms", "", false);
+      PlotCutCheck(resultData_root_cutchecks, "DCAXY", "DCA_{XY} [cm]", "ParticleHistograms", "", false);
+      PlotCutCheck(resultData_root_cutchecks, "DCAZ", "DCA_{Z} [cm]", "ParticleHistograms", "", false);
       PlotCutCheck(resultData_root_cutchecks, "VertexZ", "Vertex Z [cm]", "EventHistograms", "", false);
 
       for (int const& i : runNumberMC) {
