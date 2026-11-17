@@ -464,7 +464,7 @@ struct MultiparticleCumulants { // this name is used in lower-case format to nam
     float fCentralitySim = 0.;
     float fImpactParameter = 0.;
     float fNumContrib = 0.;
-    std::array<std::array<float, NumTwoPCorrBins>, eBeforeAfter_N> fTwoParticleCorrelationEbye{}; // <<2>> [before, after][<v1^2>, <v2^2>,<v3^2>, <v4^2>]
+    std::array<std::array<float, NumTwoPCorrBins>, eBeforeAfter_N> fTwoParticleCorrelationEbye{}; // <<2>> [before, after][<v1^2>, <v2^2>, <v3^2>, <v4^2>]
     std::array<std::array<float, NumTwoPCorrBins>, eBeforeAfter_N> fTwoParticleCorrelationMinEbye{};
     std::array<std::array<float, NumTwoPCorrBins>, eBeforeAfter_N> fTwoParticleCorrelationMaxEbye{};
     std::array<std::array<float, NumFourPCorrBins>, eBeforeAfter_N> fFourParticleCorrelationEbye{}; // <<4>> [before, after][<v2^2 v2^2>, <v2^2 v3^2>, <v2^2 v4^2>, <v3^2 v3^2>, <v3^2 v4^2>, <v4^2 v4^2>]

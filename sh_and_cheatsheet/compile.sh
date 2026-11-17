@@ -15,6 +15,7 @@ aliBuild build O2Physics -j 8 --defaults o2 --debug
 # alternative:
 # sync fork repo and discard previous commit
 # git reset --hard upstream/master
+# git pull
 
 
 

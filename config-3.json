@@ -10,25 +10,25 @@
         "step-value-enumeration": "1",
 
         "__ realdata __": "this is a comment",
-        "__aod-file-private": "/scratch3/go52dab/O2tutorial/analysis_code/realdata/AO2D.root",
+        "aod-file-private": "/scratch3/go52dab/O2tutorial/analysis_code/realdata/AO2D.root",
 
         "__ MCdata __": "this is a comment",
-        "aod-file-private": "/scratch3/go52dab/O2tutorial/analysis_code/MCdata/AO2D.root"
+        "__aod-file-private": "/scratch3/go52dab/O2tutorial/analysis_code/MCdata/AO2D.root"
     },
     "eventselection-run3": {
         "evselOpts": {
-            "isMC": "1"
+            "isMC": "0"
         },
         "ccdburl": "http:\/\/alice-ccdb.cern.ch"
     },
     "propagation-service": {
-        "processRealData": "0",
-        "processMonteCarlo": "1",
+        "processRealData": "1",
+        "processMonteCarlo": "0",
         "processRealDataWithPID": "0",
         "processMonteCarloWithPID": "0"
     },
     "mult-cent-table": {
-        "processMonteCarlo": "1",
+        "processMonteCarlo": "0",
         "processMonteCarlo2Mults": "0"
     },
     "tracks-extra-v002-converter": {
@@ -37,8 +37,8 @@
     },
     "multiparticle-cumulants": {
         "__ process switches __" : "this is a comment",
-        "processRec": "0",
-        "processRecSim": "1",
+        "processRec": "1",
+        "processRecSim": "0",
         "processSim": "0",
 
         "__ configure your task __" : "this is a comment",
