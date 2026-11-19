@@ -841,14 +841,20 @@ void PlotCutCheck(TFile* resultFile, const char* quantityName, const char* xTitl
   }
 }
 
-void plotPhiWeights(TFile* weightFile, const int runNumber)
+void plotPhiWeights(TFile* weightFile, const int runNumber, const bool isReal = true)
 {
 
   TList* ccdbObject = nullptr;
   weightFile->GetObject("ccdb_object", ccdbObject);
 
   auto* run544116 = dynamic_cast<TList*>(ccdbObject->FindObject(Form("000%d", runNumber)));
-  auto* h544116_0 = dynamic_cast<TH1F*>(run544116->FindObject(Form("wPhi_run%d", runNumber)));
+  TH1F* h544116_0 = nullptr;
+  if (isReal) {
+    h544116_0 = dynamic_cast<TH1F*>(run544116->FindObject(Form("wPhiReal_run%d", runNumber)));
+  } else {
+    h544116_0 = dynamic_cast<TH1F*>(run544116->FindObject(Form("wPhiMC_run%d", runNumber)));
+  }
+
   auto* h544116 = static_cast<TH1*>(h544116_0->Clone("hPhiWeight544116"));
 
   h544116->Scale(1.0 / h544116->Integral());
@@ -877,7 +883,15 @@ void plotPhiWeights(TFile* weightFile, const int runNumber)
   // legend->SetFillStyle(0);
   // legend->AddEntry(h544116, "run 544116", "l");
   // legend->Draw();
-  canvas->Print(Form("result/plots/chap3_phiWeights_%d.png", runNumber));
+  if (isReal) {
+    canvas->Print(Form("result/plots/chap3_phiWeights_real_%d.png", runNumber));
+  }
+  else {
+    canvas->Print(Form("result/plots/chap3_phiWeights_MC_%d.png", runNumber));
+  }
+  delete canvas;
+  canvas = nullptr;
+
 }
 
 void plotPtWeights(TFile* weightFile, const int runNumber)
@@ -887,7 +901,7 @@ void plotPtWeights(TFile* weightFile, const int runNumber)
   weightFile->GetObject("ccdb_object", ccdbObject);
 
   auto* run544116 = dynamic_cast<TList*>(ccdbObject->FindObject(Form("000%d", runNumber)));
-  auto* h544116_0 = dynamic_cast<TH1F*>(run544116->FindObject(Form("wPtReal_run%d", runNumber)));
+  auto* h544116_0 = dynamic_cast<TH1F*>(run544116->FindObject(Form("wPt_run%d", runNumber)));
   auto* h544116 = static_cast<TH1*>(h544116_0->Clone("hPtWeight544116"));
 
   h544116->Scale(1.0 / h544116->Integral());
@@ -918,6 +932,8 @@ void plotPtWeights(TFile* weightFile, const int runNumber)
   // legend->AddEntry(h544116, "run 544116", "l");
   // legend->Draw();
   canvas->Print(Form("result/plots/chap3_ptWeights_%d.png", runNumber));
+  delete canvas;
+  canvas = nullptr;
 }
 
 
@@ -1018,6 +1034,7 @@ int Plotting(bool isNormalized = true, bool isCumulant = false)
 
       for (int const& i : runNumberMC) {
         plotPtWeights(resultData_root_weights, i);
+        plotPhiWeights(resultData_root_weights, i, false);
       }
       for (int const& i : runNumberReal) {
         plotPhiWeights(resultData_root_weights, i);

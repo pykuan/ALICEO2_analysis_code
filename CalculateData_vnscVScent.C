@@ -365,7 +365,7 @@ void Bootstrap()
 
                 std::complex<double> value = MeanByRun[obs][run][cent];
 
-                if (value != value) { // nan?
+                if (value != value) { // nan? || value.imag() != 0.
                     continue;
                 }
 

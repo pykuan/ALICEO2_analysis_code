@@ -15,7 +15,7 @@ inline void BarlowTest(const char* dataTrial, const char* dataDefault, const cha
     double dxDefault, dyDefault, derrDefault, dxTrial, dyTrial, derrTrial;
     bool bMatched = false;
 
-    const double thresBarlow = 2.;
+    const double thresBarlow = 1.5;
     double diffBarlow, errBarlow, sigBarlow, sigSys;
 
     ofstream outSysErr(dataSysErr);

@@ -36,7 +36,7 @@ using namespace std;
 // - pt
 // - <<2>> for one or two cent bin
 
-const char* dataDir = "/scratch3/go52dab/O2tutorial/test20260827_analysis/";
+const char* dataDir = "/scratch3/go52dab/O2tutorial/test20260922_analysis/"; //0827
 
 const int nCentBins = 8;
 const char* centBinsName[nCentBins] = {"00-05", "05-10", "10-20", "20-30", "30-40", "40-50", "50-60", "60-70"};

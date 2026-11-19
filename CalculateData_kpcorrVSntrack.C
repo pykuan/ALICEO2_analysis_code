@@ -49,8 +49,8 @@ const int TwoPCorrName[n2][2] = {{1,-1}, {2,-2}, {3,-3}, {4,-4}};
 const int ThreePCorrName[n3][3] = {{2,-1,-1}, {3,-2,-1}, {4,-2,-2}};
 const int FourPCorrName[n4][4] = {{2,2,-2,-2}, {3,3,-3,-3}, {4,4,-4,-4}, {3,2,-3,-2}, {4,2,-4,-2}};
 
-const size_t nRun = 2;
-const int runNumber[nRun] = {544886, 544868}; //, 544122, 544116
+const size_t nRun = 4;
+const int runNumber[nRun] = {544886, 544868, 544122, 544116}; //
 
 // size_t n2 = 4;
 // size_t n3 = 3;
