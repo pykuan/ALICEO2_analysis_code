@@ -397,7 +397,7 @@ void Bootstrap()
                     graph->GetPoint(point, x, cu);
                     if (std::abs(x - centBinsCenter[cent]) < 1e-6) {
                         valid = std::isfinite(cu) &&
-                            (fourParticle ? cu < 0. : cu > 0.);
+                            (fourParticle ? cu <= 0. : cu >= 0.);
                         break;
                     }
                 }
