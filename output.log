@@ -1,0 +1,3947 @@
+Processing CalculateData_vnscVScent.C(true, true)...
+cent = 00-05 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 8 valid runs
+v2{2}, cent 05-10: 8 valid runs
+v2{2}, cent 10-20: 8 valid runs
+v2{2}, cent 20-30: 8 valid runs
+v2{2}, cent 30-40: 8 valid runs
+v2{2}, cent 40-50: 8 valid runs
+v2{2}, cent 50-60: 8 valid runs
+v2{2}, cent 60-70: 8 valid runs
+v2{4}, cent 00-05: 8 valid runs
+v2{4}, cent 05-10: 8 valid runs
+v2{4}, cent 10-20: 8 valid runs
+v2{4}, cent 20-30: 8 valid runs
+v2{4}, cent 30-40: 8 valid runs
+v2{4}, cent 40-50: 8 valid runs
+v2{4}, cent 50-60: 8 valid runs
+v2{4}, cent 60-70: 8 valid runs
+v3{2}, cent 00-05: 8 valid runs
+v3{2}, cent 05-10: 8 valid runs
+v3{2}, cent 10-20: 8 valid runs
+v3{2}, cent 20-30: 8 valid runs
+v3{2}, cent 30-40: 8 valid runs
+v3{2}, cent 40-50: 8 valid runs
+v3{2}, cent 50-60: 8 valid runs
+v3{2}, cent 60-70: 8 valid runs
+v3{4}, cent 00-05: 8 valid runs
+v3{4}, cent 05-10: 8 valid runs
+v3{4}, cent 10-20: 8 valid runs
+v3{4}, cent 20-30: 8 valid runs
+v3{4}, cent 30-40: 8 valid runs
+v3{4}, cent 40-50: 8 valid runs
+v3{4}, cent 50-60: 8 valid runs
+v3{4}, cent 60-70: 8 valid runs
+v4{2}, cent 00-05: 8 valid runs
+v4{2}, cent 05-10: 8 valid runs
+v4{2}, cent 10-20: 8 valid runs
+v4{2}, cent 20-30: 8 valid runs
+v4{2}, cent 30-40: 8 valid runs
+v4{2}, cent 40-50: 8 valid runs
+v4{2}, cent 50-60: 8 valid runs
+v4{2}, cent 60-70: 8 valid runs
+v4{4}, cent 00-05: 8 valid runs
+v4{4}, cent 05-10: 8 valid runs
+v4{4}, cent 10-20: 8 valid runs
+v4{4}, cent 20-30: 8 valid runs
+v4{4}, cent 30-40: 8 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 8 valid runs
+NSC(2,3), cent 00-05: 8 valid runs
+NSC(2,3), cent 05-10: 8 valid runs
+NSC(2,3), cent 10-20: 8 valid runs
+NSC(2,3), cent 20-30: 8 valid runs
+NSC(2,3), cent 30-40: 8 valid runs
+NSC(2,3), cent 40-50: 8 valid runs
+NSC(2,3), cent 50-60: 8 valid runs
+NSC(2,3), cent 60-70: 8 valid runs
+NSC(2,4), cent 00-05: 8 valid runs
+NSC(2,4), cent 05-10: 8 valid runs
+NSC(2,4), cent 10-20: 8 valid runs
+NSC(2,4), cent 20-30: 8 valid runs
+NSC(2,4), cent 30-40: 8 valid runs
+NSC(2,4), cent 40-50: 8 valid runs
+NSC(2,4), cent 50-60: 8 valid runs
+NSC(2,4), cent 60-70: 8 valid runs
+NSC(2,3,4), cent 00-05: 8 valid runs
+NSC(2,3,4), cent 05-10: 8 valid runs
+NSC(2,3,4), cent 10-20: 8 valid runs
+NSC(2,3,4), cent 20-30: 8 valid runs
+NSC(2,3,4), cent 30-40: 8 valid runs
+NSC(2,3,4), cent 40-50: 8 valid runs
+NSC(2,3,4), cent 50-60: 8 valid runs
+NSC(2,3,4), cent 60-70: 8 valid runs
+v2{2}gap1, cent 00-05: 8 valid runs
+v2{2}gap1, cent 05-10: 8 valid runs
+v2{2}gap1, cent 10-20: 8 valid runs
+v2{2}gap1, cent 20-30: 8 valid runs
+v2{2}gap1, cent 30-40: 8 valid runs
+v2{2}gap1, cent 40-50: 8 valid runs
+v2{2}gap1, cent 50-60: 8 valid runs
+v2{2}gap1, cent 60-70: 8 valid runs
+v2{2}gap2, cent 00-05: 8 valid runs
+v2{2}gap2, cent 05-10: 8 valid runs
+v2{2}gap2, cent 10-20: 8 valid runs
+v2{2}gap2, cent 20-30: 8 valid runs
+v2{2}gap2, cent 30-40: 8 valid runs
+v2{2}gap2, cent 40-50: 8 valid runs
+v2{2}gap2, cent 50-60: 8 valid runs
+v2{2}gap2, cent 60-70: 8 valid runs
+v2{2}gap3, cent 00-05: 8 valid runs
+v2{2}gap3, cent 05-10: 8 valid runs
+v2{2}gap3, cent 10-20: 8 valid runs
+v2{2}gap3, cent 20-30: 8 valid runs
+v2{2}gap3, cent 30-40: 8 valid runs
+v2{2}gap3, cent 40-50: 8 valid runs
+v2{2}gap3, cent 50-60: 8 valid runs
+v2{2}gap3, cent 60-70: 8 valid runs
+v3{2}gap1, cent 00-05: 8 valid runs
+v3{2}gap1, cent 05-10: 8 valid runs
+v3{2}gap1, cent 10-20: 8 valid runs
+v3{2}gap1, cent 20-30: 8 valid runs
+v3{2}gap1, cent 30-40: 8 valid runs
+v3{2}gap1, cent 40-50: 8 valid runs
+v3{2}gap1, cent 50-60: 8 valid runs
+v3{2}gap1, cent 60-70: 8 valid runs
+v3{2}gap2, cent 00-05: 8 valid runs
+v3{2}gap2, cent 05-10: 8 valid runs
+v3{2}gap2, cent 10-20: 8 valid runs
+v3{2}gap2, cent 20-30: 8 valid runs
+v3{2}gap2, cent 30-40: 8 valid runs
+v3{2}gap2, cent 40-50: 8 valid runs
+v3{2}gap2, cent 50-60: 8 valid runs
+v3{2}gap2, cent 60-70: 8 valid runs
+v3{2}gap3, cent 00-05: 8 valid runs
+v3{2}gap3, cent 05-10: 8 valid runs
+v3{2}gap3, cent 10-20: 8 valid runs
+v3{2}gap3, cent 20-30: 8 valid runs
+v3{2}gap3, cent 30-40: 8 valid runs
+v3{2}gap3, cent 40-50: 8 valid runs
+v3{2}gap3, cent 50-60: 8 valid runs
+v3{2}gap3, cent 60-70: 8 valid runs
+v4{2}gap1, cent 00-05: 8 valid runs
+v4{2}gap1, cent 05-10: 8 valid runs
+v4{2}gap1, cent 10-20: 8 valid runs
+v4{2}gap1, cent 20-30: 8 valid runs
+v4{2}gap1, cent 30-40: 8 valid runs
+v4{2}gap1, cent 40-50: 8 valid runs
+v4{2}gap1, cent 50-60: 8 valid runs
+v4{2}gap1, cent 60-70: 8 valid runs
+v4{2}gap2, cent 00-05: 8 valid runs
+v4{2}gap2, cent 05-10: 8 valid runs
+v4{2}gap2, cent 10-20: 8 valid runs
+v4{2}gap2, cent 20-30: 8 valid runs
+v4{2}gap2, cent 30-40: 8 valid runs
+v4{2}gap2, cent 40-50: 8 valid runs
+v4{2}gap2, cent 50-60: 8 valid runs
+v4{2}gap2, cent 60-70: 8 valid runs
+v4{2}gap3, cent 00-05: 8 valid runs
+v4{2}gap3, cent 05-10: 8 valid runs
+v4{2}gap3, cent 10-20: 8 valid runs
+v4{2}gap3, cent 20-30: 8 valid runs
+v4{2}gap3, cent 30-40: 8 valid runs
+v4{2}gap3, cent 40-50: 8 valid runs
+v4{2}gap3, cent 50-60: 8 valid runs
+v4{2}gap3, cent 60-70: 8 valid runs
+cent = 00-05 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 2 valid runs
+v2{2}, cent 05-10: 2 valid runs
+v2{2}, cent 10-20: 2 valid runs
+v2{2}, cent 20-30: 2 valid runs
+v2{2}, cent 30-40: 2 valid runs
+v2{2}, cent 40-50: 2 valid runs
+v2{2}, cent 50-60: 2 valid runs
+v2{2}, cent 60-70: 2 valid runs
+v2{4}, cent 00-05: 2 valid runs
+v2{4}, cent 05-10: 2 valid runs
+v2{4}, cent 10-20: 2 valid runs
+v2{4}, cent 20-30: 2 valid runs
+v2{4}, cent 30-40: 2 valid runs
+v2{4}, cent 40-50: 2 valid runs
+v2{4}, cent 50-60: 2 valid runs
+v2{4}, cent 60-70: 2 valid runs
+v3{2}, cent 00-05: 2 valid runs
+v3{2}, cent 05-10: 2 valid runs
+v3{2}, cent 10-20: 2 valid runs
+v3{2}, cent 20-30: 2 valid runs
+v3{2}, cent 30-40: 2 valid runs
+v3{2}, cent 40-50: 2 valid runs
+v3{2}, cent 50-60: 2 valid runs
+v3{2}, cent 60-70: 2 valid runs
+v3{4}, cent 00-05: 2 valid runs
+v3{4}, cent 05-10: 2 valid runs
+v3{4}, cent 10-20: 2 valid runs
+v3{4}, cent 20-30: 2 valid runs
+v3{4}, cent 30-40: 2 valid runs
+v3{4}, cent 40-50: 2 valid runs
+v3{4}, cent 50-60: 2 valid runs
+v3{4}, cent 60-70: 2 valid runs
+v4{2}, cent 00-05: 2 valid runs
+v4{2}, cent 05-10: 2 valid runs
+v4{2}, cent 10-20: 2 valid runs
+v4{2}, cent 20-30: 2 valid runs
+v4{2}, cent 30-40: 2 valid runs
+v4{2}, cent 40-50: 2 valid runs
+v4{2}, cent 50-60: 2 valid runs
+v4{2}, cent 60-70: 2 valid runs
+v4{4}, cent 00-05: 2 valid runs
+v4{4}, cent 05-10: 2 valid runs
+v4{4}, cent 10-20: 2 valid runs
+v4{4}, cent 20-30: 2 valid runs
+v4{4}, cent 30-40: 2 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 2 valid runs
+NSC(2,3), cent 00-05: 2 valid runs
+NSC(2,3), cent 05-10: 2 valid runs
+NSC(2,3), cent 10-20: 2 valid runs
+NSC(2,3), cent 20-30: 2 valid runs
+NSC(2,3), cent 30-40: 2 valid runs
+NSC(2,3), cent 40-50: 2 valid runs
+NSC(2,3), cent 50-60: 2 valid runs
+NSC(2,3), cent 60-70: 2 valid runs
+NSC(2,4), cent 00-05: 2 valid runs
+NSC(2,4), cent 05-10: 2 valid runs
+NSC(2,4), cent 10-20: 2 valid runs
+NSC(2,4), cent 20-30: 2 valid runs
+NSC(2,4), cent 30-40: 2 valid runs
+NSC(2,4), cent 40-50: 2 valid runs
+NSC(2,4), cent 50-60: 2 valid runs
+NSC(2,4), cent 60-70: 2 valid runs
+NSC(2,3,4), cent 00-05: 2 valid runs
+NSC(2,3,4), cent 05-10: 2 valid runs
+NSC(2,3,4), cent 10-20: 2 valid runs
+NSC(2,3,4), cent 20-30: 2 valid runs
+NSC(2,3,4), cent 30-40: 2 valid runs
+NSC(2,3,4), cent 40-50: 2 valid runs
+NSC(2,3,4), cent 50-60: 2 valid runs
+NSC(2,3,4), cent 60-70: 2 valid runs
+v2{2}gap1, cent 00-05: 2 valid runs
+v2{2}gap1, cent 05-10: 2 valid runs
+v2{2}gap1, cent 10-20: 2 valid runs
+v2{2}gap1, cent 20-30: 2 valid runs
+v2{2}gap1, cent 30-40: 2 valid runs
+v2{2}gap1, cent 40-50: 2 valid runs
+v2{2}gap1, cent 50-60: 2 valid runs
+v2{2}gap1, cent 60-70: 2 valid runs
+v2{2}gap2, cent 00-05: 2 valid runs
+v2{2}gap2, cent 05-10: 2 valid runs
+v2{2}gap2, cent 10-20: 2 valid runs
+v2{2}gap2, cent 20-30: 2 valid runs
+v2{2}gap2, cent 30-40: 2 valid runs
+v2{2}gap2, cent 40-50: 2 valid runs
+v2{2}gap2, cent 50-60: 2 valid runs
+v2{2}gap2, cent 60-70: 2 valid runs
+v2{2}gap3, cent 00-05: 2 valid runs
+v2{2}gap3, cent 05-10: 2 valid runs
+v2{2}gap3, cent 10-20: 2 valid runs
+v2{2}gap3, cent 20-30: 2 valid runs
+v2{2}gap3, cent 30-40: 2 valid runs
+v2{2}gap3, cent 40-50: 2 valid runs
+v2{2}gap3, cent 50-60: 2 valid runs
+v2{2}gap3, cent 60-70: 2 valid runs
+v3{2}gap1, cent 00-05: 2 valid runs
+v3{2}gap1, cent 05-10: 2 valid runs
+v3{2}gap1, cent 10-20: 2 valid runs
+v3{2}gap1, cent 20-30: 2 valid runs
+v3{2}gap1, cent 30-40: 2 valid runs
+v3{2}gap1, cent 40-50: 2 valid runs
+v3{2}gap1, cent 50-60: 2 valid runs
+v3{2}gap1, cent 60-70: 2 valid runs
+v3{2}gap2, cent 00-05: 2 valid runs
+v3{2}gap2, cent 05-10: 2 valid runs
+v3{2}gap2, cent 10-20: 2 valid runs
+v3{2}gap2, cent 20-30: 2 valid runs
+v3{2}gap2, cent 30-40: 2 valid runs
+v3{2}gap2, cent 40-50: 2 valid runs
+v3{2}gap2, cent 50-60: 2 valid runs
+v3{2}gap2, cent 60-70: 2 valid runs
+v3{2}gap3, cent 00-05: 2 valid runs
+v3{2}gap3, cent 05-10: 2 valid runs
+v3{2}gap3, cent 10-20: 2 valid runs
+v3{2}gap3, cent 20-30: 2 valid runs
+v3{2}gap3, cent 30-40: 2 valid runs
+v3{2}gap3, cent 40-50: 2 valid runs
+v3{2}gap3, cent 50-60: 2 valid runs
+v3{2}gap3, cent 60-70: 2 valid runs
+v4{2}gap1, cent 00-05: 2 valid runs
+v4{2}gap1, cent 05-10: 2 valid runs
+v4{2}gap1, cent 10-20: 2 valid runs
+v4{2}gap1, cent 20-30: 2 valid runs
+v4{2}gap1, cent 30-40: 2 valid runs
+v4{2}gap1, cent 40-50: 2 valid runs
+v4{2}gap1, cent 50-60: 2 valid runs
+v4{2}gap1, cent 60-70: 2 valid runs
+v4{2}gap2, cent 00-05: 2 valid runs
+v4{2}gap2, cent 05-10: 2 valid runs
+v4{2}gap2, cent 10-20: 2 valid runs
+v4{2}gap2, cent 20-30: 2 valid runs
+v4{2}gap2, cent 30-40: 2 valid runs
+v4{2}gap2, cent 40-50: 2 valid runs
+v4{2}gap2, cent 50-60: 2 valid runs
+v4{2}gap2, cent 60-70: 2 valid runs
+v4{2}gap3, cent 00-05: 2 valid runs
+v4{2}gap3, cent 05-10: 2 valid runs
+v4{2}gap3, cent 10-20: 2 valid runs
+v4{2}gap3, cent 20-30: 2 valid runs
+v4{2}gap3, cent 30-40: 2 valid runs
+v4{2}gap3, cent 40-50: 2 valid runs
+v4{2}gap3, cent 50-60: 2 valid runs
+v4{2}gap3, cent 60-70: 2 valid runs
+cent = 00-05 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 6 valid runs
+v2{2}, cent 05-10: 6 valid runs
+v2{2}, cent 10-20: 6 valid runs
+v2{2}, cent 20-30: 6 valid runs
+v2{2}, cent 30-40: 6 valid runs
+v2{2}, cent 40-50: 6 valid runs
+v2{2}, cent 50-60: 6 valid runs
+v2{2}, cent 60-70: 6 valid runs
+v2{4}, cent 00-05: 6 valid runs
+v2{4}, cent 05-10: 6 valid runs
+v2{4}, cent 10-20: 6 valid runs
+v2{4}, cent 20-30: 6 valid runs
+v2{4}, cent 30-40: 6 valid runs
+v2{4}, cent 40-50: 6 valid runs
+v2{4}, cent 50-60: 6 valid runs
+v2{4}, cent 60-70: 6 valid runs
+v3{2}, cent 00-05: 6 valid runs
+v3{2}, cent 05-10: 6 valid runs
+v3{2}, cent 10-20: 6 valid runs
+v3{2}, cent 20-30: 6 valid runs
+v3{2}, cent 30-40: 6 valid runs
+v3{2}, cent 40-50: 6 valid runs
+v3{2}, cent 50-60: 6 valid runs
+v3{2}, cent 60-70: 6 valid runs
+v3{4}, cent 00-05: 6 valid runs
+v3{4}, cent 05-10: 6 valid runs
+v3{4}, cent 10-20: 6 valid runs
+v3{4}, cent 20-30: 6 valid runs
+v3{4}, cent 30-40: 6 valid runs
+v3{4}, cent 40-50: 6 valid runs
+v3{4}, cent 50-60: 6 valid runs
+v3{4}, cent 60-70: 6 valid runs
+v4{2}, cent 00-05: 6 valid runs
+v4{2}, cent 05-10: 6 valid runs
+v4{2}, cent 10-20: 6 valid runs
+v4{2}, cent 20-30: 6 valid runs
+v4{2}, cent 30-40: 6 valid runs
+v4{2}, cent 40-50: 6 valid runs
+v4{2}, cent 50-60: 6 valid runs
+v4{2}, cent 60-70: 6 valid runs
+v4{4}, cent 00-05: 6 valid runs
+v4{4}, cent 05-10: 6 valid runs
+v4{4}, cent 10-20: 6 valid runs
+v4{4}, cent 20-30: 6 valid runs
+v4{4}, cent 30-40: 6 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 6 valid runs
+NSC(2,3), cent 00-05: 6 valid runs
+NSC(2,3), cent 05-10: 6 valid runs
+NSC(2,3), cent 10-20: 6 valid runs
+NSC(2,3), cent 20-30: 6 valid runs
+NSC(2,3), cent 30-40: 6 valid runs
+NSC(2,3), cent 40-50: 6 valid runs
+NSC(2,3), cent 50-60: 6 valid runs
+NSC(2,3), cent 60-70: 6 valid runs
+NSC(2,4), cent 00-05: 6 valid runs
+NSC(2,4), cent 05-10: 6 valid runs
+NSC(2,4), cent 10-20: 6 valid runs
+NSC(2,4), cent 20-30: 6 valid runs
+NSC(2,4), cent 30-40: 6 valid runs
+NSC(2,4), cent 40-50: 6 valid runs
+NSC(2,4), cent 50-60: 6 valid runs
+NSC(2,4), cent 60-70: 6 valid runs
+NSC(2,3,4), cent 00-05: 6 valid runs
+NSC(2,3,4), cent 05-10: 6 valid runs
+NSC(2,3,4), cent 10-20: 6 valid runs
+NSC(2,3,4), cent 20-30: 6 valid runs
+NSC(2,3,4), cent 30-40: 6 valid runs
+NSC(2,3,4), cent 40-50: 6 valid runs
+NSC(2,3,4), cent 50-60: 6 valid runs
+NSC(2,3,4), cent 60-70: 6 valid runs
+v2{2}gap1, cent 00-05: 6 valid runs
+v2{2}gap1, cent 05-10: 6 valid runs
+v2{2}gap1, cent 10-20: 6 valid runs
+v2{2}gap1, cent 20-30: 6 valid runs
+v2{2}gap1, cent 30-40: 6 valid runs
+v2{2}gap1, cent 40-50: 6 valid runs
+v2{2}gap1, cent 50-60: 6 valid runs
+v2{2}gap1, cent 60-70: 6 valid runs
+v2{2}gap2, cent 00-05: 6 valid runs
+v2{2}gap2, cent 05-10: 6 valid runs
+v2{2}gap2, cent 10-20: 6 valid runs
+v2{2}gap2, cent 20-30: 6 valid runs
+v2{2}gap2, cent 30-40: 6 valid runs
+v2{2}gap2, cent 40-50: 6 valid runs
+v2{2}gap2, cent 50-60: 6 valid runs
+v2{2}gap2, cent 60-70: 6 valid runs
+v2{2}gap3, cent 00-05: 6 valid runs
+v2{2}gap3, cent 05-10: 6 valid runs
+v2{2}gap3, cent 10-20: 6 valid runs
+v2{2}gap3, cent 20-30: 6 valid runs
+v2{2}gap3, cent 30-40: 6 valid runs
+v2{2}gap3, cent 40-50: 6 valid runs
+v2{2}gap3, cent 50-60: 6 valid runs
+v2{2}gap3, cent 60-70: 6 valid runs
+v3{2}gap1, cent 00-05: 6 valid runs
+v3{2}gap1, cent 05-10: 6 valid runs
+v3{2}gap1, cent 10-20: 6 valid runs
+v3{2}gap1, cent 20-30: 6 valid runs
+v3{2}gap1, cent 30-40: 6 valid runs
+v3{2}gap1, cent 40-50: 6 valid runs
+v3{2}gap1, cent 50-60: 6 valid runs
+v3{2}gap1, cent 60-70: 6 valid runs
+v3{2}gap2, cent 00-05: 6 valid runs
+v3{2}gap2, cent 05-10: 6 valid runs
+v3{2}gap2, cent 10-20: 6 valid runs
+v3{2}gap2, cent 20-30: 6 valid runs
+v3{2}gap2, cent 30-40: 6 valid runs
+v3{2}gap2, cent 40-50: 6 valid runs
+v3{2}gap2, cent 50-60: 6 valid runs
+v3{2}gap2, cent 60-70: 6 valid runs
+v3{2}gap3, cent 00-05: 6 valid runs
+v3{2}gap3, cent 05-10: 6 valid runs
+v3{2}gap3, cent 10-20: 6 valid runs
+v3{2}gap3, cent 20-30: 6 valid runs
+v3{2}gap3, cent 30-40: 6 valid runs
+v3{2}gap3, cent 40-50: 6 valid runs
+v3{2}gap3, cent 50-60: 6 valid runs
+v3{2}gap3, cent 60-70: 6 valid runs
+v4{2}gap1, cent 00-05: 6 valid runs
+v4{2}gap1, cent 05-10: 6 valid runs
+v4{2}gap1, cent 10-20: 6 valid runs
+v4{2}gap1, cent 20-30: 6 valid runs
+v4{2}gap1, cent 30-40: 6 valid runs
+v4{2}gap1, cent 40-50: 6 valid runs
+v4{2}gap1, cent 50-60: 6 valid runs
+v4{2}gap1, cent 60-70: 6 valid runs
+v4{2}gap2, cent 00-05: 6 valid runs
+v4{2}gap2, cent 05-10: 6 valid runs
+v4{2}gap2, cent 10-20: 6 valid runs
+v4{2}gap2, cent 20-30: 6 valid runs
+v4{2}gap2, cent 30-40: 6 valid runs
+v4{2}gap2, cent 40-50: 6 valid runs
+v4{2}gap2, cent 50-60: 6 valid runs
+v4{2}gap2, cent 60-70: 6 valid runs
+v4{2}gap3, cent 00-05: 6 valid runs
+v4{2}gap3, cent 05-10: 6 valid runs
+v4{2}gap3, cent 10-20: 6 valid runs
+v4{2}gap3, cent 20-30: 6 valid runs
+v4{2}gap3, cent 30-40: 6 valid runs
+v4{2}gap3, cent 40-50: 6 valid runs
+v4{2}gap3, cent 50-60: 6 valid runs
+v4{2}gap3, cent 60-70: 6 valid runs
+cent = 00-05 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 4 valid runs
+v2{2}, cent 05-10: 4 valid runs
+v2{2}, cent 10-20: 4 valid runs
+v2{2}, cent 20-30: 4 valid runs
+v2{2}, cent 30-40: 4 valid runs
+v2{2}, cent 40-50: 4 valid runs
+v2{2}, cent 50-60: 4 valid runs
+v2{2}, cent 60-70: 4 valid runs
+v2{4}, cent 00-05: 4 valid runs
+v2{4}, cent 05-10: 4 valid runs
+v2{4}, cent 10-20: 4 valid runs
+v2{4}, cent 20-30: 4 valid runs
+v2{4}, cent 30-40: 4 valid runs
+v2{4}, cent 40-50: 4 valid runs
+v2{4}, cent 50-60: 4 valid runs
+v2{4}, cent 60-70: 4 valid runs
+v3{2}, cent 00-05: 4 valid runs
+v3{2}, cent 05-10: 4 valid runs
+v3{2}, cent 10-20: 4 valid runs
+v3{2}, cent 20-30: 4 valid runs
+v3{2}, cent 30-40: 4 valid runs
+v3{2}, cent 40-50: 4 valid runs
+v3{2}, cent 50-60: 4 valid runs
+v3{2}, cent 60-70: 4 valid runs
+v3{4}, cent 00-05: 4 valid runs
+v3{4}, cent 05-10: 4 valid runs
+v3{4}, cent 10-20: 4 valid runs
+v3{4}, cent 20-30: 4 valid runs
+v3{4}, cent 30-40: 4 valid runs
+v3{4}, cent 40-50: 4 valid runs
+v3{4}, cent 50-60: 4 valid runs
+v3{4}, cent 60-70: 4 valid runs
+v4{2}, cent 00-05: 4 valid runs
+v4{2}, cent 05-10: 4 valid runs
+v4{2}, cent 10-20: 4 valid runs
+v4{2}, cent 20-30: 4 valid runs
+v4{2}, cent 30-40: 4 valid runs
+v4{2}, cent 40-50: 4 valid runs
+v4{2}, cent 50-60: 4 valid runs
+v4{2}, cent 60-70: 4 valid runs
+v4{4}, cent 00-05: 4 valid runs
+v4{4}, cent 05-10: 4 valid runs
+v4{4}, cent 10-20: 4 valid runs
+v4{4}, cent 20-30: 4 valid runs
+v4{4}, cent 30-40: 4 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 4 valid runs
+NSC(2,3), cent 00-05: 4 valid runs
+NSC(2,3), cent 05-10: 4 valid runs
+NSC(2,3), cent 10-20: 4 valid runs
+NSC(2,3), cent 20-30: 4 valid runs
+NSC(2,3), cent 30-40: 4 valid runs
+NSC(2,3), cent 40-50: 4 valid runs
+NSC(2,3), cent 50-60: 4 valid runs
+NSC(2,3), cent 60-70: 4 valid runs
+NSC(2,4), cent 00-05: 4 valid runs
+NSC(2,4), cent 05-10: 4 valid runs
+NSC(2,4), cent 10-20: 4 valid runs
+NSC(2,4), cent 20-30: 4 valid runs
+NSC(2,4), cent 30-40: 4 valid runs
+NSC(2,4), cent 40-50: 4 valid runs
+NSC(2,4), cent 50-60: 4 valid runs
+NSC(2,4), cent 60-70: 4 valid runs
+NSC(2,3,4), cent 00-05: 4 valid runs
+NSC(2,3,4), cent 05-10: 4 valid runs
+NSC(2,3,4), cent 10-20: 4 valid runs
+NSC(2,3,4), cent 20-30: 4 valid runs
+NSC(2,3,4), cent 30-40: 4 valid runs
+NSC(2,3,4), cent 40-50: 4 valid runs
+NSC(2,3,4), cent 50-60: 4 valid runs
+NSC(2,3,4), cent 60-70: 4 valid runs
+v2{2}gap1, cent 00-05: 4 valid runs
+v2{2}gap1, cent 05-10: 4 valid runs
+v2{2}gap1, cent 10-20: 4 valid runs
+v2{2}gap1, cent 20-30: 4 valid runs
+v2{2}gap1, cent 30-40: 4 valid runs
+v2{2}gap1, cent 40-50: 4 valid runs
+v2{2}gap1, cent 50-60: 4 valid runs
+v2{2}gap1, cent 60-70: 4 valid runs
+v2{2}gap2, cent 00-05: 4 valid runs
+v2{2}gap2, cent 05-10: 4 valid runs
+v2{2}gap2, cent 10-20: 4 valid runs
+v2{2}gap2, cent 20-30: 4 valid runs
+v2{2}gap2, cent 30-40: 4 valid runs
+v2{2}gap2, cent 40-50: 4 valid runs
+v2{2}gap2, cent 50-60: 4 valid runs
+v2{2}gap2, cent 60-70: 4 valid runs
+v2{2}gap3, cent 00-05: 4 valid runs
+v2{2}gap3, cent 05-10: 4 valid runs
+v2{2}gap3, cent 10-20: 4 valid runs
+v2{2}gap3, cent 20-30: 4 valid runs
+v2{2}gap3, cent 30-40: 4 valid runs
+v2{2}gap3, cent 40-50: 4 valid runs
+v2{2}gap3, cent 50-60: 4 valid runs
+v2{2}gap3, cent 60-70: 4 valid runs
+v3{2}gap1, cent 00-05: 4 valid runs
+v3{2}gap1, cent 05-10: 4 valid runs
+v3{2}gap1, cent 10-20: 4 valid runs
+v3{2}gap1, cent 20-30: 4 valid runs
+v3{2}gap1, cent 30-40: 4 valid runs
+v3{2}gap1, cent 40-50: 4 valid runs
+v3{2}gap1, cent 50-60: 4 valid runs
+v3{2}gap1, cent 60-70: 4 valid runs
+v3{2}gap2, cent 00-05: 4 valid runs
+v3{2}gap2, cent 05-10: 4 valid runs
+v3{2}gap2, cent 10-20: 4 valid runs
+v3{2}gap2, cent 20-30: 4 valid runs
+v3{2}gap2, cent 30-40: 4 valid runs
+v3{2}gap2, cent 40-50: 4 valid runs
+v3{2}gap2, cent 50-60: 4 valid runs
+v3{2}gap2, cent 60-70: 4 valid runs
+v3{2}gap3, cent 00-05: 4 valid runs
+v3{2}gap3, cent 05-10: 4 valid runs
+v3{2}gap3, cent 10-20: 4 valid runs
+v3{2}gap3, cent 20-30: 4 valid runs
+v3{2}gap3, cent 30-40: 4 valid runs
+v3{2}gap3, cent 40-50: 4 valid runs
+v3{2}gap3, cent 50-60: 4 valid runs
+v3{2}gap3, cent 60-70: 4 valid runs
+v4{2}gap1, cent 00-05: 4 valid runs
+v4{2}gap1, cent 05-10: 4 valid runs
+v4{2}gap1, cent 10-20: 4 valid runs
+v4{2}gap1, cent 20-30: 4 valid runs
+v4{2}gap1, cent 30-40: 4 valid runs
+v4{2}gap1, cent 40-50: 4 valid runs
+v4{2}gap1, cent 50-60: 4 valid runs
+v4{2}gap1, cent 60-70: 4 valid runs
+v4{2}gap2, cent 00-05: 4 valid runs
+v4{2}gap2, cent 05-10: 4 valid runs
+v4{2}gap2, cent 10-20: 4 valid runs
+v4{2}gap2, cent 20-30: 4 valid runs
+v4{2}gap2, cent 30-40: 4 valid runs
+v4{2}gap2, cent 40-50: 4 valid runs
+v4{2}gap2, cent 50-60: 4 valid runs
+v4{2}gap2, cent 60-70: 4 valid runs
+v4{2}gap3, cent 00-05: 4 valid runs
+v4{2}gap3, cent 05-10: 4 valid runs
+v4{2}gap3, cent 10-20: 4 valid runs
+v4{2}gap3, cent 20-30: 4 valid runs
+v4{2}gap3, cent 30-40: 4 valid runs
+v4{2}gap3, cent 40-50: 4 valid runs
+v4{2}gap3, cent 50-60: 4 valid runs
+v4{2}gap3, cent 60-70: 4 valid runs
+cent = 00-05 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 2 valid runs
+v2{2}, cent 05-10: 2 valid runs
+v2{2}, cent 10-20: 2 valid runs
+v2{2}, cent 20-30: 2 valid runs
+v2{2}, cent 30-40: 2 valid runs
+v2{2}, cent 40-50: 2 valid runs
+v2{2}, cent 50-60: 2 valid runs
+v2{2}, cent 60-70: 2 valid runs
+v2{4}, cent 00-05: 2 valid runs
+v2{4}, cent 05-10: 2 valid runs
+v2{4}, cent 10-20: 2 valid runs
+v2{4}, cent 20-30: 2 valid runs
+v2{4}, cent 30-40: 2 valid runs
+v2{4}, cent 40-50: 2 valid runs
+v2{4}, cent 50-60: 2 valid runs
+v2{4}, cent 60-70: 2 valid runs
+v3{2}, cent 00-05: 2 valid runs
+v3{2}, cent 05-10: 2 valid runs
+v3{2}, cent 10-20: 2 valid runs
+v3{2}, cent 20-30: 2 valid runs
+v3{2}, cent 30-40: 2 valid runs
+v3{2}, cent 40-50: 2 valid runs
+v3{2}, cent 50-60: 2 valid runs
+v3{2}, cent 60-70: 2 valid runs
+v3{4}, cent 00-05: 2 valid runs
+v3{4}, cent 05-10: 2 valid runs
+v3{4}, cent 10-20: 2 valid runs
+v3{4}, cent 20-30: 2 valid runs
+v3{4}, cent 30-40: 2 valid runs
+v3{4}, cent 40-50: 2 valid runs
+v3{4}, cent 50-60: 2 valid runs
+v3{4}, cent 60-70: 2 valid runs
+v4{2}, cent 00-05: 2 valid runs
+v4{2}, cent 05-10: 2 valid runs
+v4{2}, cent 10-20: 2 valid runs
+v4{2}, cent 20-30: 2 valid runs
+v4{2}, cent 30-40: 2 valid runs
+v4{2}, cent 40-50: 2 valid runs
+v4{2}, cent 50-60: 2 valid runs
+v4{2}, cent 60-70: 2 valid runs
+v4{4}, cent 00-05: 2 valid runs
+v4{4}, cent 05-10: 2 valid runs
+v4{4}, cent 10-20: 2 valid runs
+v4{4}, cent 20-30: 2 valid runs
+v4{4}, cent 30-40: 2 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 2 valid runs
+NSC(2,3), cent 00-05: 2 valid runs
+NSC(2,3), cent 05-10: 2 valid runs
+NSC(2,3), cent 10-20: 2 valid runs
+NSC(2,3), cent 20-30: 2 valid runs
+NSC(2,3), cent 30-40: 2 valid runs
+NSC(2,3), cent 40-50: 2 valid runs
+NSC(2,3), cent 50-60: 2 valid runs
+NSC(2,3), cent 60-70: 2 valid runs
+NSC(2,4), cent 00-05: 2 valid runs
+NSC(2,4), cent 05-10: 2 valid runs
+NSC(2,4), cent 10-20: 2 valid runs
+NSC(2,4), cent 20-30: 2 valid runs
+NSC(2,4), cent 30-40: 2 valid runs
+NSC(2,4), cent 40-50: 2 valid runs
+NSC(2,4), cent 50-60: 2 valid runs
+NSC(2,4), cent 60-70: 2 valid runs
+NSC(2,3,4), cent 00-05: 2 valid runs
+NSC(2,3,4), cent 05-10: 2 valid runs
+NSC(2,3,4), cent 10-20: 2 valid runs
+NSC(2,3,4), cent 20-30: 2 valid runs
+NSC(2,3,4), cent 30-40: 2 valid runs
+NSC(2,3,4), cent 40-50: 2 valid runs
+NSC(2,3,4), cent 50-60: 2 valid runs
+NSC(2,3,4), cent 60-70: 2 valid runs
+v2{2}gap1, cent 00-05: 2 valid runs
+v2{2}gap1, cent 05-10: 2 valid runs
+v2{2}gap1, cent 10-20: 2 valid runs
+v2{2}gap1, cent 20-30: 2 valid runs
+v2{2}gap1, cent 30-40: 2 valid runs
+v2{2}gap1, cent 40-50: 2 valid runs
+v2{2}gap1, cent 50-60: 2 valid runs
+v2{2}gap1, cent 60-70: 2 valid runs
+v2{2}gap2, cent 00-05: 2 valid runs
+v2{2}gap2, cent 05-10: 2 valid runs
+v2{2}gap2, cent 10-20: 2 valid runs
+v2{2}gap2, cent 20-30: 2 valid runs
+v2{2}gap2, cent 30-40: 2 valid runs
+v2{2}gap2, cent 40-50: 2 valid runs
+v2{2}gap2, cent 50-60: 2 valid runs
+v2{2}gap2, cent 60-70: 2 valid runs
+v2{2}gap3, cent 00-05: 2 valid runs
+v2{2}gap3, cent 05-10: 2 valid runs
+v2{2}gap3, cent 10-20: 2 valid runs
+v2{2}gap3, cent 20-30: 2 valid runs
+v2{2}gap3, cent 30-40: 2 valid runs
+v2{2}gap3, cent 40-50: 2 valid runs
+v2{2}gap3, cent 50-60: 2 valid runs
+v2{2}gap3, cent 60-70: 2 valid runs
+v3{2}gap1, cent 00-05: 2 valid runs
+v3{2}gap1, cent 05-10: 2 valid runs
+v3{2}gap1, cent 10-20: 2 valid runs
+v3{2}gap1, cent 20-30: 2 valid runs
+v3{2}gap1, cent 30-40: 2 valid runs
+v3{2}gap1, cent 40-50: 2 valid runs
+v3{2}gap1, cent 50-60: 2 valid runs
+v3{2}gap1, cent 60-70: 2 valid runs
+v3{2}gap2, cent 00-05: 2 valid runs
+v3{2}gap2, cent 05-10: 2 valid runs
+v3{2}gap2, cent 10-20: 2 valid runs
+v3{2}gap2, cent 20-30: 2 valid runs
+v3{2}gap2, cent 30-40: 2 valid runs
+v3{2}gap2, cent 40-50: 2 valid runs
+v3{2}gap2, cent 50-60: 2 valid runs
+v3{2}gap2, cent 60-70: 2 valid runs
+v3{2}gap3, cent 00-05: 2 valid runs
+v3{2}gap3, cent 05-10: 2 valid runs
+v3{2}gap3, cent 10-20: 2 valid runs
+v3{2}gap3, cent 20-30: 2 valid runs
+v3{2}gap3, cent 30-40: 2 valid runs
+v3{2}gap3, cent 40-50: 2 valid runs
+v3{2}gap3, cent 50-60: 2 valid runs
+v3{2}gap3, cent 60-70: 2 valid runs
+v4{2}gap1, cent 00-05: 2 valid runs
+v4{2}gap1, cent 05-10: 2 valid runs
+v4{2}gap1, cent 10-20: 2 valid runs
+v4{2}gap1, cent 20-30: 2 valid runs
+v4{2}gap1, cent 30-40: 2 valid runs
+v4{2}gap1, cent 40-50: 2 valid runs
+v4{2}gap1, cent 50-60: 2 valid runs
+v4{2}gap1, cent 60-70: 2 valid runs
+v4{2}gap2, cent 00-05: 2 valid runs
+v4{2}gap2, cent 05-10: 2 valid runs
+v4{2}gap2, cent 10-20: 2 valid runs
+v4{2}gap2, cent 20-30: 2 valid runs
+v4{2}gap2, cent 30-40: 2 valid runs
+v4{2}gap2, cent 40-50: 2 valid runs
+v4{2}gap2, cent 50-60: 2 valid runs
+v4{2}gap2, cent 60-70: 2 valid runs
+v4{2}gap3, cent 00-05: 2 valid runs
+v4{2}gap3, cent 05-10: 2 valid runs
+v4{2}gap3, cent 10-20: 2 valid runs
+v4{2}gap3, cent 20-30: 2 valid runs
+v4{2}gap3, cent 30-40: 2 valid runs
+v4{2}gap3, cent 40-50: 2 valid runs
+v4{2}gap3, cent 50-60: 2 valid runs
+v4{2}gap3, cent 60-70: 2 valid runs
+cent = 00-05 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 2 valid runs
+v2{2}, cent 05-10: 2 valid runs
+v2{2}, cent 10-20: 2 valid runs
+v2{2}, cent 20-30: 2 valid runs
+v2{2}, cent 30-40: 2 valid runs
+v2{2}, cent 40-50: 2 valid runs
+v2{2}, cent 50-60: 2 valid runs
+v2{2}, cent 60-70: 2 valid runs
+v2{4}, cent 00-05: 2 valid runs
+v2{4}, cent 05-10: 2 valid runs
+v2{4}, cent 10-20: 2 valid runs
+v2{4}, cent 20-30: 2 valid runs
+v2{4}, cent 30-40: 2 valid runs
+v2{4}, cent 40-50: 2 valid runs
+v2{4}, cent 50-60: 2 valid runs
+v2{4}, cent 60-70: 2 valid runs
+v3{2}, cent 00-05: 2 valid runs
+v3{2}, cent 05-10: 2 valid runs
+v3{2}, cent 10-20: 2 valid runs
+v3{2}, cent 20-30: 2 valid runs
+v3{2}, cent 30-40: 2 valid runs
+v3{2}, cent 40-50: 2 valid runs
+v3{2}, cent 50-60: 2 valid runs
+v3{2}, cent 60-70: 2 valid runs
+v3{4}, cent 00-05: 2 valid runs
+v3{4}, cent 05-10: 2 valid runs
+v3{4}, cent 10-20: 2 valid runs
+v3{4}, cent 20-30: 2 valid runs
+v3{4}, cent 30-40: 2 valid runs
+v3{4}, cent 40-50: 2 valid runs
+v3{4}, cent 50-60: 2 valid runs
+v3{4}, cent 60-70: 2 valid runs
+v4{2}, cent 00-05: 2 valid runs
+v4{2}, cent 05-10: 2 valid runs
+v4{2}, cent 10-20: 2 valid runs
+v4{2}, cent 20-30: 2 valid runs
+v4{2}, cent 30-40: 2 valid runs
+v4{2}, cent 40-50: 2 valid runs
+v4{2}, cent 50-60: 2 valid runs
+v4{2}, cent 60-70: 2 valid runs
+v4{4}, cent 00-05: 2 valid runs
+v4{4}, cent 05-10: 2 valid runs
+v4{4}, cent 10-20: 2 valid runs
+v4{4}, cent 20-30: 2 valid runs
+v4{4}, cent 30-40: 2 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 2 valid runs
+NSC(2,3), cent 00-05: 2 valid runs
+NSC(2,3), cent 05-10: 2 valid runs
+NSC(2,3), cent 10-20: 2 valid runs
+NSC(2,3), cent 20-30: 2 valid runs
+NSC(2,3), cent 30-40: 2 valid runs
+NSC(2,3), cent 40-50: 2 valid runs
+NSC(2,3), cent 50-60: 2 valid runs
+NSC(2,3), cent 60-70: 2 valid runs
+NSC(2,4), cent 00-05: 2 valid runs
+NSC(2,4), cent 05-10: 2 valid runs
+NSC(2,4), cent 10-20: 2 valid runs
+NSC(2,4), cent 20-30: 2 valid runs
+NSC(2,4), cent 30-40: 2 valid runs
+NSC(2,4), cent 40-50: 2 valid runs
+NSC(2,4), cent 50-60: 2 valid runs
+NSC(2,4), cent 60-70: 2 valid runs
+NSC(2,3,4), cent 00-05: 2 valid runs
+NSC(2,3,4), cent 05-10: 2 valid runs
+NSC(2,3,4), cent 10-20: 2 valid runs
+NSC(2,3,4), cent 20-30: 2 valid runs
+NSC(2,3,4), cent 30-40: 2 valid runs
+NSC(2,3,4), cent 40-50: 2 valid runs
+NSC(2,3,4), cent 50-60: 2 valid runs
+NSC(2,3,4), cent 60-70: 2 valid runs
+v2{2}gap1, cent 00-05: 2 valid runs
+v2{2}gap1, cent 05-10: 2 valid runs
+v2{2}gap1, cent 10-20: 2 valid runs
+v2{2}gap1, cent 20-30: 2 valid runs
+v2{2}gap1, cent 30-40: 2 valid runs
+v2{2}gap1, cent 40-50: 2 valid runs
+v2{2}gap1, cent 50-60: 2 valid runs
+v2{2}gap1, cent 60-70: 2 valid runs
+v2{2}gap2, cent 00-05: 2 valid runs
+v2{2}gap2, cent 05-10: 2 valid runs
+v2{2}gap2, cent 10-20: 2 valid runs
+v2{2}gap2, cent 20-30: 2 valid runs
+v2{2}gap2, cent 30-40: 2 valid runs
+v2{2}gap2, cent 40-50: 2 valid runs
+v2{2}gap2, cent 50-60: 2 valid runs
+v2{2}gap2, cent 60-70: 2 valid runs
+v2{2}gap3, cent 00-05: 2 valid runs
+v2{2}gap3, cent 05-10: 2 valid runs
+v2{2}gap3, cent 10-20: 2 valid runs
+v2{2}gap3, cent 20-30: 2 valid runs
+v2{2}gap3, cent 30-40: 2 valid runs
+v2{2}gap3, cent 40-50: 2 valid runs
+v2{2}gap3, cent 50-60: 2 valid runs
+v2{2}gap3, cent 60-70: 2 valid runs
+v3{2}gap1, cent 00-05: 2 valid runs
+v3{2}gap1, cent 05-10: 2 valid runs
+v3{2}gap1, cent 10-20: 2 valid runs
+v3{2}gap1, cent 20-30: 2 valid runs
+v3{2}gap1, cent 30-40: 2 valid runs
+v3{2}gap1, cent 40-50: 2 valid runs
+v3{2}gap1, cent 50-60: 2 valid runs
+v3{2}gap1, cent 60-70: 2 valid runs
+v3{2}gap2, cent 00-05: 2 valid runs
+v3{2}gap2, cent 05-10: 2 valid runs
+v3{2}gap2, cent 10-20: 2 valid runs
+v3{2}gap2, cent 20-30: 2 valid runs
+v3{2}gap2, cent 30-40: 2 valid runs
+v3{2}gap2, cent 40-50: 2 valid runs
+v3{2}gap2, cent 50-60: 2 valid runs
+v3{2}gap2, cent 60-70: 2 valid runs
+v3{2}gap3, cent 00-05: 2 valid runs
+v3{2}gap3, cent 05-10: 2 valid runs
+v3{2}gap3, cent 10-20: 2 valid runs
+v3{2}gap3, cent 20-30: 2 valid runs
+v3{2}gap3, cent 30-40: 2 valid runs
+v3{2}gap3, cent 40-50: 2 valid runs
+v3{2}gap3, cent 50-60: 2 valid runs
+v3{2}gap3, cent 60-70: 2 valid runs
+v4{2}gap1, cent 00-05: 2 valid runs
+v4{2}gap1, cent 05-10: 2 valid runs
+v4{2}gap1, cent 10-20: 2 valid runs
+v4{2}gap1, cent 20-30: 2 valid runs
+v4{2}gap1, cent 30-40: 2 valid runs
+v4{2}gap1, cent 40-50: 2 valid runs
+v4{2}gap1, cent 50-60: 2 valid runs
+v4{2}gap1, cent 60-70: 2 valid runs
+v4{2}gap2, cent 00-05: 2 valid runs
+v4{2}gap2, cent 05-10: 2 valid runs
+v4{2}gap2, cent 10-20: 2 valid runs
+v4{2}gap2, cent 20-30: 2 valid runs
+v4{2}gap2, cent 30-40: 2 valid runs
+v4{2}gap2, cent 40-50: 2 valid runs
+v4{2}gap2, cent 50-60: 2 valid runs
+v4{2}gap2, cent 60-70: 2 valid runs
+v4{2}gap3, cent 00-05: 2 valid runs
+v4{2}gap3, cent 05-10: 2 valid runs
+v4{2}gap3, cent 10-20: 2 valid runs
+v4{2}gap3, cent 20-30: 2 valid runs
+v4{2}gap3, cent 30-40: 2 valid runs
+v4{2}gap3, cent 40-50: 2 valid runs
+v4{2}gap3, cent 50-60: 2 valid runs
+v4{2}gap3, cent 60-70: 2 valid runs
+cent = 00-05 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 8 valid runs
+v2{2}, cent 05-10: 8 valid runs
+v2{2}, cent 10-20: 8 valid runs
+v2{2}, cent 20-30: 8 valid runs
+v2{2}, cent 30-40: 8 valid runs
+v2{2}, cent 40-50: 8 valid runs
+v2{2}, cent 50-60: 8 valid runs
+v2{2}, cent 60-70: 8 valid runs
+v2{4}, cent 00-05: 8 valid runs
+v2{4}, cent 05-10: 8 valid runs
+v2{4}, cent 10-20: 8 valid runs
+v2{4}, cent 20-30: 8 valid runs
+v2{4}, cent 30-40: 8 valid runs
+v2{4}, cent 40-50: 8 valid runs
+v2{4}, cent 50-60: 8 valid runs
+v2{4}, cent 60-70: 8 valid runs
+v3{2}, cent 00-05: 8 valid runs
+v3{2}, cent 05-10: 8 valid runs
+v3{2}, cent 10-20: 8 valid runs
+v3{2}, cent 20-30: 8 valid runs
+v3{2}, cent 30-40: 8 valid runs
+v3{2}, cent 40-50: 8 valid runs
+v3{2}, cent 50-60: 8 valid runs
+v3{2}, cent 60-70: 8 valid runs
+v3{4}, cent 00-05: 8 valid runs
+v3{4}, cent 05-10: 8 valid runs
+v3{4}, cent 10-20: 8 valid runs
+v3{4}, cent 20-30: 8 valid runs
+v3{4}, cent 30-40: 8 valid runs
+v3{4}, cent 40-50: 8 valid runs
+v3{4}, cent 50-60: 8 valid runs
+v3{4}, cent 60-70: 8 valid runs
+v4{2}, cent 00-05: 8 valid runs
+v4{2}, cent 05-10: 8 valid runs
+v4{2}, cent 10-20: 8 valid runs
+v4{2}, cent 20-30: 8 valid runs
+v4{2}, cent 30-40: 8 valid runs
+v4{2}, cent 40-50: 8 valid runs
+v4{2}, cent 50-60: 8 valid runs
+v4{2}, cent 60-70: 8 valid runs
+v4{4}, cent 00-05: 8 valid runs
+v4{4}, cent 05-10: 8 valid runs
+v4{4}, cent 10-20: 8 valid runs
+v4{4}, cent 20-30: 8 valid runs
+v4{4}, cent 30-40: 8 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 8 valid runs
+NSC(2,3), cent 00-05: 8 valid runs
+NSC(2,3), cent 05-10: 8 valid runs
+NSC(2,3), cent 10-20: 8 valid runs
+NSC(2,3), cent 20-30: 8 valid runs
+NSC(2,3), cent 30-40: 8 valid runs
+NSC(2,3), cent 40-50: 8 valid runs
+NSC(2,3), cent 50-60: 8 valid runs
+NSC(2,3), cent 60-70: 8 valid runs
+NSC(2,4), cent 00-05: 8 valid runs
+NSC(2,4), cent 05-10: 8 valid runs
+NSC(2,4), cent 10-20: 8 valid runs
+NSC(2,4), cent 20-30: 8 valid runs
+NSC(2,4), cent 30-40: 8 valid runs
+NSC(2,4), cent 40-50: 8 valid runs
+NSC(2,4), cent 50-60: 8 valid runs
+NSC(2,4), cent 60-70: 8 valid runs
+NSC(2,3,4), cent 00-05: 8 valid runs
+NSC(2,3,4), cent 05-10: 8 valid runs
+NSC(2,3,4), cent 10-20: 8 valid runs
+NSC(2,3,4), cent 20-30: 8 valid runs
+NSC(2,3,4), cent 30-40: 8 valid runs
+NSC(2,3,4), cent 40-50: 8 valid runs
+NSC(2,3,4), cent 50-60: 8 valid runs
+NSC(2,3,4), cent 60-70: 8 valid runs
+v2{2}gap1, cent 00-05: 8 valid runs
+v2{2}gap1, cent 05-10: 8 valid runs
+v2{2}gap1, cent 10-20: 8 valid runs
+v2{2}gap1, cent 20-30: 8 valid runs
+v2{2}gap1, cent 30-40: 8 valid runs
+v2{2}gap1, cent 40-50: 8 valid runs
+v2{2}gap1, cent 50-60: 8 valid runs
+v2{2}gap1, cent 60-70: 8 valid runs
+v2{2}gap2, cent 00-05: 8 valid runs
+v2{2}gap2, cent 05-10: 8 valid runs
+v2{2}gap2, cent 10-20: 8 valid runs
+v2{2}gap2, cent 20-30: 8 valid runs
+v2{2}gap2, cent 30-40: 8 valid runs
+v2{2}gap2, cent 40-50: 8 valid runs
+v2{2}gap2, cent 50-60: 8 valid runs
+v2{2}gap2, cent 60-70: 8 valid runs
+v2{2}gap3, cent 00-05: 8 valid runs
+v2{2}gap3, cent 05-10: 8 valid runs
+v2{2}gap3, cent 10-20: 8 valid runs
+v2{2}gap3, cent 20-30: 8 valid runs
+v2{2}gap3, cent 30-40: 8 valid runs
+v2{2}gap3, cent 40-50: 8 valid runs
+v2{2}gap3, cent 50-60: 8 valid runs
+v2{2}gap3, cent 60-70: 8 valid runs
+v3{2}gap1, cent 00-05: 8 valid runs
+v3{2}gap1, cent 05-10: 8 valid runs
+v3{2}gap1, cent 10-20: 8 valid runs
+v3{2}gap1, cent 20-30: 8 valid runs
+v3{2}gap1, cent 30-40: 8 valid runs
+v3{2}gap1, cent 40-50: 8 valid runs
+v3{2}gap1, cent 50-60: 8 valid runs
+v3{2}gap1, cent 60-70: 8 valid runs
+v3{2}gap2, cent 00-05: 8 valid runs
+v3{2}gap2, cent 05-10: 8 valid runs
+v3{2}gap2, cent 10-20: 8 valid runs
+v3{2}gap2, cent 20-30: 8 valid runs
+v3{2}gap2, cent 30-40: 8 valid runs
+v3{2}gap2, cent 40-50: 8 valid runs
+v3{2}gap2, cent 50-60: 8 valid runs
+v3{2}gap2, cent 60-70: 8 valid runs
+v3{2}gap3, cent 00-05: 8 valid runs
+v3{2}gap3, cent 05-10: 8 valid runs
+v3{2}gap3, cent 10-20: 8 valid runs
+v3{2}gap3, cent 20-30: 8 valid runs
+v3{2}gap3, cent 30-40: 8 valid runs
+v3{2}gap3, cent 40-50: 8 valid runs
+v3{2}gap3, cent 50-60: 8 valid runs
+v3{2}gap3, cent 60-70: 8 valid runs
+v4{2}gap1, cent 00-05: 8 valid runs
+v4{2}gap1, cent 05-10: 8 valid runs
+v4{2}gap1, cent 10-20: 8 valid runs
+v4{2}gap1, cent 20-30: 8 valid runs
+v4{2}gap1, cent 30-40: 8 valid runs
+v4{2}gap1, cent 40-50: 8 valid runs
+v4{2}gap1, cent 50-60: 8 valid runs
+v4{2}gap1, cent 60-70: 8 valid runs
+v4{2}gap2, cent 00-05: 8 valid runs
+v4{2}gap2, cent 05-10: 8 valid runs
+v4{2}gap2, cent 10-20: 8 valid runs
+v4{2}gap2, cent 20-30: 8 valid runs
+v4{2}gap2, cent 30-40: 8 valid runs
+v4{2}gap2, cent 40-50: 8 valid runs
+v4{2}gap2, cent 50-60: 8 valid runs
+v4{2}gap2, cent 60-70: 8 valid runs
+v4{2}gap3, cent 00-05: 8 valid runs
+v4{2}gap3, cent 05-10: 8 valid runs
+v4{2}gap3, cent 10-20: 8 valid runs
+v4{2}gap3, cent 20-30: 8 valid runs
+v4{2}gap3, cent 30-40: 8 valid runs
+v4{2}gap3, cent 40-50: 8 valid runs
+v4{2}gap3, cent 50-60: 8 valid runs
+v4{2}gap3, cent 60-70: 8 valid runs
+cent = 00-05 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 4 valid runs
+v2{2}, cent 05-10: 4 valid runs
+v2{2}, cent 10-20: 4 valid runs
+v2{2}, cent 20-30: 4 valid runs
+v2{2}, cent 30-40: 4 valid runs
+v2{2}, cent 40-50: 4 valid runs
+v2{2}, cent 50-60: 4 valid runs
+v2{2}, cent 60-70: 4 valid runs
+v2{4}, cent 00-05: 4 valid runs
+v2{4}, cent 05-10: 4 valid runs
+v2{4}, cent 10-20: 4 valid runs
+v2{4}, cent 20-30: 4 valid runs
+v2{4}, cent 30-40: 4 valid runs
+v2{4}, cent 40-50: 4 valid runs
+v2{4}, cent 50-60: 4 valid runs
+v2{4}, cent 60-70: 4 valid runs
+v3{2}, cent 00-05: 4 valid runs
+v3{2}, cent 05-10: 4 valid runs
+v3{2}, cent 10-20: 4 valid runs
+v3{2}, cent 20-30: 4 valid runs
+v3{2}, cent 30-40: 4 valid runs
+v3{2}, cent 40-50: 4 valid runs
+v3{2}, cent 50-60: 4 valid runs
+v3{2}, cent 60-70: 4 valid runs
+v3{4}, cent 00-05: 4 valid runs
+v3{4}, cent 05-10: 4 valid runs
+v3{4}, cent 10-20: 4 valid runs
+v3{4}, cent 20-30: 4 valid runs
+v3{4}, cent 30-40: 4 valid runs
+v3{4}, cent 40-50: 4 valid runs
+v3{4}, cent 50-60: 4 valid runs
+v3{4}, cent 60-70: 4 valid runs
+v4{2}, cent 00-05: 4 valid runs
+v4{2}, cent 05-10: 4 valid runs
+v4{2}, cent 10-20: 4 valid runs
+v4{2}, cent 20-30: 4 valid runs
+v4{2}, cent 30-40: 4 valid runs
+v4{2}, cent 40-50: 4 valid runs
+v4{2}, cent 50-60: 4 valid runs
+v4{2}, cent 60-70: 4 valid runs
+v4{4}, cent 00-05: 4 valid runs
+v4{4}, cent 05-10: 4 valid runs
+v4{4}, cent 10-20: 4 valid runs
+v4{4}, cent 20-30: 4 valid runs
+v4{4}, cent 30-40: 4 valid runs
+v4{4}, cent 40-50: 0 valid runs
+v4{4}, cent 50-60: 0 valid runs
+v4{4}, cent 60-70: 4 valid runs
+NSC(2,3), cent 00-05: 4 valid runs
+NSC(2,3), cent 05-10: 4 valid runs
+NSC(2,3), cent 10-20: 4 valid runs
+NSC(2,3), cent 20-30: 4 valid runs
+NSC(2,3), cent 30-40: 4 valid runs
+NSC(2,3), cent 40-50: 4 valid runs
+NSC(2,3), cent 50-60: 4 valid runs
+NSC(2,3), cent 60-70: 4 valid runs
+NSC(2,4), cent 00-05: 4 valid runs
+NSC(2,4), cent 05-10: 4 valid runs
+NSC(2,4), cent 10-20: 4 valid runs
+NSC(2,4), cent 20-30: 4 valid runs
+NSC(2,4), cent 30-40: 4 valid runs
+NSC(2,4), cent 40-50: 4 valid runs
+NSC(2,4), cent 50-60: 4 valid runs
+NSC(2,4), cent 60-70: 4 valid runs
+NSC(2,3,4), cent 00-05: 4 valid runs
+NSC(2,3,4), cent 05-10: 4 valid runs
+NSC(2,3,4), cent 10-20: 4 valid runs
+NSC(2,3,4), cent 20-30: 4 valid runs
+NSC(2,3,4), cent 30-40: 4 valid runs
+NSC(2,3,4), cent 40-50: 4 valid runs
+NSC(2,3,4), cent 50-60: 4 valid runs
+NSC(2,3,4), cent 60-70: 4 valid runs
+v2{2}gap1, cent 00-05: 4 valid runs
+v2{2}gap1, cent 05-10: 4 valid runs
+v2{2}gap1, cent 10-20: 4 valid runs
+v2{2}gap1, cent 20-30: 4 valid runs
+v2{2}gap1, cent 30-40: 4 valid runs
+v2{2}gap1, cent 40-50: 4 valid runs
+v2{2}gap1, cent 50-60: 4 valid runs
+v2{2}gap1, cent 60-70: 4 valid runs
+v2{2}gap2, cent 00-05: 4 valid runs
+v2{2}gap2, cent 05-10: 4 valid runs
+v2{2}gap2, cent 10-20: 4 valid runs
+v2{2}gap2, cent 20-30: 4 valid runs
+v2{2}gap2, cent 30-40: 4 valid runs
+v2{2}gap2, cent 40-50: 4 valid runs
+v2{2}gap2, cent 50-60: 4 valid runs
+v2{2}gap2, cent 60-70: 4 valid runs
+v2{2}gap3, cent 00-05: 4 valid runs
+v2{2}gap3, cent 05-10: 4 valid runs
+v2{2}gap3, cent 10-20: 4 valid runs
+v2{2}gap3, cent 20-30: 4 valid runs
+v2{2}gap3, cent 30-40: 4 valid runs
+v2{2}gap3, cent 40-50: 4 valid runs
+v2{2}gap3, cent 50-60: 4 valid runs
+v2{2}gap3, cent 60-70: 4 valid runs
+v3{2}gap1, cent 00-05: 4 valid runs
+v3{2}gap1, cent 05-10: 4 valid runs
+v3{2}gap1, cent 10-20: 4 valid runs
+v3{2}gap1, cent 20-30: 4 valid runs
+v3{2}gap1, cent 30-40: 4 valid runs
+v3{2}gap1, cent 40-50: 4 valid runs
+v3{2}gap1, cent 50-60: 4 valid runs
+v3{2}gap1, cent 60-70: 4 valid runs
+v3{2}gap2, cent 00-05: 4 valid runs
+v3{2}gap2, cent 05-10: 4 valid runs
+v3{2}gap2, cent 10-20: 4 valid runs
+v3{2}gap2, cent 20-30: 4 valid runs
+v3{2}gap2, cent 30-40: 4 valid runs
+v3{2}gap2, cent 40-50: 4 valid runs
+v3{2}gap2, cent 50-60: 4 valid runs
+v3{2}gap2, cent 60-70: 4 valid runs
+v3{2}gap3, cent 00-05: 4 valid runs
+v3{2}gap3, cent 05-10: 4 valid runs
+v3{2}gap3, cent 10-20: 4 valid runs
+v3{2}gap3, cent 20-30: 4 valid runs
+v3{2}gap3, cent 30-40: 4 valid runs
+v3{2}gap3, cent 40-50: 4 valid runs
+v3{2}gap3, cent 50-60: 4 valid runs
+v3{2}gap3, cent 60-70: 4 valid runs
+v4{2}gap1, cent 00-05: 4 valid runs
+v4{2}gap1, cent 05-10: 4 valid runs
+v4{2}gap1, cent 10-20: 4 valid runs
+v4{2}gap1, cent 20-30: 4 valid runs
+v4{2}gap1, cent 30-40: 4 valid runs
+v4{2}gap1, cent 40-50: 4 valid runs
+v4{2}gap1, cent 50-60: 4 valid runs
+v4{2}gap1, cent 60-70: 4 valid runs
+v4{2}gap2, cent 00-05: 4 valid runs
+v4{2}gap2, cent 05-10: 4 valid runs
+v4{2}gap2, cent 10-20: 4 valid runs
+v4{2}gap2, cent 20-30: 4 valid runs
+v4{2}gap2, cent 30-40: 4 valid runs
+v4{2}gap2, cent 40-50: 4 valid runs
+v4{2}gap2, cent 50-60: 4 valid runs
+v4{2}gap2, cent 60-70: 4 valid runs
+v4{2}gap3, cent 00-05: 4 valid runs
+v4{2}gap3, cent 05-10: 4 valid runs
+v4{2}gap3, cent 10-20: 4 valid runs
+v4{2}gap3, cent 20-30: 4 valid runs
+v4{2}gap3, cent 30-40: 4 valid runs
+v4{2}gap3, cent 40-50: 4 valid runs
+v4{2}gap3, cent 50-60: 4 valid runs
+v4{2}gap3, cent 60-70: 4 valid runs
+(int) 0
+Processing Plotting.C(true, true)...
+(int) 0
+Processing CalculateData_vnscVScent.C(true, false)...
+cent = 00-05 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 8 valid runs
+v2{2}, cent 05-10: 8 valid runs
+v2{2}, cent 10-20: 8 valid runs
+v2{2}, cent 20-30: 8 valid runs
+v2{2}, cent 30-40: 8 valid runs
+v2{2}, cent 40-50: 8 valid runs
+v2{2}, cent 50-60: 8 valid runs
+v2{2}, cent 60-70: 8 valid runs
+v2{4}, cent 00-05: 8 valid runs
+v2{4}, cent 05-10: 8 valid runs
+v2{4}, cent 10-20: 8 valid runs
+v2{4}, cent 20-30: 8 valid runs
+v2{4}, cent 30-40: 8 valid runs
+v2{4}, cent 40-50: 8 valid runs
+v2{4}, cent 50-60: 8 valid runs
+v2{4}, cent 60-70: 8 valid runs
+v3{2}, cent 00-05: 8 valid runs
+v3{2}, cent 05-10: 8 valid runs
+v3{2}, cent 10-20: 8 valid runs
+v3{2}, cent 20-30: 8 valid runs
+v3{2}, cent 30-40: 8 valid runs
+v3{2}, cent 40-50: 8 valid runs
+v3{2}, cent 50-60: 8 valid runs
+v3{2}, cent 60-70: 8 valid runs
+v3{4}, cent 00-05: 8 valid runs
+v3{4}, cent 05-10: 8 valid runs
+v3{4}, cent 10-20: 8 valid runs
+v3{4}, cent 20-30: 8 valid runs
+v3{4}, cent 30-40: 8 valid runs
+v3{4}, cent 40-50: 8 valid runs
+v3{4}, cent 50-60: 8 valid runs
+v3{4}, cent 60-70: 8 valid runs
+v4{2}, cent 00-05: 8 valid runs
+v4{2}, cent 05-10: 8 valid runs
+v4{2}, cent 10-20: 8 valid runs
+v4{2}, cent 20-30: 8 valid runs
+v4{2}, cent 30-40: 8 valid runs
+v4{2}, cent 40-50: 8 valid runs
+v4{2}, cent 50-60: 8 valid runs
+v4{2}, cent 60-70: 8 valid runs
+v4{4}, cent 00-05: 8 valid runs
+v4{4}, cent 05-10: 8 valid runs
+v4{4}, cent 10-20: 8 valid runs
+v4{4}, cent 20-30: 8 valid runs
+v4{4}, cent 30-40: 8 valid runs
+v4{4}, cent 40-50: 8 valid runs
+v4{4}, cent 50-60: 8 valid runs
+v4{4}, cent 60-70: 8 valid runs
+NSC(2,3), cent 00-05: 8 valid runs
+NSC(2,3), cent 05-10: 8 valid runs
+NSC(2,3), cent 10-20: 8 valid runs
+NSC(2,3), cent 20-30: 8 valid runs
+NSC(2,3), cent 30-40: 8 valid runs
+NSC(2,3), cent 40-50: 8 valid runs
+NSC(2,3), cent 50-60: 8 valid runs
+NSC(2,3), cent 60-70: 8 valid runs
+NSC(2,4), cent 00-05: 8 valid runs
+NSC(2,4), cent 05-10: 8 valid runs
+NSC(2,4), cent 10-20: 8 valid runs
+NSC(2,4), cent 20-30: 8 valid runs
+NSC(2,4), cent 30-40: 8 valid runs
+NSC(2,4), cent 40-50: 8 valid runs
+NSC(2,4), cent 50-60: 8 valid runs
+NSC(2,4), cent 60-70: 8 valid runs
+NSC(2,3,4), cent 00-05: 8 valid runs
+NSC(2,3,4), cent 05-10: 8 valid runs
+NSC(2,3,4), cent 10-20: 8 valid runs
+NSC(2,3,4), cent 20-30: 8 valid runs
+NSC(2,3,4), cent 30-40: 8 valid runs
+NSC(2,3,4), cent 40-50: 8 valid runs
+NSC(2,3,4), cent 50-60: 8 valid runs
+NSC(2,3,4), cent 60-70: 8 valid runs
+v2{2}gap1, cent 00-05: 8 valid runs
+v2{2}gap1, cent 05-10: 8 valid runs
+v2{2}gap1, cent 10-20: 8 valid runs
+v2{2}gap1, cent 20-30: 8 valid runs
+v2{2}gap1, cent 30-40: 8 valid runs
+v2{2}gap1, cent 40-50: 8 valid runs
+v2{2}gap1, cent 50-60: 8 valid runs
+v2{2}gap1, cent 60-70: 8 valid runs
+v2{2}gap2, cent 00-05: 8 valid runs
+v2{2}gap2, cent 05-10: 8 valid runs
+v2{2}gap2, cent 10-20: 8 valid runs
+v2{2}gap2, cent 20-30: 8 valid runs
+v2{2}gap2, cent 30-40: 8 valid runs
+v2{2}gap2, cent 40-50: 8 valid runs
+v2{2}gap2, cent 50-60: 8 valid runs
+v2{2}gap2, cent 60-70: 8 valid runs
+v2{2}gap3, cent 00-05: 8 valid runs
+v2{2}gap3, cent 05-10: 8 valid runs
+v2{2}gap3, cent 10-20: 8 valid runs
+v2{2}gap3, cent 20-30: 8 valid runs
+v2{2}gap3, cent 30-40: 8 valid runs
+v2{2}gap3, cent 40-50: 8 valid runs
+v2{2}gap3, cent 50-60: 8 valid runs
+v2{2}gap3, cent 60-70: 8 valid runs
+v3{2}gap1, cent 00-05: 8 valid runs
+v3{2}gap1, cent 05-10: 8 valid runs
+v3{2}gap1, cent 10-20: 8 valid runs
+v3{2}gap1, cent 20-30: 8 valid runs
+v3{2}gap1, cent 30-40: 8 valid runs
+v3{2}gap1, cent 40-50: 8 valid runs
+v3{2}gap1, cent 50-60: 8 valid runs
+v3{2}gap1, cent 60-70: 8 valid runs
+v3{2}gap2, cent 00-05: 8 valid runs
+v3{2}gap2, cent 05-10: 8 valid runs
+v3{2}gap2, cent 10-20: 8 valid runs
+v3{2}gap2, cent 20-30: 8 valid runs
+v3{2}gap2, cent 30-40: 8 valid runs
+v3{2}gap2, cent 40-50: 8 valid runs
+v3{2}gap2, cent 50-60: 8 valid runs
+v3{2}gap2, cent 60-70: 8 valid runs
+v3{2}gap3, cent 00-05: 8 valid runs
+v3{2}gap3, cent 05-10: 8 valid runs
+v3{2}gap3, cent 10-20: 8 valid runs
+v3{2}gap3, cent 20-30: 8 valid runs
+v3{2}gap3, cent 30-40: 8 valid runs
+v3{2}gap3, cent 40-50: 8 valid runs
+v3{2}gap3, cent 50-60: 8 valid runs
+v3{2}gap3, cent 60-70: 8 valid runs
+v4{2}gap1, cent 00-05: 8 valid runs
+v4{2}gap1, cent 05-10: 8 valid runs
+v4{2}gap1, cent 10-20: 8 valid runs
+v4{2}gap1, cent 20-30: 8 valid runs
+v4{2}gap1, cent 30-40: 8 valid runs
+v4{2}gap1, cent 40-50: 8 valid runs
+v4{2}gap1, cent 50-60: 8 valid runs
+v4{2}gap1, cent 60-70: 8 valid runs
+v4{2}gap2, cent 00-05: 8 valid runs
+v4{2}gap2, cent 05-10: 8 valid runs
+v4{2}gap2, cent 10-20: 8 valid runs
+v4{2}gap2, cent 20-30: 8 valid runs
+v4{2}gap2, cent 30-40: 8 valid runs
+v4{2}gap2, cent 40-50: 8 valid runs
+v4{2}gap2, cent 50-60: 8 valid runs
+v4{2}gap2, cent 60-70: 8 valid runs
+v4{2}gap3, cent 00-05: 8 valid runs
+v4{2}gap3, cent 05-10: 8 valid runs
+v4{2}gap3, cent 10-20: 8 valid runs
+v4{2}gap3, cent 20-30: 8 valid runs
+v4{2}gap3, cent 30-40: 8 valid runs
+v4{2}gap3, cent 40-50: 8 valid runs
+v4{2}gap3, cent 50-60: 8 valid runs
+v4{2}gap3, cent 60-70: 8 valid runs
+cent = 00-05 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544116: 
+ found realdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found realdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 2 valid runs
+v2{2}, cent 05-10: 2 valid runs
+v2{2}, cent 10-20: 2 valid runs
+v2{2}, cent 20-30: 2 valid runs
+v2{2}, cent 30-40: 2 valid runs
+v2{2}, cent 40-50: 2 valid runs
+v2{2}, cent 50-60: 2 valid runs
+v2{2}, cent 60-70: 2 valid runs
+v2{4}, cent 00-05: 2 valid runs
+v2{4}, cent 05-10: 2 valid runs
+v2{4}, cent 10-20: 2 valid runs
+v2{4}, cent 20-30: 2 valid runs
+v2{4}, cent 30-40: 2 valid runs
+v2{4}, cent 40-50: 2 valid runs
+v2{4}, cent 50-60: 2 valid runs
+v2{4}, cent 60-70: 2 valid runs
+v3{2}, cent 00-05: 2 valid runs
+v3{2}, cent 05-10: 2 valid runs
+v3{2}, cent 10-20: 2 valid runs
+v3{2}, cent 20-30: 2 valid runs
+v3{2}, cent 30-40: 2 valid runs
+v3{2}, cent 40-50: 2 valid runs
+v3{2}, cent 50-60: 2 valid runs
+v3{2}, cent 60-70: 2 valid runs
+v3{4}, cent 00-05: 2 valid runs
+v3{4}, cent 05-10: 2 valid runs
+v3{4}, cent 10-20: 2 valid runs
+v3{4}, cent 20-30: 2 valid runs
+v3{4}, cent 30-40: 2 valid runs
+v3{4}, cent 40-50: 2 valid runs
+v3{4}, cent 50-60: 2 valid runs
+v3{4}, cent 60-70: 2 valid runs
+v4{2}, cent 00-05: 2 valid runs
+v4{2}, cent 05-10: 2 valid runs
+v4{2}, cent 10-20: 2 valid runs
+v4{2}, cent 20-30: 2 valid runs
+v4{2}, cent 30-40: 2 valid runs
+v4{2}, cent 40-50: 2 valid runs
+v4{2}, cent 50-60: 2 valid runs
+v4{2}, cent 60-70: 2 valid runs
+v4{4}, cent 00-05: 2 valid runs
+v4{4}, cent 05-10: 2 valid runs
+v4{4}, cent 10-20: 2 valid runs
+v4{4}, cent 20-30: 2 valid runs
+v4{4}, cent 30-40: 2 valid runs
+v4{4}, cent 40-50: 2 valid runs
+v4{4}, cent 50-60: 2 valid runs
+v4{4}, cent 60-70: 2 valid runs
+NSC(2,3), cent 00-05: 2 valid runs
+NSC(2,3), cent 05-10: 2 valid runs
+NSC(2,3), cent 10-20: 2 valid runs
+NSC(2,3), cent 20-30: 2 valid runs
+NSC(2,3), cent 30-40: 2 valid runs
+NSC(2,3), cent 40-50: 2 valid runs
+NSC(2,3), cent 50-60: 2 valid runs
+NSC(2,3), cent 60-70: 2 valid runs
+NSC(2,4), cent 00-05: 2 valid runs
+NSC(2,4), cent 05-10: 2 valid runs
+NSC(2,4), cent 10-20: 2 valid runs
+NSC(2,4), cent 20-30: 2 valid runs
+NSC(2,4), cent 30-40: 2 valid runs
+NSC(2,4), cent 40-50: 2 valid runs
+NSC(2,4), cent 50-60: 2 valid runs
+NSC(2,4), cent 60-70: 2 valid runs
+NSC(2,3,4), cent 00-05: 2 valid runs
+NSC(2,3,4), cent 05-10: 2 valid runs
+NSC(2,3,4), cent 10-20: 2 valid runs
+NSC(2,3,4), cent 20-30: 2 valid runs
+NSC(2,3,4), cent 30-40: 2 valid runs
+NSC(2,3,4), cent 40-50: 2 valid runs
+NSC(2,3,4), cent 50-60: 2 valid runs
+NSC(2,3,4), cent 60-70: 2 valid runs
+v2{2}gap1, cent 00-05: 2 valid runs
+v2{2}gap1, cent 05-10: 2 valid runs
+v2{2}gap1, cent 10-20: 2 valid runs
+v2{2}gap1, cent 20-30: 2 valid runs
+v2{2}gap1, cent 30-40: 2 valid runs
+v2{2}gap1, cent 40-50: 2 valid runs
+v2{2}gap1, cent 50-60: 2 valid runs
+v2{2}gap1, cent 60-70: 2 valid runs
+v2{2}gap2, cent 00-05: 2 valid runs
+v2{2}gap2, cent 05-10: 2 valid runs
+v2{2}gap2, cent 10-20: 2 valid runs
+v2{2}gap2, cent 20-30: 2 valid runs
+v2{2}gap2, cent 30-40: 2 valid runs
+v2{2}gap2, cent 40-50: 2 valid runs
+v2{2}gap2, cent 50-60: 2 valid runs
+v2{2}gap2, cent 60-70: 2 valid runs
+v2{2}gap3, cent 00-05: 2 valid runs
+v2{2}gap3, cent 05-10: 2 valid runs
+v2{2}gap3, cent 10-20: 2 valid runs
+v2{2}gap3, cent 20-30: 2 valid runs
+v2{2}gap3, cent 30-40: 2 valid runs
+v2{2}gap3, cent 40-50: 2 valid runs
+v2{2}gap3, cent 50-60: 2 valid runs
+v2{2}gap3, cent 60-70: 2 valid runs
+v3{2}gap1, cent 00-05: 2 valid runs
+v3{2}gap1, cent 05-10: 2 valid runs
+v3{2}gap1, cent 10-20: 2 valid runs
+v3{2}gap1, cent 20-30: 2 valid runs
+v3{2}gap1, cent 30-40: 2 valid runs
+v3{2}gap1, cent 40-50: 2 valid runs
+v3{2}gap1, cent 50-60: 2 valid runs
+v3{2}gap1, cent 60-70: 2 valid runs
+v3{2}gap2, cent 00-05: 2 valid runs
+v3{2}gap2, cent 05-10: 2 valid runs
+v3{2}gap2, cent 10-20: 2 valid runs
+v3{2}gap2, cent 20-30: 2 valid runs
+v3{2}gap2, cent 30-40: 2 valid runs
+v3{2}gap2, cent 40-50: 2 valid runs
+v3{2}gap2, cent 50-60: 2 valid runs
+v3{2}gap2, cent 60-70: 2 valid runs
+v3{2}gap3, cent 00-05: 2 valid runs
+v3{2}gap3, cent 05-10: 2 valid runs
+v3{2}gap3, cent 10-20: 2 valid runs
+v3{2}gap3, cent 20-30: 2 valid runs
+v3{2}gap3, cent 30-40: 2 valid runs
+v3{2}gap3, cent 40-50: 2 valid runs
+v3{2}gap3, cent 50-60: 2 valid runs
+v3{2}gap3, cent 60-70: 2 valid runs
+v4{2}gap1, cent 00-05: 2 valid runs
+v4{2}gap1, cent 05-10: 2 valid runs
+v4{2}gap1, cent 10-20: 2 valid runs
+v4{2}gap1, cent 20-30: 2 valid runs
+v4{2}gap1, cent 30-40: 2 valid runs
+v4{2}gap1, cent 40-50: 2 valid runs
+v4{2}gap1, cent 50-60: 2 valid runs
+v4{2}gap1, cent 60-70: 2 valid runs
+v4{2}gap2, cent 00-05: 2 valid runs
+v4{2}gap2, cent 05-10: 2 valid runs
+v4{2}gap2, cent 10-20: 2 valid runs
+v4{2}gap2, cent 20-30: 2 valid runs
+v4{2}gap2, cent 30-40: 2 valid runs
+v4{2}gap2, cent 40-50: 2 valid runs
+v4{2}gap2, cent 50-60: 2 valid runs
+v4{2}gap2, cent 60-70: 2 valid runs
+v4{2}gap3, cent 00-05: 2 valid runs
+v4{2}gap3, cent 05-10: 2 valid runs
+v4{2}gap3, cent 10-20: 2 valid runs
+v4{2}gap3, cent 20-30: 2 valid runs
+v4{2}gap3, cent 30-40: 2 valid runs
+v4{2}gap3, cent 40-50: 2 valid runs
+v4{2}gap3, cent 50-60: 2 valid runs
+v4{2}gap3, cent 60-70: 2 valid runs
+cent = 00-05 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544091: 
+ found realdata/544091/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544095: 
+ found realdata/544095/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544098: 
+ found realdata/544098/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544121: 
+ found realdata/544121/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544123: 
+ found realdata/544123/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544124: 
+ found realdata/544124/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 6 valid runs
+v2{2}, cent 05-10: 6 valid runs
+v2{2}, cent 10-20: 6 valid runs
+v2{2}, cent 20-30: 6 valid runs
+v2{2}, cent 30-40: 6 valid runs
+v2{2}, cent 40-50: 6 valid runs
+v2{2}, cent 50-60: 6 valid runs
+v2{2}, cent 60-70: 6 valid runs
+v2{4}, cent 00-05: 6 valid runs
+v2{4}, cent 05-10: 6 valid runs
+v2{4}, cent 10-20: 6 valid runs
+v2{4}, cent 20-30: 6 valid runs
+v2{4}, cent 30-40: 6 valid runs
+v2{4}, cent 40-50: 6 valid runs
+v2{4}, cent 50-60: 6 valid runs
+v2{4}, cent 60-70: 6 valid runs
+v3{2}, cent 00-05: 6 valid runs
+v3{2}, cent 05-10: 6 valid runs
+v3{2}, cent 10-20: 6 valid runs
+v3{2}, cent 20-30: 6 valid runs
+v3{2}, cent 30-40: 6 valid runs
+v3{2}, cent 40-50: 6 valid runs
+v3{2}, cent 50-60: 6 valid runs
+v3{2}, cent 60-70: 6 valid runs
+v3{4}, cent 00-05: 6 valid runs
+v3{4}, cent 05-10: 6 valid runs
+v3{4}, cent 10-20: 6 valid runs
+v3{4}, cent 20-30: 6 valid runs
+v3{4}, cent 30-40: 6 valid runs
+v3{4}, cent 40-50: 6 valid runs
+v3{4}, cent 50-60: 6 valid runs
+v3{4}, cent 60-70: 6 valid runs
+v4{2}, cent 00-05: 6 valid runs
+v4{2}, cent 05-10: 6 valid runs
+v4{2}, cent 10-20: 6 valid runs
+v4{2}, cent 20-30: 6 valid runs
+v4{2}, cent 30-40: 6 valid runs
+v4{2}, cent 40-50: 6 valid runs
+v4{2}, cent 50-60: 6 valid runs
+v4{2}, cent 60-70: 6 valid runs
+v4{4}, cent 00-05: 6 valid runs
+v4{4}, cent 05-10: 6 valid runs
+v4{4}, cent 10-20: 6 valid runs
+v4{4}, cent 20-30: 6 valid runs
+v4{4}, cent 30-40: 6 valid runs
+v4{4}, cent 40-50: 6 valid runs
+v4{4}, cent 50-60: 6 valid runs
+v4{4}, cent 60-70: 6 valid runs
+NSC(2,3), cent 00-05: 6 valid runs
+NSC(2,3), cent 05-10: 6 valid runs
+NSC(2,3), cent 10-20: 6 valid runs
+NSC(2,3), cent 20-30: 6 valid runs
+NSC(2,3), cent 30-40: 6 valid runs
+NSC(2,3), cent 40-50: 6 valid runs
+NSC(2,3), cent 50-60: 6 valid runs
+NSC(2,3), cent 60-70: 6 valid runs
+NSC(2,4), cent 00-05: 6 valid runs
+NSC(2,4), cent 05-10: 6 valid runs
+NSC(2,4), cent 10-20: 6 valid runs
+NSC(2,4), cent 20-30: 6 valid runs
+NSC(2,4), cent 30-40: 6 valid runs
+NSC(2,4), cent 40-50: 6 valid runs
+NSC(2,4), cent 50-60: 6 valid runs
+NSC(2,4), cent 60-70: 6 valid runs
+NSC(2,3,4), cent 00-05: 6 valid runs
+NSC(2,3,4), cent 05-10: 6 valid runs
+NSC(2,3,4), cent 10-20: 6 valid runs
+NSC(2,3,4), cent 20-30: 6 valid runs
+NSC(2,3,4), cent 30-40: 6 valid runs
+NSC(2,3,4), cent 40-50: 6 valid runs
+NSC(2,3,4), cent 50-60: 6 valid runs
+NSC(2,3,4), cent 60-70: 6 valid runs
+v2{2}gap1, cent 00-05: 6 valid runs
+v2{2}gap1, cent 05-10: 6 valid runs
+v2{2}gap1, cent 10-20: 6 valid runs
+v2{2}gap1, cent 20-30: 6 valid runs
+v2{2}gap1, cent 30-40: 6 valid runs
+v2{2}gap1, cent 40-50: 6 valid runs
+v2{2}gap1, cent 50-60: 6 valid runs
+v2{2}gap1, cent 60-70: 6 valid runs
+v2{2}gap2, cent 00-05: 6 valid runs
+v2{2}gap2, cent 05-10: 6 valid runs
+v2{2}gap2, cent 10-20: 6 valid runs
+v2{2}gap2, cent 20-30: 6 valid runs
+v2{2}gap2, cent 30-40: 6 valid runs
+v2{2}gap2, cent 40-50: 6 valid runs
+v2{2}gap2, cent 50-60: 6 valid runs
+v2{2}gap2, cent 60-70: 6 valid runs
+v2{2}gap3, cent 00-05: 6 valid runs
+v2{2}gap3, cent 05-10: 6 valid runs
+v2{2}gap3, cent 10-20: 6 valid runs
+v2{2}gap3, cent 20-30: 6 valid runs
+v2{2}gap3, cent 30-40: 6 valid runs
+v2{2}gap3, cent 40-50: 6 valid runs
+v2{2}gap3, cent 50-60: 6 valid runs
+v2{2}gap3, cent 60-70: 6 valid runs
+v3{2}gap1, cent 00-05: 6 valid runs
+v3{2}gap1, cent 05-10: 6 valid runs
+v3{2}gap1, cent 10-20: 6 valid runs
+v3{2}gap1, cent 20-30: 6 valid runs
+v3{2}gap1, cent 30-40: 6 valid runs
+v3{2}gap1, cent 40-50: 6 valid runs
+v3{2}gap1, cent 50-60: 6 valid runs
+v3{2}gap1, cent 60-70: 6 valid runs
+v3{2}gap2, cent 00-05: 6 valid runs
+v3{2}gap2, cent 05-10: 6 valid runs
+v3{2}gap2, cent 10-20: 6 valid runs
+v3{2}gap2, cent 20-30: 6 valid runs
+v3{2}gap2, cent 30-40: 6 valid runs
+v3{2}gap2, cent 40-50: 6 valid runs
+v3{2}gap2, cent 50-60: 6 valid runs
+v3{2}gap2, cent 60-70: 6 valid runs
+v3{2}gap3, cent 00-05: 6 valid runs
+v3{2}gap3, cent 05-10: 6 valid runs
+v3{2}gap3, cent 10-20: 6 valid runs
+v3{2}gap3, cent 20-30: 6 valid runs
+v3{2}gap3, cent 30-40: 6 valid runs
+v3{2}gap3, cent 40-50: 6 valid runs
+v3{2}gap3, cent 50-60: 6 valid runs
+v3{2}gap3, cent 60-70: 6 valid runs
+v4{2}gap1, cent 00-05: 6 valid runs
+v4{2}gap1, cent 05-10: 6 valid runs
+v4{2}gap1, cent 10-20: 6 valid runs
+v4{2}gap1, cent 20-30: 6 valid runs
+v4{2}gap1, cent 30-40: 6 valid runs
+v4{2}gap1, cent 40-50: 6 valid runs
+v4{2}gap1, cent 50-60: 6 valid runs
+v4{2}gap1, cent 60-70: 6 valid runs
+v4{2}gap2, cent 00-05: 6 valid runs
+v4{2}gap2, cent 05-10: 6 valid runs
+v4{2}gap2, cent 10-20: 6 valid runs
+v4{2}gap2, cent 20-30: 6 valid runs
+v4{2}gap2, cent 30-40: 6 valid runs
+v4{2}gap2, cent 40-50: 6 valid runs
+v4{2}gap2, cent 50-60: 6 valid runs
+v4{2}gap2, cent 60-70: 6 valid runs
+v4{2}gap3, cent 00-05: 6 valid runs
+v4{2}gap3, cent 05-10: 6 valid runs
+v4{2}gap3, cent 10-20: 6 valid runs
+v4{2}gap3, cent 20-30: 6 valid runs
+v4{2}gap3, cent 30-40: 6 valid runs
+v4{2}gap3, cent 40-50: 6 valid runs
+v4{2}gap3, cent 50-60: 6 valid runs
+v4{2}gap3, cent 60-70: 6 valid runs
+cent = 00-05 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 4 valid runs
+v2{2}, cent 05-10: 4 valid runs
+v2{2}, cent 10-20: 4 valid runs
+v2{2}, cent 20-30: 4 valid runs
+v2{2}, cent 30-40: 4 valid runs
+v2{2}, cent 40-50: 4 valid runs
+v2{2}, cent 50-60: 4 valid runs
+v2{2}, cent 60-70: 4 valid runs
+v2{4}, cent 00-05: 4 valid runs
+v2{4}, cent 05-10: 4 valid runs
+v2{4}, cent 10-20: 4 valid runs
+v2{4}, cent 20-30: 4 valid runs
+v2{4}, cent 30-40: 4 valid runs
+v2{4}, cent 40-50: 4 valid runs
+v2{4}, cent 50-60: 4 valid runs
+v2{4}, cent 60-70: 4 valid runs
+v3{2}, cent 00-05: 4 valid runs
+v3{2}, cent 05-10: 4 valid runs
+v3{2}, cent 10-20: 4 valid runs
+v3{2}, cent 20-30: 4 valid runs
+v3{2}, cent 30-40: 4 valid runs
+v3{2}, cent 40-50: 4 valid runs
+v3{2}, cent 50-60: 4 valid runs
+v3{2}, cent 60-70: 4 valid runs
+v3{4}, cent 00-05: 4 valid runs
+v3{4}, cent 05-10: 4 valid runs
+v3{4}, cent 10-20: 4 valid runs
+v3{4}, cent 20-30: 4 valid runs
+v3{4}, cent 30-40: 4 valid runs
+v3{4}, cent 40-50: 4 valid runs
+v3{4}, cent 50-60: 4 valid runs
+v3{4}, cent 60-70: 4 valid runs
+v4{2}, cent 00-05: 4 valid runs
+v4{2}, cent 05-10: 4 valid runs
+v4{2}, cent 10-20: 4 valid runs
+v4{2}, cent 20-30: 4 valid runs
+v4{2}, cent 30-40: 4 valid runs
+v4{2}, cent 40-50: 4 valid runs
+v4{2}, cent 50-60: 4 valid runs
+v4{2}, cent 60-70: 4 valid runs
+v4{4}, cent 00-05: 4 valid runs
+v4{4}, cent 05-10: 4 valid runs
+v4{4}, cent 10-20: 4 valid runs
+v4{4}, cent 20-30: 4 valid runs
+v4{4}, cent 30-40: 4 valid runs
+v4{4}, cent 40-50: 4 valid runs
+v4{4}, cent 50-60: 4 valid runs
+v4{4}, cent 60-70: 4 valid runs
+NSC(2,3), cent 00-05: 4 valid runs
+NSC(2,3), cent 05-10: 4 valid runs
+NSC(2,3), cent 10-20: 4 valid runs
+NSC(2,3), cent 20-30: 4 valid runs
+NSC(2,3), cent 30-40: 4 valid runs
+NSC(2,3), cent 40-50: 4 valid runs
+NSC(2,3), cent 50-60: 4 valid runs
+NSC(2,3), cent 60-70: 4 valid runs
+NSC(2,4), cent 00-05: 4 valid runs
+NSC(2,4), cent 05-10: 4 valid runs
+NSC(2,4), cent 10-20: 4 valid runs
+NSC(2,4), cent 20-30: 4 valid runs
+NSC(2,4), cent 30-40: 4 valid runs
+NSC(2,4), cent 40-50: 4 valid runs
+NSC(2,4), cent 50-60: 4 valid runs
+NSC(2,4), cent 60-70: 4 valid runs
+NSC(2,3,4), cent 00-05: 4 valid runs
+NSC(2,3,4), cent 05-10: 4 valid runs
+NSC(2,3,4), cent 10-20: 4 valid runs
+NSC(2,3,4), cent 20-30: 4 valid runs
+NSC(2,3,4), cent 30-40: 4 valid runs
+NSC(2,3,4), cent 40-50: 4 valid runs
+NSC(2,3,4), cent 50-60: 4 valid runs
+NSC(2,3,4), cent 60-70: 4 valid runs
+v2{2}gap1, cent 00-05: 4 valid runs
+v2{2}gap1, cent 05-10: 4 valid runs
+v2{2}gap1, cent 10-20: 4 valid runs
+v2{2}gap1, cent 20-30: 4 valid runs
+v2{2}gap1, cent 30-40: 4 valid runs
+v2{2}gap1, cent 40-50: 4 valid runs
+v2{2}gap1, cent 50-60: 4 valid runs
+v2{2}gap1, cent 60-70: 4 valid runs
+v2{2}gap2, cent 00-05: 4 valid runs
+v2{2}gap2, cent 05-10: 4 valid runs
+v2{2}gap2, cent 10-20: 4 valid runs
+v2{2}gap2, cent 20-30: 4 valid runs
+v2{2}gap2, cent 30-40: 4 valid runs
+v2{2}gap2, cent 40-50: 4 valid runs
+v2{2}gap2, cent 50-60: 4 valid runs
+v2{2}gap2, cent 60-70: 4 valid runs
+v2{2}gap3, cent 00-05: 4 valid runs
+v2{2}gap3, cent 05-10: 4 valid runs
+v2{2}gap3, cent 10-20: 4 valid runs
+v2{2}gap3, cent 20-30: 4 valid runs
+v2{2}gap3, cent 30-40: 4 valid runs
+v2{2}gap3, cent 40-50: 4 valid runs
+v2{2}gap3, cent 50-60: 4 valid runs
+v2{2}gap3, cent 60-70: 4 valid runs
+v3{2}gap1, cent 00-05: 4 valid runs
+v3{2}gap1, cent 05-10: 4 valid runs
+v3{2}gap1, cent 10-20: 4 valid runs
+v3{2}gap1, cent 20-30: 4 valid runs
+v3{2}gap1, cent 30-40: 4 valid runs
+v3{2}gap1, cent 40-50: 4 valid runs
+v3{2}gap1, cent 50-60: 4 valid runs
+v3{2}gap1, cent 60-70: 4 valid runs
+v3{2}gap2, cent 00-05: 4 valid runs
+v3{2}gap2, cent 05-10: 4 valid runs
+v3{2}gap2, cent 10-20: 4 valid runs
+v3{2}gap2, cent 20-30: 4 valid runs
+v3{2}gap2, cent 30-40: 4 valid runs
+v3{2}gap2, cent 40-50: 4 valid runs
+v3{2}gap2, cent 50-60: 4 valid runs
+v3{2}gap2, cent 60-70: 4 valid runs
+v3{2}gap3, cent 00-05: 4 valid runs
+v3{2}gap3, cent 05-10: 4 valid runs
+v3{2}gap3, cent 10-20: 4 valid runs
+v3{2}gap3, cent 20-30: 4 valid runs
+v3{2}gap3, cent 30-40: 4 valid runs
+v3{2}gap3, cent 40-50: 4 valid runs
+v3{2}gap3, cent 50-60: 4 valid runs
+v3{2}gap3, cent 60-70: 4 valid runs
+v4{2}gap1, cent 00-05: 4 valid runs
+v4{2}gap1, cent 05-10: 4 valid runs
+v4{2}gap1, cent 10-20: 4 valid runs
+v4{2}gap1, cent 20-30: 4 valid runs
+v4{2}gap1, cent 30-40: 4 valid runs
+v4{2}gap1, cent 40-50: 4 valid runs
+v4{2}gap1, cent 50-60: 4 valid runs
+v4{2}gap1, cent 60-70: 4 valid runs
+v4{2}gap2, cent 00-05: 4 valid runs
+v4{2}gap2, cent 05-10: 4 valid runs
+v4{2}gap2, cent 10-20: 4 valid runs
+v4{2}gap2, cent 20-30: 4 valid runs
+v4{2}gap2, cent 30-40: 4 valid runs
+v4{2}gap2, cent 40-50: 4 valid runs
+v4{2}gap2, cent 50-60: 4 valid runs
+v4{2}gap2, cent 60-70: 4 valid runs
+v4{2}gap3, cent 00-05: 4 valid runs
+v4{2}gap3, cent 05-10: 4 valid runs
+v4{2}gap3, cent 10-20: 4 valid runs
+v4{2}gap3, cent 20-30: 4 valid runs
+v4{2}gap3, cent 30-40: 4 valid runs
+v4{2}gap3, cent 40-50: 4 valid runs
+v4{2}gap3, cent 50-60: 4 valid runs
+v4{2}gap3, cent 60-70: 4 valid runs
+cent = 00-05 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544116: 
+ found MCdata/544116/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544122: 
+ found MCdata/544122/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 2 valid runs
+v2{2}, cent 05-10: 2 valid runs
+v2{2}, cent 10-20: 2 valid runs
+v2{2}, cent 20-30: 2 valid runs
+v2{2}, cent 30-40: 2 valid runs
+v2{2}, cent 40-50: 2 valid runs
+v2{2}, cent 50-60: 2 valid runs
+v2{2}, cent 60-70: 2 valid runs
+v2{4}, cent 00-05: 2 valid runs
+v2{4}, cent 05-10: 2 valid runs
+v2{4}, cent 10-20: 2 valid runs
+v2{4}, cent 20-30: 2 valid runs
+v2{4}, cent 30-40: 2 valid runs
+v2{4}, cent 40-50: 2 valid runs
+v2{4}, cent 50-60: 2 valid runs
+v2{4}, cent 60-70: 2 valid runs
+v3{2}, cent 00-05: 2 valid runs
+v3{2}, cent 05-10: 2 valid runs
+v3{2}, cent 10-20: 2 valid runs
+v3{2}, cent 20-30: 2 valid runs
+v3{2}, cent 30-40: 2 valid runs
+v3{2}, cent 40-50: 2 valid runs
+v3{2}, cent 50-60: 2 valid runs
+v3{2}, cent 60-70: 2 valid runs
+v3{4}, cent 00-05: 2 valid runs
+v3{4}, cent 05-10: 2 valid runs
+v3{4}, cent 10-20: 2 valid runs
+v3{4}, cent 20-30: 2 valid runs
+v3{4}, cent 30-40: 2 valid runs
+v3{4}, cent 40-50: 2 valid runs
+v3{4}, cent 50-60: 2 valid runs
+v3{4}, cent 60-70: 2 valid runs
+v4{2}, cent 00-05: 2 valid runs
+v4{2}, cent 05-10: 2 valid runs
+v4{2}, cent 10-20: 2 valid runs
+v4{2}, cent 20-30: 2 valid runs
+v4{2}, cent 30-40: 2 valid runs
+v4{2}, cent 40-50: 2 valid runs
+v4{2}, cent 50-60: 2 valid runs
+v4{2}, cent 60-70: 2 valid runs
+v4{4}, cent 00-05: 2 valid runs
+v4{4}, cent 05-10: 2 valid runs
+v4{4}, cent 10-20: 2 valid runs
+v4{4}, cent 20-30: 2 valid runs
+v4{4}, cent 30-40: 2 valid runs
+v4{4}, cent 40-50: 2 valid runs
+v4{4}, cent 50-60: 2 valid runs
+v4{4}, cent 60-70: 2 valid runs
+NSC(2,3), cent 00-05: 2 valid runs
+NSC(2,3), cent 05-10: 2 valid runs
+NSC(2,3), cent 10-20: 2 valid runs
+NSC(2,3), cent 20-30: 2 valid runs
+NSC(2,3), cent 30-40: 2 valid runs
+NSC(2,3), cent 40-50: 2 valid runs
+NSC(2,3), cent 50-60: 2 valid runs
+NSC(2,3), cent 60-70: 2 valid runs
+NSC(2,4), cent 00-05: 2 valid runs
+NSC(2,4), cent 05-10: 2 valid runs
+NSC(2,4), cent 10-20: 2 valid runs
+NSC(2,4), cent 20-30: 2 valid runs
+NSC(2,4), cent 30-40: 2 valid runs
+NSC(2,4), cent 40-50: 2 valid runs
+NSC(2,4), cent 50-60: 2 valid runs
+NSC(2,4), cent 60-70: 2 valid runs
+NSC(2,3,4), cent 00-05: 2 valid runs
+NSC(2,3,4), cent 05-10: 2 valid runs
+NSC(2,3,4), cent 10-20: 2 valid runs
+NSC(2,3,4), cent 20-30: 2 valid runs
+NSC(2,3,4), cent 30-40: 2 valid runs
+NSC(2,3,4), cent 40-50: 2 valid runs
+NSC(2,3,4), cent 50-60: 2 valid runs
+NSC(2,3,4), cent 60-70: 2 valid runs
+v2{2}gap1, cent 00-05: 2 valid runs
+v2{2}gap1, cent 05-10: 2 valid runs
+v2{2}gap1, cent 10-20: 2 valid runs
+v2{2}gap1, cent 20-30: 2 valid runs
+v2{2}gap1, cent 30-40: 2 valid runs
+v2{2}gap1, cent 40-50: 2 valid runs
+v2{2}gap1, cent 50-60: 2 valid runs
+v2{2}gap1, cent 60-70: 2 valid runs
+v2{2}gap2, cent 00-05: 2 valid runs
+v2{2}gap2, cent 05-10: 2 valid runs
+v2{2}gap2, cent 10-20: 2 valid runs
+v2{2}gap2, cent 20-30: 2 valid runs
+v2{2}gap2, cent 30-40: 2 valid runs
+v2{2}gap2, cent 40-50: 2 valid runs
+v2{2}gap2, cent 50-60: 2 valid runs
+v2{2}gap2, cent 60-70: 2 valid runs
+v2{2}gap3, cent 00-05: 2 valid runs
+v2{2}gap3, cent 05-10: 2 valid runs
+v2{2}gap3, cent 10-20: 2 valid runs
+v2{2}gap3, cent 20-30: 2 valid runs
+v2{2}gap3, cent 30-40: 2 valid runs
+v2{2}gap3, cent 40-50: 2 valid runs
+v2{2}gap3, cent 50-60: 2 valid runs
+v2{2}gap3, cent 60-70: 2 valid runs
+v3{2}gap1, cent 00-05: 2 valid runs
+v3{2}gap1, cent 05-10: 2 valid runs
+v3{2}gap1, cent 10-20: 2 valid runs
+v3{2}gap1, cent 20-30: 2 valid runs
+v3{2}gap1, cent 30-40: 2 valid runs
+v3{2}gap1, cent 40-50: 2 valid runs
+v3{2}gap1, cent 50-60: 2 valid runs
+v3{2}gap1, cent 60-70: 2 valid runs
+v3{2}gap2, cent 00-05: 2 valid runs
+v3{2}gap2, cent 05-10: 2 valid runs
+v3{2}gap2, cent 10-20: 2 valid runs
+v3{2}gap2, cent 20-30: 2 valid runs
+v3{2}gap2, cent 30-40: 2 valid runs
+v3{2}gap2, cent 40-50: 2 valid runs
+v3{2}gap2, cent 50-60: 2 valid runs
+v3{2}gap2, cent 60-70: 2 valid runs
+v3{2}gap3, cent 00-05: 2 valid runs
+v3{2}gap3, cent 05-10: 2 valid runs
+v3{2}gap3, cent 10-20: 2 valid runs
+v3{2}gap3, cent 20-30: 2 valid runs
+v3{2}gap3, cent 30-40: 2 valid runs
+v3{2}gap3, cent 40-50: 2 valid runs
+v3{2}gap3, cent 50-60: 2 valid runs
+v3{2}gap3, cent 60-70: 2 valid runs
+v4{2}gap1, cent 00-05: 2 valid runs
+v4{2}gap1, cent 05-10: 2 valid runs
+v4{2}gap1, cent 10-20: 2 valid runs
+v4{2}gap1, cent 20-30: 2 valid runs
+v4{2}gap1, cent 30-40: 2 valid runs
+v4{2}gap1, cent 40-50: 2 valid runs
+v4{2}gap1, cent 50-60: 2 valid runs
+v4{2}gap1, cent 60-70: 2 valid runs
+v4{2}gap2, cent 00-05: 2 valid runs
+v4{2}gap2, cent 05-10: 2 valid runs
+v4{2}gap2, cent 10-20: 2 valid runs
+v4{2}gap2, cent 20-30: 2 valid runs
+v4{2}gap2, cent 30-40: 2 valid runs
+v4{2}gap2, cent 40-50: 2 valid runs
+v4{2}gap2, cent 50-60: 2 valid runs
+v4{2}gap2, cent 60-70: 2 valid runs
+v4{2}gap3, cent 00-05: 2 valid runs
+v4{2}gap3, cent 05-10: 2 valid runs
+v4{2}gap3, cent 10-20: 2 valid runs
+v4{2}gap3, cent 20-30: 2 valid runs
+v4{2}gap3, cent 30-40: 2 valid runs
+v4{2}gap3, cent 40-50: 2 valid runs
+v4{2}gap3, cent 50-60: 2 valid runs
+v4{2}gap3, cent 60-70: 2 valid runs
+cent = 00-05 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent00-05_id0
+ Open dir multiparticle-cumulants_cent00-05
+cent = 05-10 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent05-10_id0
+ Open dir multiparticle-cumulants_cent05-10
+cent = 10-20 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent10-20_id0
+ Open dir multiparticle-cumulants_cent10-20
+cent = 20-30 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent20-30_id0
+ Open dir multiparticle-cumulants_cent20-30
+cent = 30-40 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent30-40_id0
+ Open dir multiparticle-cumulants_cent30-40
+cent = 40-50 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent40-50_id0
+ Open dir multiparticle-cumulants_cent40-50
+cent = 50-60 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent50-60_id0
+ Open dir multiparticle-cumulants_cent50-60
+cent = 60-70 
+ Run 544886: 
+ found MCdata/544886/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+ Run 544868: 
+ found MCdata/544868/AnalysisResults.root
+ Failed to open dir multiparticle-cumulants_cent60-70_id0
+ Open dir multiparticle-cumulants_cent60-70
+v2{2}, cent 00-05: 2 valid runs
+v2{2}, cent 05-10: 2 valid runs
+v2{2}, cent 10-20: 2 valid runs
+v2{2}, cent 20-30: 2 valid runs
+v2{2}, cent 30-40: 2 valid runs
+v2{2}, cent 40-50: 2 valid runs
+v2{2}, cent 50-60: 2 valid runs
+v2{2}, cent 60-70: 2 valid runs
+v2{4}, cent 00-05: 2 valid runs
+v2{4}, cent 05-10: 2 valid runs
+v2{4}, cent 10-20: 2 valid runs
+v2{4}, cent 20-30: 2 valid runs
+v2{4}, cent 30-40: 2 valid runs
+v2{4}, cent 40-50: 2 valid runs
+v2{4}, cent 50-60: 2 valid runs
+v2{4}, cent 60-70: 2 valid runs
+v3{2}, cent 00-05: 2 valid runs
+v3{2}, cent 05-10: 2 valid runs
+v3{2}, cent 10-20: 2 valid runs
+v3{2}, cent 20-30: 2 valid runs
+v3{2}, cent 30-40: 2 valid runs
+v3{2}, cent 40-50: 2 valid runs
+v3{2}, cent 50-60: 2 valid runs
+v3{2}, cent 60-70: 2 valid runs
+v3{4}, cent 00-05: 2 valid runs
+v3{4}, cent 05-10: 2 valid runs
+v3{4}, cent 10-20: 2 valid runs
+v3{4}, cent 20-30: 2 valid runs
+v3{4}, cent 30-40: 2 valid runs
+v3{4}, cent 40-50: 2 valid runs
+v3{4}, cent 50-60: 2 valid runs
+v3{4}, cent 60-70: 2 valid runs
+v4{2}, cent 00-05: 2 valid runs
+v4{2}, cent 05-10: 2 valid runs
+v4{2}, cent 10-20: 2 valid runs
+v4{2}, cent 20-30: 2 valid runs
+v4{2}, cent 30-40: 2 valid runs
+v4{2

@@ -163,7 +163,7 @@ void plotFlow(int harmonic, TGraphErrors* twoParticleGraphReal_stat, TGraphError
 
   auto* canvas = new TCanvas(Form("c_v%d", harmonic), "", 1500, 900);
   canvas->SetGrid();
-  const float alpha = 0.5;
+  const float alpha = 0.;
 
   for (size_t s = 0; s < 2; s++) {
     twoParticleGraphReal[s]->SetMarkerStyle(20);
@@ -473,6 +473,218 @@ void plotFlow2pGap(int harmonic, TGraphErrors* twoParticleGap0, TGraphErrors* tw
   legend->Draw();
   canvas->Print(Form("result/plots/chap4_result_v%d_etagap.pdf", harmonic));
   canvas->Print(Form("result/plots/chap4_result_v%d_etagap.png", harmonic));
+  delete canvas;
+  // delete multigraph;
+}
+
+void plot2pCumulant(TGraphErrors* v2FourPCuGraphMC, TGraphErrors* v3FourPCuGraphMC, TGraphErrors* v4FourPCuGraphMC) {
+  auto* canvas = new TCanvas("canvas", "", 1500, 900);
+  canvas->SetGrid();
+  // canvas->SetLogy(1);
+
+  v2FourPCuGraphMC->SetMarkerStyle(20);
+  v2FourPCuGraphMC->SetMarkerColor(kRed);
+  v3FourPCuGraphMC->SetMarkerStyle(20);
+  v3FourPCuGraphMC->SetMarkerColor(kBlue);
+  v4FourPCuGraphMC->SetMarkerStyle(20);
+  v4FourPCuGraphMC->SetMarkerColor(kGreen + 2);
+
+  auto* multigraph = new TMultiGraph();
+  multigraph->SetTitle(" ");
+
+  multigraph->Add(v2FourPCuGraphMC);
+  multigraph->Add(v3FourPCuGraphMC);
+  multigraph->Add(v4FourPCuGraphMC);
+
+  int multigraphSize = multigraph->GetListOfGraphs()->GetSize();
+  TIter next(multigraph->GetListOfGraphs());
+  int graphIndex = 0;
+  while (auto* object = next()) {
+
+    auto* graph = dynamic_cast<TGraphErrors*>(object);
+    if (!graph) {
+      continue;
+    }
+
+    graph->SetLineColor(kBlack);
+    ShiftAlongXaxis(graph, 0.7*graphIndex);
+    // printf("index:%d\n", graphIndex);
+    graphIndex++;
+  }
+
+  TLegend* legend = nullptr;
+  const double ycMax = getYMax(multigraph);
+  const double ycMin = getYMin(multigraph);
+  const double yvMax = std::pow(ycMax, 0.5);
+  const double yvMin = 0.;
+  const double dy = std::abs(ycMax - ycMin);
+  legend = new TLegend(0.15, 0.67, 0.35, 0.85);
+  // multigraph->SetMinimum(ycMin - 0.2 * dy);
+  // multigraph->SetMaximum(ycMax + 0.2 * dy);
+
+  multigraph->Draw("ap");
+  multigraph->GetXaxis()->SetLimits(0., 70.);
+  multigraph->GetXaxis()->SetTitle("Centrality (\%)");
+  multigraph->GetYaxis()->SetTitle("c_{n}{2}");
+
+  canvas->Update();
+  TF1* VtoC = new TF1("VtoC", "pow(x,2)", yvMin, yvMax);
+  TGaxis* vAxis = new TGaxis(70., 0., 70., ycMax, "VtoC", 510, "-L");
+  TLatex label;
+  label.SetTextFont(multigraph->GetYaxis()->GetLabelFont());
+  label.SetTextSize(multigraph->GetYaxis()->GetLabelSize());
+  label.SetTextAlign(12);
+  for (double v : {0.002, 0.006, 0.01, 0.012, 0.014}) {
+    double c = std::pow(v, 2);
+    label.DrawLatex(70. + 2, c, Form("%.3f", v));
+  }
+  TLatex title;
+  title.SetTextFont(multigraph->GetYaxis()->GetTitleFont());
+  title.SetTextSize(multigraph->GetYaxis()->GetTitleSize());
+  title.SetTextAlign(12);
+  title.SetTextAngle(90);
+  title.DrawLatex(70. + 3, 2.5e-4, "v_{n}{2}");
+
+  vAxis->SetLabelFont(multigraph->GetYaxis()->GetLabelFont());
+  vAxis->SetTitleFont(multigraph->GetYaxis()->GetTitleFont());
+  // vAxis->SetLabelOffset(-0.4);
+  // vAxis->SetTitleOffset(-0.5);
+  vAxis->SetLabelSize(0);
+  vAxis->SetTitleSize(0);
+  vAxis->SetTitle("v_{n}{2}");
+  vAxis->Draw();
+
+
+  legend->AddEntry((TObject*)0, "PYTHIA 8", "");
+
+  legend->AddEntry((TObject*)0, "5.36 TeV", "");
+
+  legend->AddEntry(v2FourPCuGraphMC, "c_{2}{2}");
+
+  legend->AddEntry(v3FourPCuGraphMC, "c_{3}{2}");
+
+  legend->AddEntry(v4FourPCuGraphMC, "c_{4}{2}");
+
+  legend->SetBorderSize(0);
+  legend->Draw();
+  canvas->Print("result/plots/chap4_result_cn2.pdf");
+  canvas->Print("result/plots/chap4_result_cn2.png");
+  delete canvas;
+  // delete multigraph;
+}
+
+void plot4pCumulant(TGraphErrors* v2FourPCuGraphMC, TGraphErrors* v3FourPCuGraphMC, TGraphErrors* v4FourPCuGraphMC) {
+  auto* canvas = new TCanvas("canvas", "", 1500, 900);
+  canvas->SetGrid();
+  // canvas->SetLogy(1);
+
+  // v2FourPCuGraphReal->SetMarkerStyle(24);
+  // v2FourPCuGraphReal->SetMarkerColor(kRed);
+  // v3FourPCuGraphReal->SetMarkerStyle(24);
+  // v3FourPCuGraphReal->SetMarkerColor(kBlue);
+  // v4FourPCuGraphReal->SetMarkerStyle(24);
+  // v4FourPCuGraphReal->SetMarkerColor(kGreen + 2);
+
+  v2FourPCuGraphMC->SetMarkerStyle(20);
+  v2FourPCuGraphMC->SetMarkerColor(kRed);
+  v3FourPCuGraphMC->SetMarkerStyle(20);
+  v3FourPCuGraphMC->SetMarkerColor(kBlue);
+  v4FourPCuGraphMC->SetMarkerStyle(20);
+  v4FourPCuGraphMC->SetMarkerColor(kGreen + 2);
+
+  auto* multigraph = new TMultiGraph();
+  multigraph->SetTitle(" ");
+  // multigraph->Add(v2FourPCuGraphReal);
+  // multigraph->Add(v3FourPCuGraphReal);
+  // multigraph->Add(v4FourPCuGraphReal);
+  multigraph->Add(v2FourPCuGraphMC);
+  multigraph->Add(v3FourPCuGraphMC);
+  multigraph->Add(v4FourPCuGraphMC);
+
+  int multigraphSize = multigraph->GetListOfGraphs()->GetSize();
+  TIter next(multigraph->GetListOfGraphs());
+  int graphIndex = 0;
+  while (auto* object = next()) {
+    // if (graphIndex >= multigraphSize / 2) {
+    //   graphIndex = 0;
+    // }
+    auto* graph = dynamic_cast<TGraphErrors*>(object);
+    if (!graph) {
+      continue;
+    }
+    // if (graphIndex == 0) {
+    //   graphIndex++;
+    //   continue;
+    // }
+    graph->SetLineColor(kBlack);
+    ShiftAlongXaxis(graph, 0.7*graphIndex);
+    // printf("index:%d\n", graphIndex);
+    graphIndex++;
+  }
+
+  TLegend* legend = nullptr;
+  const double ycMax = getYMax(multigraph);
+  const double ycMin = getYMin(multigraph);
+  const double yvMax = std::pow(-ycMin, 0.25);
+  const double yvMin = 0.;
+  const double dy = std::abs(ycMax - ycMin);
+  legend = new TLegend(0.15, 0.17, 0.35, 0.35);
+  // multigraph->SetMinimum(ycMin - 0.2 * dy);
+  // multigraph->SetMaximum(ycMax + 0.2 * dy);
+
+  multigraph->Draw("ap");
+  multigraph->GetXaxis()->SetLimits(0., 70.);
+  multigraph->GetXaxis()->SetTitle("Centrality (\%)");
+  multigraph->GetYaxis()->SetTitle("c_{n}{4}");
+
+  canvas->Update();
+  TF1* VtoC = new TF1("VtoC", "-pow(x,4)", yvMin, yvMax);
+  TGaxis* vAxis = new TGaxis(70., ycMin, 70., 0., "VtoC", 510, "-L");
+  TLatex label;
+  label.SetTextFont(multigraph->GetYaxis()->GetLabelFont());
+  label.SetTextSize(multigraph->GetYaxis()->GetLabelSize());
+  label.SetTextAlign(12);
+  for (double v : {0.015, 0.02, 0.025}) {
+    double c = -std::pow(v, 4);
+    label.DrawLatex(70. + 2, c, Form("%.3f", v));
+  }
+  TLatex title;
+  title.SetTextFont(multigraph->GetYaxis()->GetTitleFont());
+  title.SetTextSize(multigraph->GetYaxis()->GetTitleSize());
+  title.SetTextAlign(12);
+  title.SetTextAngle(90);
+  title.DrawLatex(70. + 3, 1e-7, "v_{n}{4}");
+
+  vAxis->SetLabelFont(multigraph->GetYaxis()->GetLabelFont());
+  vAxis->SetTitleFont(multigraph->GetYaxis()->GetTitleFont());
+  vAxis->SetLabelOffset(0);
+  vAxis->SetTitleOffset(-0.5);
+  vAxis->SetLabelSize(0);
+  vAxis->SetTitleSize(0);
+  vAxis->SetTitle("v_{n}{4}");
+  vAxis->Draw();
+
+  // legend->SetNColumns(2);
+
+  // legend->AddEntry((TObject*)0, "ALICE Pb-Pb", "");
+  legend->AddEntry((TObject*)0, "PYTHIA 8", "");
+
+  // legend->AddEntry((TObject*)0, "5.36 TeV", "");
+  legend->AddEntry((TObject*)0, "5.36 TeV", "");
+
+  // legend->AddEntry(v2FourPCuGraphReal, "c_{2}{4}");
+  legend->AddEntry(v2FourPCuGraphMC, "c_{2}{4}");
+  
+  // legend->AddEntry(v3FourPCuGraphReal, "c_{3}{4}");
+  legend->AddEntry(v3FourPCuGraphMC, "c_{3}{4}");
+
+  // legend->AddEntry(v4FourPCuGraphReal, "c_{4}{4}");
+  legend->AddEntry(v4FourPCuGraphMC, "c_{4}{4}");
+
+  legend->SetBorderSize(0);
+  legend->Draw();
+  canvas->Print("result/plots/chap4_result_cn4.pdf");
+  canvas->Print("result/plots/chap4_result_cn4.png");
   delete canvas;
   // delete multigraph;
 }
@@ -1043,8 +1255,8 @@ int Plotting(bool isNormalized = true, bool isCumulant = false)
     }
 
   } else {
-    return 1;
-    // PlotCumulant()
+    plot2pCumulant(dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[11]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[14]->Clone()), dynamic_cast<TGraphErrors*>(resultData_vnscVScent_MC[17]->Clone()));
+    plot4pCumulant(resultData_vnscVScent_MC[1], resultData_vnscVScent_MC[3], resultData_vnscVScent_MC[5]);
   }
 
   return 0;

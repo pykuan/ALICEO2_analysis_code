@@ -25,6 +25,7 @@
 #include <limits>
 #include "BarlowTest.h"
 #include "ReadBarlowTest.h"
+#include "loadtable.h"
 
 using namespace std;
 
@@ -66,6 +67,9 @@ const bool bLocal = false;
 const int idReal = 0;
 const int idMC = 0;
 const char* dataDir = "/scratch3/go52dab/O2tutorial/test20260922_analysis/";
+
+const auto cumulantDataReal = loadtable("result/data/result_vnscVScent_realdata_cumulant.csv");
+const auto cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv");
 
 const int nCentBins = 8;
 const char* centBinsName[nCentBins] = {"00-05", "05-10", "10-20", "20-30", "30-40", "40-50", "50-60", "60-70"};
@@ -218,8 +222,8 @@ void FillArray(){
 
                 // <<2>> and vn{2}
                 std::complex<double> v2TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v2^2>")), 0}; // c2{2}
-                std::complex<double> v3TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>")), 0};
-                std::complex<double> v4TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>")), 0};
+                std::complex<double> v3TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>")), 0}; // c3{2}
+                std::complex<double> v4TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>")), 0}; // c4{2}
                 
                 std::complex<double> v2TwoPCorr = std::pow(v2TwoPCu, 0.5); // v2{2}
                 std::complex<double> v3TwoPCorr = std::pow(v3TwoPCu, 0.5); // v3{2}
@@ -243,9 +247,9 @@ void FillArray(){
                 std::complex<double> v2TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v2^2>")), 0};
                 std::complex<double> v3TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v3^2>")), 0};
                 std::complex<double> v4TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v4^2>")), 0};
-                std::complex<double> v2TwoPCorrGap3 = std::pow(v2TwoPCuGap3, 0.5); // v2{2}
-                std::complex<double> v3TwoPCorrGap3 = std::pow(v3TwoPCuGap3, 0.5); // v3{2}
-                std::complex<double> v4TwoPCorrGap3 = std::pow(v4TwoPCuGap3, 0.5); // v4{2}
+                std::complex<double> v2TwoPCorrGap3; // v2{2}
+                std::complex<double> v3TwoPCorrGap3; // v3{2}
+                std::complex<double> v4TwoPCorrGap3; // v4{2}
 
                 // <<4>>
                 double v2v2FourPCorr = prof4->GetBinContent(prof4->GetXaxis()->FindBin("<v2^2v2^2>")); // <v2^2 v2^2>
@@ -269,13 +273,19 @@ void FillArray(){
                 std::complex<double> v4FourPCorr; // v4{4}
 
                 if (!bCumulant) {
+                    v2TwoPCorrGap3 = std::pow(v2TwoPCuGap3, 0.5);
+                    v3TwoPCorrGap3 = std::pow(v3TwoPCuGap3, 0.5);
+                    v4TwoPCorrGap3 = std::pow(v4TwoPCuGap3, 0.5);
                     v2FourPCorr = std::pow(v2FourPCu, 0.25); // v2{4}
                     v3FourPCorr = std::pow(v3FourPCu, 0.25); // v3{4}
                     v4FourPCorr = std::pow(v4FourPCu, 0.25); // v4{4}
                 } else {
-                    v2FourPCorr = v2FourPCu; // -c2{4}
-                    v3FourPCorr = v3FourPCu; // -c3{4}
-                    v4FourPCorr = v4FourPCu; // -c4{4}
+                    v2TwoPCorrGap3 = v2TwoPCuGap3;
+                    v3TwoPCorrGap3 = v3TwoPCuGap3;
+                    v4TwoPCorrGap3 = v4TwoPCuGap3;
+                    v2FourPCorr = -v2FourPCu; // c2{4}
+                    v3FourPCorr = -v3FourPCu; // c3{4}
+                    v4FourPCorr = -v4FourPCu; // c4{4}
                 }
 
                 // (N)SC
@@ -351,11 +361,26 @@ void Bootstrap()
 {
 
     double nValid[nObservables][nCentBins] = {}; // actually int
+    bool bRealValue[nObservables][nCentBins] = {};
 
     for (int obs = 0; obs < nObservables; ++obs) {
         for (int cent = 0; cent < nCentBins; ++cent) {
             Mean[obs][cent] = 0.;
             StatErr[obs][cent] = 0.;
+            bRealValue[obs][cent] = true;
+        }
+    }
+
+    for (int obs : {eV24, eV34, eV44, eV22gap3, eV32gap3, eV42gap3}) {
+        auto* graph = cumulantDataReal[obs];
+        for (int cent = 0; cent < graph->GetN(); cent++) {
+            double _cent, cu;
+            graph->GetPoint(cent, _cent, cu);
+            if ((obs == eV24 || obs == eV34 || obs == eV44) && cu >= 0.) {
+                bRealValue[obs][cent] = false;
+            } else if ((obs == eV22gap3 || obs == eV32gap3 || obs == eV42gap3) && cu <= 0.) {
+                bRealValue[obs][cent] = false;
+            }
         }
     }
 
@@ -365,7 +390,12 @@ void Bootstrap()
 
                 std::complex<double> value = MeanByRun[obs][run][cent];
 
-                if (value != value) { // nan? || value.imag() != 0.
+                if (value != value) { // nan?
+                    continue;
+                }
+                else if (!bRealValue[obs][cent]) { // value.imag() != 0.
+                    Mean[obs][cent] = std::numeric_limits<double>::quiet_NaN();
+                    nValid[obs][cent] = 0.;
                     continue;
                 }
 
@@ -417,7 +447,7 @@ void Bootstrap()
 
             Err[obs][cent] = StatErr[obs][cent];
 
-            printf("%s, cent %s: %d valid runs\n", observablesList[obs], centBinsName[cent], n);
+            // printf("%s, cent %s: %d valid runs\n", observablesList[obs], centBinsName[cent], n);
         }
     }
 }
