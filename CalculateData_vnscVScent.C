@@ -68,8 +68,8 @@ const int idReal = 0;
 const int idMC = 0;
 const char* dataDir = "/scratch3/go52dab/O2tutorial/test20260922_analysis/";
 
-const auto cumulantDataReal = loadtable("result/data/result_vnscVScent_realdata_cumulant.csv");
-const auto cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv");
+std::vector<TGraphErrors*> cumulantDataReal;
+std::vector<TGraphErrors*> cumulantDataMC;
 
 const int nCentBins = 8;
 const char* centBinsName[nCentBins] = {"00-05", "05-10", "10-20", "20-30", "30-40", "40-50", "50-60", "60-70"};
@@ -280,6 +280,15 @@ void FillArray(){
                     v3FourPCorr = std::pow(v3FourPCu, 0.25); // v3{4}
                     v4FourPCorr = std::pow(v4FourPCu, 0.25); // v4{4}
                 } else {
+                    v2TwoPCorr = v2TwoPCu;
+                    v3TwoPCorr = v3TwoPCu;
+                    v4TwoPCorr = v4TwoPCu;
+                    v2TwoPCorrGap1 = v2TwoPCuGap1;
+                    v3TwoPCorrGap1 = v3TwoPCuGap1;
+                    v4TwoPCorrGap1 = v4TwoPCuGap1;
+                    v2TwoPCorrGap2 = v2TwoPCuGap2;
+                    v3TwoPCorrGap2 = v3TwoPCuGap2;
+                    v4TwoPCorrGap2 = v4TwoPCuGap2;
                     v2TwoPCorrGap3 = v2TwoPCuGap3;
                     v3TwoPCorrGap3 = v3TwoPCuGap3;
                     v4TwoPCorrGap3 = v4TwoPCuGap3;
@@ -371,15 +380,28 @@ void Bootstrap()
         }
     }
 
-    for (int obs : {eV24, eV34, eV44, eV22gap3, eV32gap3, eV42gap3}) {
-        auto* graph = cumulantDataReal[obs];
-        for (int cent = 0; cent < graph->GetN(); cent++) {
-            double _cent, cu;
-            graph->GetPoint(cent, _cent, cu);
-            if ((obs == eV24 || obs == eV34 || obs == eV44) && cu >= 0.) {
-                bRealValue[obs][cent] = false;
-            } else if ((obs == eV22gap3 || obs == eV32gap3 || obs == eV42gap3) && cu <= 0.) {
-                bRealValue[obs][cent] = false;
+    // The first pass writes cumulants; only the flow pass reads them.
+    if (!bCumulant) {
+        const auto& cumulants = (strcmp(realMC, "MCdata") == 0)
+            ? cumulantDataMC : cumulantDataReal;
+        for (int obs : {eV22, eV24, eV32, eV34, eV42, eV44,
+                        eV22gap1, eV22gap2, eV22gap3,
+                        eV32gap1, eV32gap2, eV32gap3,
+                        eV42gap1, eV42gap2, eV42gap3}) {
+            const bool fourParticle = (obs == eV24 || obs == eV34 || obs == eV44);
+            auto* graph = cumulants[obs];
+            for (int cent = 0; cent < nCentBins; ++cent) {
+                bool valid = false; // missing bins are not valid flow measurements
+                for (int point = 0; point < graph->GetN(); ++point) {
+                    double x, cu;
+                    graph->GetPoint(point, x, cu);
+                    if (std::abs(x - centBinsCenter[cent]) < 1e-6) {
+                        valid = std::isfinite(cu) &&
+                            (fourParticle ? cu < 0. : cu > 0.);
+                        break;
+                    }
+                }
+                bRealValue[obs][cent] = valid;
             }
         }
     }
@@ -393,9 +415,7 @@ void Bootstrap()
                 if (value != value) { // nan?
                     continue;
                 }
-                else if (!bRealValue[obs][cent]) { // value.imag() != 0.
-                    Mean[obs][cent] = std::numeric_limits<double>::quiet_NaN();
-                    nValid[obs][cent] = 0.;
+                if (!bRealValue[obs][cent]) {
                     continue;
                 }
 
@@ -584,6 +604,27 @@ int CalculateData_vnscVScent(bool isNormalized = true, bool isCumulant = false) 
 
     bSCnormalized = isNormalized;
     bCumulant = isCumulant;
+
+    if (!bCumulant) {
+        // Read after the cumulant pass has written both CSVs.
+        // Errors may be NaN for bins with too few runs; only the sign is needed.
+        cumulantDataReal = loadtable("result/data/result_vnscVScent_realdata_cumulant.csv", false, false);
+        if (!bLocal) {
+            cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv", false, false);
+        }
+        auto validTable = [](const std::vector<TGraphErrors*>& graphs) {
+            if (graphs.size() != nObservables) return false;
+            for (int obs = 0; obs < nObservables; ++obs) {
+                if (!graphs[obs] || std::string(graphs[obs]->GetName()) != observablesList[obs])
+                    return false;
+            }
+            return true;
+        };
+        if (!validTable(cumulantDataReal) || (!bLocal && !validTable(cumulantDataMC))) {
+            std::cerr << "ERROR: cumulant CSV is missing or has unexpected observables\n";
+            return 1;
+        }
+    }
 
     if (!bLocal) {
         // generate data for Barlow test
