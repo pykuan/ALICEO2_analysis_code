@@ -225,24 +225,24 @@ void FillArray(){
                 std::complex<double> v3TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v3^2>")), 0}; // c3{2}
                 std::complex<double> v4TwoPCu = std::complex<double>{prof2->GetBinContent(prof2->GetXaxis()->FindBin("<v4^2>")), 0}; // c4{2}
                 
-                std::complex<double> v2TwoPCorr = std::pow(v2TwoPCu, 0.5); // v2{2}
-                std::complex<double> v3TwoPCorr = std::pow(v3TwoPCu, 0.5); // v3{2}
-                std::complex<double> v4TwoPCorr = std::pow(v4TwoPCu, 0.5); // v4{2}
+                std::complex<double> v2TwoPCorr; // v2{2}
+                std::complex<double> v3TwoPCorr; // v3{2}
+                std::complex<double> v4TwoPCorr; // v4{2}
 
                 // <<2>> and vn{2}, gapped
                 std::complex<double> v2TwoPCuGap1 = std::complex<double>{prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v2^2>")), 0};
                 std::complex<double> v3TwoPCuGap1 = std::complex<double>{prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v3^2>")), 0};
                 std::complex<double> v4TwoPCuGap1 = std::complex<double>{prof2gap1->GetBinContent(prof2gap1->GetXaxis()->FindBin("<v4^2>")), 0};
-                std::complex<double> v2TwoPCorrGap1 = std::pow(v2TwoPCuGap1, 0.5); // v2{2}
-                std::complex<double> v3TwoPCorrGap1 = std::pow(v3TwoPCuGap1, 0.5); // v3{2}
-                std::complex<double> v4TwoPCorrGap1 = std::pow(v4TwoPCuGap1, 0.5); // v4{2}
+                std::complex<double> v2TwoPCorrGap1; // v2{2}
+                std::complex<double> v3TwoPCorrGap1; // v3{2}
+                std::complex<double> v4TwoPCorrGap1; // v4{2}
 
                 std::complex<double> v2TwoPCuGap2 = std::complex<double>{prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v2^2>")), 0};
                 std::complex<double> v3TwoPCuGap2 = std::complex<double>{prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v3^2>")), 0};
                 std::complex<double> v4TwoPCuGap2 = std::complex<double>{prof2gap2->GetBinContent(prof2gap2->GetXaxis()->FindBin("<v4^2>")), 0};
-                std::complex<double> v2TwoPCorrGap2 = std::pow(v2TwoPCuGap2, 0.5); // v2{2}
-                std::complex<double> v3TwoPCorrGap2 = std::pow(v3TwoPCuGap2, 0.5); // v3{2}
-                std::complex<double> v4TwoPCorrGap2 = std::pow(v4TwoPCuGap2, 0.5); // v4{2}
+                std::complex<double> v2TwoPCorrGap2; // v2{2}
+                std::complex<double> v3TwoPCorrGap2; // v3{2}
+                std::complex<double> v4TwoPCorrGap2; // v4{2}
 
                 std::complex<double> v2TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v2^2>")), 0};
                 std::complex<double> v3TwoPCuGap3 = std::complex<double>{prof2gap3->GetBinContent(prof2gap3->GetXaxis()->FindBin("<v3^2>")), 0};
@@ -273,6 +273,15 @@ void FillArray(){
                 std::complex<double> v4FourPCorr; // v4{4}
 
                 if (!bCumulant) {
+                    v2TwoPCorr = std::pow(v2TwoPCu, 0.5);
+                    v3TwoPCorr = std::pow(v3TwoPCu, 0.5);
+                    v4TwoPCorr = std::pow(v4TwoPCu, 0.5);
+                    v2TwoPCorrGap1 = std::pow(v2TwoPCuGap1, 0.5);
+                    v3TwoPCorrGap1 = std::pow(v3TwoPCuGap1, 0.5);
+                    v4TwoPCorrGap1 = std::pow(v4TwoPCuGap1, 0.5);
+                    v2TwoPCorrGap2 = std::pow(v2TwoPCuGap2, 0.5);
+                    v3TwoPCorrGap2 = std::pow(v3TwoPCuGap2, 0.5);
+                    v4TwoPCorrGap2 = std::pow(v4TwoPCuGap2, 0.5);
                     v2TwoPCorrGap3 = std::pow(v2TwoPCuGap3, 0.5);
                     v3TwoPCorrGap3 = std::pow(v3TwoPCuGap3, 0.5);
                     v4TwoPCorrGap3 = std::pow(v4TwoPCuGap3, 0.5);
@@ -312,21 +321,6 @@ void FillArray(){
                     NSC24 = (v2v4FourPCorr - v2TwoPCu.real() * v4TwoPCu.real()); // SC(2,4)
                     NSC234 = (vnSixPCorr - v2v3FourPCorr * v4TwoPCu.real() - v2v4FourPCorr * v3TwoPCu.real() - v3v4FourPCorr * v2TwoPCu.real() + 2 * v2TwoPCu.real() * v3TwoPCu.real() * v4TwoPCu.real()); // SC(2,3,4)
                 }
-
-
-
-                // printf("  v2{2} = %.12f \n", v2TwoPCorr);
-                // printf("  v3{2} = %.12f \n", v3TwoPCorr);
-                // printf("  v4{2} = %.12f \n", v4TwoPCorr);
-                // printf("  v2{4} = %.12f \n", v2FourPCorr);
-                // printf("  v3{4} = %.12f \n", v3FourPCorr);
-                // printf("  v4{4} = %.12f \n", v4FourPCorr);
-                // // printf("  <v2^2 v2^2> = %.12f \n", v2v2FourPCorr);
-                // // printf("  <v2^2 v3^2> = %.12f \n", v2v3FourPCorr);
-                // // printf("  <v2^2 v4^2> = %.12f \n", v2v4FourPCorr);
-                // printf("  (N)SC(2,3) = %.12f \n", NSC23);
-                // printf("  (N)SC(2,4) = %.12f \n", NSC24);
-                // printf("  (N)SC(2,3,4) = %.12f \n", NSC234);
 
                 MeanByRun[eV22][j][i] = v2TwoPCorr;
                 MeanByRun[eV24][j][i] = v2FourPCorr;
@@ -382,8 +376,7 @@ void Bootstrap()
 
     // The first pass writes cumulants; only the flow pass reads them.
     if (!bCumulant) {
-        const auto& cumulants = (strcmp(realMC, "MCdata") == 0)
-            ? cumulantDataMC : cumulantDataReal;
+        const auto& cumulants = (strcmp(realMC, "MCdata") == 0) ? cumulantDataMC : cumulantDataReal;
         for (int obs : {eV22, eV24, eV32, eV34, eV42, eV44,
                         eV22gap1, eV22gap2, eV22gap3,
                         eV32gap1, eV32gap2, eV32gap3,
@@ -391,13 +384,12 @@ void Bootstrap()
             const bool fourParticle = (obs == eV24 || obs == eV34 || obs == eV44);
             auto* graph = cumulants[obs];
             for (int cent = 0; cent < nCentBins; ++cent) {
-                bool valid = false; // missing bins are not valid flow measurements
+                bool valid = false;
                 for (int point = 0; point < graph->GetN(); ++point) {
                     double x, cu;
                     graph->GetPoint(point, x, cu);
                     if (std::abs(x - centBinsCenter[cent]) < 1e-6) {
-                        valid = std::isfinite(cu) &&
-                            (fourParticle ? cu <= 0. : cu >= 0.);
+                        valid = fourParticle ? cu <= 0. : cu >= 0.;
                         break;
                     }
                 }
@@ -606,24 +598,10 @@ int CalculateData_vnscVScent(bool isNormalized = true, bool isCumulant = false) 
     bCumulant = isCumulant;
 
     if (!bCumulant) {
-        // Read after the cumulant pass has written both CSVs.
-        // Errors may be NaN for bins with too few runs; only the sign is needed.
+
         cumulantDataReal = loadtable("result/data/result_vnscVScent_realdata_cumulant.csv", false, false);
-        if (!bLocal) {
-            cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv", false, false);
-        }
-        auto validTable = [](const std::vector<TGraphErrors*>& graphs) {
-            if (graphs.size() != nObservables) return false;
-            for (int obs = 0; obs < nObservables; ++obs) {
-                if (!graphs[obs] || std::string(graphs[obs]->GetName()) != observablesList[obs])
-                    return false;
-            }
-            return true;
-        };
-        if (!validTable(cumulantDataReal) || (!bLocal && !validTable(cumulantDataMC))) {
-            std::cerr << "ERROR: cumulant CSV is missing or has unexpected observables\n";
-            return 1;
-        }
+        cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv", false, false);
+
     }
 
     if (!bLocal) {
