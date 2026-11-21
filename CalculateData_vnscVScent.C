@@ -264,9 +264,11 @@ void FillArray(){
 
                 // vn{4}
 
-                std::complex<double> v2FourPCu = 2. * std::pow(v2TwoPCorr, 4.) - v2v2FourPCorr; // -c2{4}
-                std::complex<double> v3FourPCu = 2. * std::pow(v3TwoPCorr, 4.) - v3v3FourPCorr; // -c3{4}
-                std::complex<double> v4FourPCu = 2. * std::pow(v4TwoPCorr, 4.) - v4v4FourPCorr; // -c4{4}
+                // Compute -c_n{4} = 2 <2>_n^2 - <4>_n directly from the raw correlators.
+                // v_n{2} has not been assigned yet and can be complex for negative <2>_n.
+                std::complex<double> v2FourPCu = 2. * v2TwoPCu * v2TwoPCu - v2v2FourPCorr;
+                std::complex<double> v3FourPCu = 2. * v3TwoPCu * v3TwoPCu - v3v3FourPCorr;
+                std::complex<double> v4FourPCu = 2. * v4TwoPCu * v4TwoPCu - v4v4FourPCorr;
 
                 std::complex<double> v2FourPCorr; // v2{4}
                 std::complex<double> v3FourPCorr; // v3{4}
@@ -389,7 +391,7 @@ void Bootstrap()
                     double x, cu;
                     graph->GetPoint(point, x, cu);
                     if (std::abs(x - centBinsCenter[cent]) < 1e-6) {
-                        valid = fourParticle ? cu <= 0. : cu >= 0.;
+                        valid = std::isfinite(cu) && (fourParticle ? cu <= 0. : cu >= 0.);
                         break;
                     }
                 }
@@ -600,8 +602,21 @@ int CalculateData_vnscVScent(bool isNormalized = true, bool isCumulant = false) 
     if (!bCumulant) {
 
         cumulantDataReal = loadtable("result/data/result_vnscVScent_realdata_cumulant.csv", false, false);
-        cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv", false, false);
-
+        if (!bLocal) {
+            cumulantDataMC = loadtable("result/data/result_vnscVScent_MCdata_cumulant.csv", false, false);
+        }
+        auto validTable = [](const std::vector<TGraphErrors*>& graphs) {
+            if (graphs.size() != nObservables) return false;
+            for (int obs = 0; obs < nObservables; ++obs) {
+                if (!graphs[obs] || std::string(graphs[obs]->GetName()) != observablesList[obs])
+                    return false;
+            }
+            return true;
+        };
+        if (!validTable(cumulantDataReal) || (!bLocal && !validTable(cumulantDataMC))) {
+            std::cerr << "ERROR: cumulant CSV is missing or has unexpected observables\n";
+            return 1;
+        }
     }
 
     if (!bLocal) {
