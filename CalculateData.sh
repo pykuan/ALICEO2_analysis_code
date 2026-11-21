@@ -1,4 +1,7 @@
 #!/bin/bash
+set -euo pipefail
+
+mkdir -p result/barlow result/data result/plots
 
 # cumulants
 root -l -q "CalculateData_vnscVScent.C(true, true)"
